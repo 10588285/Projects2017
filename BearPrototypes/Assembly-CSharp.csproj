@@ -55,7 +55,7 @@
      <Compile Include="Assets\Scripts\ButtonManager.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ChangeCheckPoint.cs" />
-     <Compile Include="Assets\Scripts\DeathTrigger.cs" />
+     <Compile Include="Assets\Scripts\Chicken.cs" />
      <Compile Include="Assets\Scripts\EatChicken.cs" />
      <Compile Include="Assets\Scripts\FallingPlatform.cs" />
      <Compile Include="Assets\Scripts\Grab.cs" />
@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\MovePlatform.cs" />
+     <Compile Include="Assets\Scripts\Mud.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\PushObject.cs" />
  <Reference Include="UnityEngine.UI">

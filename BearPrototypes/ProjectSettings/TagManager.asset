@@ -9,6 +9,9 @@ TagManager:
   - Ladder
   - Chicken
   - Pick Up
+  - Death
+  - Hurt
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -21,7 +24,7 @@ TagManager:
   - Grabbable
   - Player
   - Ladder
-  - 
+  - Chicken
   - 
   - 
   - 

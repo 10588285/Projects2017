@@ -23,7 +23,8 @@ public class BearFollow : MonoBehaviour {
 		float time = 0;
 
 		while (time < 5) {
-			bear.transform.position = Vector3.MoveTowards (bear.transform.position, col.transform.position, time);
+			Vector3 target = new Vector3(col.transform.position.x ,bear.transform.position.y,bear.transform.position.z);
+			bear.transform.position = Vector3.MoveTowards (bear.transform.position, target, time);
 			time += Time.deltaTime;
 			yield return null;
 		}
