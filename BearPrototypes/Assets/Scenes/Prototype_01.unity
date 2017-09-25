@@ -459,8 +459,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 128432031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.26000977, y: 1.18, z: -0.5}
-  m_LocalScale: {x: 9.705403, y: 6.460192, z: 3.0072796}
+  m_LocalPosition: {x: 0.26000977, y: 3.2, z: -0.5}
+  m_LocalScale: {x: 17.945515, y: 11.033824, z: 3.0072796}
   m_Children: []
   m_Father: {fileID: 2007953947}
   m_RootOrder: 0
@@ -729,6 +729,7 @@ MonoBehaviour:
   glideSpeed: 12
   glideWieght: 5
   glideJumpSpeed: 5
+  moveDirection: {x: 0, y: 0, z: 0}
   hasChicken: 0
   hasMud: 0
   hasObject: 0
@@ -2554,7 +2555,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 647094043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.31, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 428305659}
@@ -2967,6 +2968,8 @@ GameObject:
   m_Component:
   - component: {fileID: 793557749}
   - component: {fileID: 793557750}
+  - component: {fileID: 793557751}
+  - component: {fileID: 793557752}
   m_Layer: 0
   m_Name: ChickenSprite
   m_TagString: Untagged
@@ -3029,6 +3032,36 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &793557751
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793557748}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd0263b6eb3143441857b5e4e7d1a5e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &793557752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793557748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b66a801a40f22b442b647a08695e4523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 793557751}
+  chicken: {fileID: 1175043060}
 --- !u!1 &831903719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,6 +3638,10 @@ Prefab:
         type: 2}
       propertyPath: weight
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839215716918172, guid: 201dc284a583a504aabd099266581011, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 201dc284a583a504aabd099266581011, type: 2}
@@ -4658,6 +4695,11 @@ Transform:
   m_Father: {fileID: 472541106}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1175043060 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1657961815379508, guid: 201dc284a583a504aabd099266581011,
+    type: 2}
+  m_PrefabInternal: {fileID: 11925430}
 --- !u!1 &1185919218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,7 +4784,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1185919218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.39, z: -11.01}
+  m_LocalPosition: {x: 0, y: 1.79, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1631700818}
@@ -4868,7 +4910,7 @@ Transform:
   m_GameObject: {fileID: 1259564228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.017599886, y: 0.017596131, z: -0.0131970905}
-  m_LocalScale: {x: 1.2712837, y: 2.0373123, z: 1.3229133}
+  m_LocalScale: {x: 1.3531523, y: 2.3215387, z: 1.3229133}
   m_Children: []
   m_Father: {fileID: 428305659}
   m_RootOrder: 0
@@ -6155,6 +6197,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1590833980}
   - component: {fileID: 1590833981}
+  - component: {fileID: 1590833982}
+  - component: {fileID: 1590833983}
   m_Layer: 0
   m_Name: CharacterSprite
   m_TagString: Untagged
@@ -6169,7 +6213,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590833979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.065, z: 0}
+  m_LocalPosition: {x: 0.11, y: 0.065, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.4}
   m_Children: []
   m_Father: {fileID: 200591277}
@@ -6217,6 +6261,36 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!95 &1590833982
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590833979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8dd94e7b6c0b6c4398bef1336130102, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1590833983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590833979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074a0714e6cc94b4eb713c0af656f9e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1590833982}
+  character: {fileID: 200591271}
 --- !u!1 &1602206982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6460,20 +6534,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -7928,7 +7988,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2007953946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.88, y: 2.69, z: 0}
+  m_LocalPosition: {x: 61.85, y: 2.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 128432032}
