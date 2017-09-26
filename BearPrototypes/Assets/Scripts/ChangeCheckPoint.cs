@@ -7,7 +7,7 @@ public class ChangeCheckPoint : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.CompareTag ("Player")) {
 			checkpoint.transform.position = transform.position;
-			gameObject.SetActive (false);
+			//gameObject.SetActive (false);
 		}
 	}
 }

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class HoldCharacter : MonoBehaviour {
 	void OnTriggerEnter (Collider col){
+		if(col.CompareTag("Player") ||col.CompareTag("Chicken"))
 		col.transform.parent = gameObject.transform;
 
 	}
 	void OnTriggerExit(Collider col){
+		if(col.CompareTag("Player") ||col.CompareTag("Chicken"))
 		col.transform.parent = null;
 
 	}
