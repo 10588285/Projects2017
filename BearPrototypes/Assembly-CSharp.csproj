@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ChangeCheckPoint.cs" />
      <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
+     <Compile Include="Assets\Scripts\CharacterFlip.cs" />
      <Compile Include="Assets\Scripts\Chicken.cs" />
      <Compile Include="Assets\Scripts\ChickenAnimation.cs" />
      <Compile Include="Assets\Scripts\EatChicken.cs" />
@@ -70,6 +71,9 @@
      <Compile Include="Assets\Scripts\Mud.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\PushObject.cs" />
+     <Compile Include="Assets\Scripts\SpriteFlip.cs" />
+     <Compile Include="Assets\Scripts\UpDraft.cs" />
+     <Compile Include="Assets\Scripts\WaterMill.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

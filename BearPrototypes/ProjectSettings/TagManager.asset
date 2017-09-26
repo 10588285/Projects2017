@@ -12,6 +12,7 @@ TagManager:
   - Death
   - Hurt
   - Health
+  - ChickenTrigger
   layers:
   - Default
   - TransparentFX
