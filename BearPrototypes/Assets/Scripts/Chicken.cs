@@ -10,6 +10,7 @@ public class Chicken : MonoBehaviour {
 		}
 	}
 	void KillChicken(){
+		gameObject.GetComponent<Rigidbody> ().velocity = Vector3.zero;
 		transform.position = spawn.position;
 	}
 }

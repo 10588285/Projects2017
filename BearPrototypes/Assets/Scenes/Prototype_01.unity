@@ -7620,7 +7620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
-  doubleJump: 1
   speedFactor: 8
   gravityFactor: 20
   jumpSpeedFactor: 8
@@ -7631,6 +7630,7 @@ MonoBehaviour:
   glideSpeed: 12
   glideWieght: 5
   glideJumpSpeed: 5
+  jumpCount: 2
   moveDirection: {x: 0, y: 0, z: 0}
   hasChicken: 0
   hasMud: 0
@@ -9428,8 +9428,13 @@ Prefab:
     - target: {fileID: 114790976464036550, guid: 6772ec677a35dbd46b08c2b361b3a267,
         type: 2}
       propertyPath: throwSpeed
-      value: 10
+      value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114790976464036550, guid: 6772ec677a35dbd46b08c2b361b3a267,
+        type: 2}
+      propertyPath: dropPose
+      value: 
+      objectReference: {fileID: 1705568952}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6772ec677a35dbd46b08c2b361b3a267, type: 2}
   m_IsPrefabParent: 0
@@ -9591,6 +9596,7 @@ MonoBehaviour:
   item: {fileID: 1548162375}
   character: {fileID: 200591271}
   holdingPose: {fileID: 1437158025}
+  dropPose: {fileID: 1705568952}
   weight: 1.5
   throwSpeed: 1
   holdingItem: 0
@@ -21017,7 +21023,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1282773544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 167.51001, y: -12.209999, z: -53.944283}
+  m_LocalPosition: {x: 168.95, y: -12.67, z: -53.944283}
   m_LocalScale: {x: 45.83895, y: 1.1857799, z: 7.0374}
   m_Children: []
   m_Father: {fileID: 472541106}
@@ -22382,7 +22388,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.11, y: 0.065, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.4}
-  m_Children: []
+  m_Children:
+  - {fileID: 1705568952}
   m_Father: {fileID: 200591277}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22794,20 +22801,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -22907,6 +22900,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647621620}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1705568951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1705568952}
+  m_Layer: 0
+  m_Name: DropPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1705568952
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705568951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.13, y: -1.05, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2.5}
+  m_Children: []
+  m_Father: {fileID: 1590833980}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1707017894
 GameObject:
   m_ObjectHideFlags: 0
