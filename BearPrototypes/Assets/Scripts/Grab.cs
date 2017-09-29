@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour {
 	public float maxDistance = 1.0F;
-	public int orient; 
+	private int orient; 
 	public Transform holdingPose;
 	public Transform dropPose;
+	public Transform rayPose;
 	private bool closeEnough = false;
-	public bool holdingItem = false;
 	private GameObject item;
 	void start (){
 		orient = 1;
 	}
 	void FixedUpdate(){
 		RaycastHit hit;
-		Ray rayRight = new Ray (transform.position, transform.right * orient);
+		Ray rayRight = new Ray (rayPose.position, transform.right * orient);
 		if (Input.GetKeyDown(KeyCode.D))
 		{
 			orient = 1;
@@ -25,35 +25,39 @@ public class Grab : MonoBehaviour {
 			orient = -1;
 		}
 			
-		if (Physics.Raycast (rayRight, out hit, maxDistance)) {
-			item = hit.transform.gameObject;
-			if (item.CompareTag ("Grabbable") || item.CompareTag ("Chicken")) {
+		if (Physics.Raycast (rayRight, out hit, maxDistance) && GetComponent<Move>().hasObject == false) {
+			if (hit.transform.gameObject.CompareTag ("Grabbable") || hit.transform.gameObject.CompareTag ("Chicken")) {
+				item = hit.transform.gameObject;
 				closeEnough = true;
-				print ("Chicken");
-			} else {
-				closeEnough = false;
 			}
+		} else {
+			closeEnough = false;
 		}
 	}
+
 	void Update(){
-		Rigidbody body = item.GetComponent<Rigidbody>();
-		Collider coll = item.GetComponent<BoxCollider> ();
-		if ( Input.GetKeyDown(KeyCode.G)) {
-			if (holdingItem == true){
-				DropItem(body,coll);
-			}
-			if (GetComponent<CharacterController>().isGrounded && closeEnough == true ) {
-				if (holdingItem == false && GetComponent<Move>().crouched == false) {
-					PickUpItem (body, coll);
+		if (item) {
+			Rigidbody body = item.GetComponent<Rigidbody> ();
+			Collider coll = item.GetComponent<BoxCollider> ();
+
+			if (Input.GetKeyDown (KeyCode.G)) {
+				switch (item.GetComponent<GrabItem> ().holdingItem) {
+				case(true):
+					DropItem (body, coll);
+					break;
+				case(false):
+					if ( closeEnough == true && GetComponent<Move> ().crouched == false) {
+						PickUpItem (body, coll);
+					}
+					break;
 				}
 			}
-
 		}
 	}
 	void PickUpItem (Rigidbody body, Collider coll){
 
 		print ("Picking up item");
-		holdingItem = true;
+		item.GetComponent<GrabItem>().holdingItem = true;
 		body.useGravity = false;
 		body.isKinematic = true;
 		coll.enabled = false;
@@ -81,16 +85,15 @@ public class Grab : MonoBehaviour {
 			item.transform.position = dropPose.position;
 			print ("dropping item");
 		}
-		holdingItem = false;
+		item.GetComponent<GrabItem>().holdingItem = false;
 		body.isKinematic = false;
 		body.useGravity = true;
 		coll.enabled = true;
 		item.transform.parent = null;
-		GameObject.Find ("Character").GetComponent<Move> ().hasObject = false;
-		GameObject.Find ("Character").GetComponent<Move> ().LoseWeight (item.GetComponent<GrabItem> ().weight);
+		GetComponent<Move> ().hasObject = false;
+		GetComponent<Move> ().LoseWeight (item.GetComponent<GrabItem> ().weight);
 		if (item.tag == "Chicken") {
-			GameObject.Find ("Character").GetComponent<Move> ().DropChicken ();
+			GetComponent<Move> ().DropChicken ();
 		}
 	}
-
 }
