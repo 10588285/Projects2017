@@ -20,10 +20,10 @@ public class CharacterAnimation : MonoBehaviour {
 		}else{
 			animator.SetBool ("grounded", false);
 		}
-		if (character.GetComponent<Move> ().moveDirection.x == 0) {
-			animator.SetBool ("moving", false);
-		} else {
+		if (character.GetComponent<CharacterController> ().velocity.x > 0 || character.GetComponent<CharacterController> ().velocity.x < 0) {
 			animator.SetBool ("moving", true);
+		} else {
+			animator.SetBool ("moving", false);
 		}
 			
 	}
