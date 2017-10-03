@@ -63,14 +63,17 @@
      <Compile Include="Assets\Scripts\FallingPlatform.cs" />
      <Compile Include="Assets\Scripts\Grab.cs" />
      <Compile Include="Assets\Scripts\GrabItem.cs" />
+     <Compile Include="Assets\Scripts\GrabRange.cs" />
      <Compile Include="Assets\Scripts\HoldCharacter.cs" />
      <Compile Include="Assets\Scripts\Lives.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\LockedDoor.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\MovePlatform.cs" />
      <Compile Include="Assets\Scripts\Mud.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\PushObject.cs" />
+     <Compile Include="Assets\Scripts\Rune.cs" />
      <Compile Include="Assets\Scripts\SpriteFlip.cs" />
      <Compile Include="Assets\Scripts\UpDraft.cs" />
      <Compile Include="Assets\Scripts\WaterMill.cs" />

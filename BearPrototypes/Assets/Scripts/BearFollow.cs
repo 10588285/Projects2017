@@ -14,7 +14,7 @@ public class BearFollow : MonoBehaviour {
 		} else {
 			GoHome ();
 		}
-		if (player &! player.active) {
+		if (player) {
 			GoHome ();
 		}
 	}

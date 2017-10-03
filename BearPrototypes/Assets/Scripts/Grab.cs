@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour {
 	public float maxDistance = 1.0F;
-	private int orient; 
+	//private int orient; 
 	public Transform holdingPose;
 	public Transform dropPose;
 	public Transform rayPose;
 	private bool closeEnough = false;
 	private GameObject item;
 	void start (){
-		orient = 1;
+		//orient = 1;
 	}
+	/*
 	void FixedUpdate(){
 		RaycastHit hit;
+
 		Ray rayRight = new Ray (rayPose.position, transform.right * orient);
+
 		if (Input.GetKeyDown(KeyCode.D))
 		{
 			orient = 1;
@@ -24,7 +27,7 @@ public class Grab : MonoBehaviour {
 		{
 			orient = -1;
 		}
-			
+
 		if (Physics.Raycast (rayRight, out hit, maxDistance) && GetComponent<Move>().hasObject == false) {
 			if (hit.transform.gameObject.CompareTag ("Grabbable") || hit.transform.gameObject.CompareTag ("Chicken")) {
 				item = hit.transform.gameObject;
@@ -33,9 +36,13 @@ public class Grab : MonoBehaviour {
 		} else {
 			closeEnough = false;
 		}
-	}
 
+	}
+		*/
 	void Update(){
+		closeEnough = dropPose.gameObject.GetComponent<GrabRange>().closeEnough;
+		item = dropPose.gameObject.GetComponent<GrabRange>().item;
+
 		if (item) {
 			Rigidbody body = item.GetComponent<Rigidbody> ();
 			Collider coll = item.GetComponent<BoxCollider> ();
@@ -77,7 +84,7 @@ public class Grab : MonoBehaviour {
 		CharacterController Controller = GetComponent<CharacterController> ();
 		if (Controller.velocity.x > 1 || Controller.velocity.x < -1) {
 			Vector3 pushDir = new Vector3 ((item.GetComponent<GrabItem> ().throwSpeed * Controller.velocity.x), item.GetComponent<GrabItem> ().throwSpeed *4, 0);
-
+			dropPose.gameObject.GetComponent<GrabRange>().item = null;
 			item.GetComponent<Rigidbody> ().velocity = pushDir * item.GetComponent<GrabItem> ().throwSpeed;
 			print ("you threw the item!");
 		} else {
