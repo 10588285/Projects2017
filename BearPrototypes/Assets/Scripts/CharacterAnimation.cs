@@ -10,7 +10,7 @@ public class CharacterAnimation : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey (KeyCode.G ))
 			CheckHasObject ();
-		if (Input.GetKeyDown (KeyCode.Space) && GameObject.Find("Character").GetComponent<Move>().jumpCount > 0) {
+		if (Input.GetKeyDown (KeyCode.Space) && GameObject.Find("Character").GetComponent<Move>().jumpCount >= 0) {
 			animator.SetBool ("jump", true);
 		}else{
 				animator.SetBool ("jump", false);
@@ -28,6 +28,11 @@ public class CharacterAnimation : MonoBehaviour {
 			
 	}
 	void CheckHasObject(){
+		if (character.GetComponent<Move> ().hasChicken == true) {
+			animator.SetBool ("hasChicken", true);
+		} else {
+			animator.SetBool ("hasChicken", false);
+		}
 		if (character.GetComponent<Move> ().hasObject == true) {
 			animator.SetBool ("hasObject", true);
 		} else {

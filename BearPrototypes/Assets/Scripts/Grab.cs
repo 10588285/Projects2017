@@ -7,7 +7,7 @@ public class Grab : MonoBehaviour {
 	//private int orient; 
 	public Transform holdingPose;
 	public Transform dropPose;
-	public Transform rayPose;
+	//public Transform rayPose;
 	private bool closeEnough = false;
 	private GameObject item;
 	void start (){
