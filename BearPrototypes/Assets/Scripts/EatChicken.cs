@@ -13,6 +13,8 @@ public class EatChicken : MonoBehaviour {
 			print ("The Bear ate a chicken");
 			chickenCount ++;
 			other.gameObject.SetActive (false);
+			GameObject.Find ("BearTriggerArea").GetComponent<BearFollow> ().chicken = null;
+			GameObject.Find ("BearTriggerArea").GetComponent<BearFollow> ().chickenRange = false;
 			//other.transform.parent.gameObject.SetActive (false);
 			if (chickenCount == chickenLimit) {
 				Sedate ();
