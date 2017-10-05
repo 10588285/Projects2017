@@ -35,8 +35,8 @@ public class BearFollow : MonoBehaviour {
 
 	void FollowPlayer(){
 		float xPose = Mathf.Lerp (bear.transform.position.x, player.transform.position.x, Time.deltaTime);
+		//bear.transform.position = Vector3.MoveTowards (bear.transform.position, player.transform.position, speed* Time.deltaTime);
 		bear.transform.position = new Vector3 (xPose, defaultPosition.position.y, 0);
-		//bear.transform.position += (player.transform.right * speed * Time.deltaTime);
 
 	}
 
