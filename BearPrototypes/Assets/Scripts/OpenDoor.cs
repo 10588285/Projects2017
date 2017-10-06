@@ -6,12 +6,11 @@ public class OpenDoor : MonoBehaviour {
 	public float pointsNeeded;
 	public Transform endMarker;
 	public Transform startMarker;
-
+	public int points;
+	public float speed = 1.0F;
 	IEnumerator MovePose(){
-		float time = 0;
-		while (time < 1) {
-			transform.position = Vector3.Lerp (transform.position, endMarker.position, time);
-			time += Time.deltaTime;
+		while (Vector3.Distance(transform.position, endMarker.position) > .1F) {
+			transform.position = Vector3.Lerp (transform.position, endMarker.position, (speed * Time.deltaTime));
 			yield return null;
 		}
 
@@ -19,7 +18,6 @@ public class OpenDoor : MonoBehaviour {
 
 	// Update is called once per frame
 	void LateUpdate () {
-		float points = GameObject.Find("Character").GetComponent<Move>().points;
 		if (points == pointsNeeded) {
 			StartCoroutine(MovePose());
 		}

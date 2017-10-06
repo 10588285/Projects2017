@@ -9,6 +9,12 @@ public class MoveCamera : MonoBehaviour {
 	public float waitTime = 5.0F;
 	private Vector3 returnPosition;
 	private bool triggered = true;
+	private Vector3 offset;
+	private GameObject player;
+	void Start(){
+		player = GameObject.Find ("Character");
+		offset = camera.transform.position - player.transform.position;
+	}
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag("Player")&& triggered == true){
 			triggered = false;
@@ -29,7 +35,7 @@ public class MoveCamera : MonoBehaviour {
 		yield return new WaitForSeconds(waitTime);
 
 		while (Vector3.Distance (camera.transform.position, returnPosition) > 0.1F) {
-			camera.transform.position = Vector3.Lerp (camera.transform.position, returnPosition, speed * Time.deltaTime);
+			camera.transform.position = Vector3.Lerp (camera.transform.position, (player.transform.position + offset), speed * Time.deltaTime);
 			yield return null;
 		}
 		camera.GetComponent<CameraController> ().enabled = true;

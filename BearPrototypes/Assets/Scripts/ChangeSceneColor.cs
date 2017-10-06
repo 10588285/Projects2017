@@ -27,6 +27,7 @@ public class ChangeSceneColor : MonoBehaviour {
 	IEnumerator ChangeColor(){
 		startColor = sky.GetColor("_EmissionColor");
 		startAmbience = RenderSettings.ambientLight; 
+		startLight = lit.color;
 
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
