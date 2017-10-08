@@ -5,9 +5,8 @@ using UnityEngine;
 public class MoveCamera : MonoBehaviour {
 	public Transform target;
 	public GameObject camera;
-	public float speed = 5.0F;
-	public float waitTime = 5.0F;
-	private Vector3 returnPosition;
+	public float waitTime = 1.0F;
+	public float totTime = 5.0F;
 	private bool triggered = true;
 	private Vector3 offset;
 	private GameObject player;
@@ -23,19 +22,24 @@ public class MoveCamera : MonoBehaviour {
 	}
 
 	IEnumerator Move(){
+		Vector3 curPose = camera.transform.position;
+		float elapTime = 0;
+		Vector3 playerOffset = player.transform.position;
 		camera.GetComponent<CameraController> ().enabled = false;
-		returnPosition = camera.transform.position;
-		//float xPose = Mathf.Lerp (camera.transform.position.x, target.transform.position.x, speed * Time.deltaTime);
-		//float yPose = Mathf.Lerp (camera.transform.position.x, target.transform.position.y, speed * Time.deltaTime);
-		while (Vector3.Distance (camera.transform.position, target.position) > 0.1F) {
-			camera.transform.position = Vector3.Lerp (camera.transform.position, target.position, speed * Time.deltaTime);
+		while (elapTime < totTime) {
+			elapTime += Time.deltaTime;
+			camera.transform.position = Vector3.Lerp (curPose, target.position, elapTime/totTime);
+			player.transform.position = playerOffset;
 			yield return null;
 		}
 		//camera.transform.position = Vector3.Lerp (camera.transform.position, target.position, speed * Time.deltaTime);
 		yield return new WaitForSeconds(waitTime);
-
-		while (Vector3.Distance (camera.transform.position, returnPosition) > 0.1F) {
-			camera.transform.position = Vector3.Lerp (camera.transform.position, (player.transform.position + offset), speed * Time.deltaTime);
+		elapTime = 0;
+		curPose = camera.transform.position;
+		while (elapTime < totTime) {
+			elapTime += Time.deltaTime;
+			camera.transform.position = Vector3.Lerp (curPose, (player.transform.position + offset), (elapTime /totTime));
+			player.transform.position = playerOffset;
 			yield return null;
 		}
 		camera.GetComponent<CameraController> ().enabled = true;
