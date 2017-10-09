@@ -10,6 +10,7 @@ public class Grab : MonoBehaviour {
 	//public Transform rayPose;
 	private bool closeEnough = false;
 	private GameObject item;
+	public bool canDrop = true;
 	void start (){
 		//orient = 1;
 	}
@@ -50,7 +51,9 @@ public class Grab : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.G)) {
 				switch (item.GetComponent<GrabItem> ().holdingItem) {
 				case(true):
-					DropItem (body, coll);
+					if (canDrop == true) {
+						DropItem (body, coll);
+					}
 					break;
 				case(false):
 					if ( closeEnough == true && GetComponent<Move> ().crouched == false) {
@@ -71,6 +74,7 @@ public class Grab : MonoBehaviour {
 		body.velocity = new Vector3(0,0,0);
 		body.rotation =  Quaternion.Euler(0,0,0);
 		item.transform.position = holdingPose.position;
+		//StartCoroutine(MoveItem(item.transform.position,holdingPose.position));
 		GetComponent<Move> ().hasObject = true;
 		GetComponent<Move> ().GainWeight (item.GetComponent<GrabItem> ().weight);
 		item.transform.parent = transform;
@@ -89,6 +93,7 @@ public class Grab : MonoBehaviour {
 			print ("you threw the item!");
 		} else {
 			body.rotation =  Quaternion.Euler(0,0,0);
+			//StartCoroutine(MoveItem(item.transform.position,dropPose.position));
 			item.transform.position = dropPose.position;
 			print ("dropping item");
 		}
@@ -101,6 +106,15 @@ public class Grab : MonoBehaviour {
 		GetComponent<Move> ().LoseWeight (item.GetComponent<GrabItem> ().weight);
 		if (item.tag == "Chicken") {
 			GetComponent<Move> ().DropChicken ();
+		}
+	}
+	IEnumerator MoveItem(Vector3 startPose, Vector3 endPose){
+		float totTime = 0.1F;
+		float elapTime = 0; 
+		while(elapTime < totTime){
+			elapTime += Time.deltaTime;
+			item.transform.position = Vector3.Lerp (startPose, endPose, (elapTime / totTime));
+			yield return null;
 		}
 	}
 }

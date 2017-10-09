@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TriggerActivate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Flipper.cs">
     <Files>
-      <File FileName="Assets\Scripts\Move.cs" Line="87" Column="18" />
-      <File FileName="Assets\Scripts\Flipper.cs" Line="53" Column="18" />
+      <File FileName="Assets\Scripts\Move.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Flipper.cs" Line="36" Column="42" />
       <File FileName="Assets\Scripts\ChangeSceneColor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MoveCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterAnimation.cs" Line="34" Column="23" />
-      <File FileName="Assets\Scripts\TriggerActivate.cs" Line="14" Column="16" />
+      <File FileName="Assets\Scripts\TriggerActivate.cs" Line="26" Column="20" />
+      <File FileName="Assets\Scripts\WaterMill.cs" Line="31" Column="92" />
+      <File FileName="Assets\Scripts\Grab.cs" Line="56" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

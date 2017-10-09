@@ -4,35 +4,41 @@ using UnityEngine;
 
 public class TriggerActivate : MonoBehaviour {
 	public GameObject key; 
-	public GameObject machine;
+	public GameObject[] machine;
 	public bool useTag;
 	public string tag;
 
 	void Start(){
-		machine.SetActive (false);
+		Activate(false);
 	}
 	void OnTriggerEnter(Collider other){
 		if (useTag == true) {
 			if (other.CompareTag (tag)) {
-				machine.SetActive (true);
+				Activate(true);
 			} 
 		}
 			else {
 			if (other.transform.gameObject == key)
-					machine.SetActive (true);
+				Activate(true);
 			}
 	}
 	void OnTriggerExit(Collider other){
-
+		print ("we're out");
 		if (useTag == true) {
 			if (other.CompareTag (tag)) {
-				machine.SetActive (false);
+				Activate(false);
 			} 
 
 		}else {
 			if (other.transform.gameObject == key)
-					machine.SetActive (false);
+				Activate(false);
 			}
 		}
+	void Activate(bool active){
+		int len = machine.Length;
+		for (int i = 0; i < len; i++) {
+			machine[i].SetActive (active);
+		}
+	}
 
 }
