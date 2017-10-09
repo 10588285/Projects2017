@@ -10,6 +10,7 @@ public class TriggerActivate : MonoBehaviour {
 
 	void Start(){
 		Activate(false);
+
 	}
 	void OnTriggerEnter(Collider other){
 		if (useTag == true) {
@@ -23,7 +24,7 @@ public class TriggerActivate : MonoBehaviour {
 			}
 	}
 	void OnTriggerExit(Collider other){
-		print ("we're out");
+		
 		if (useTag == true) {
 			if (other.CompareTag (tag)) {
 				Activate(false);

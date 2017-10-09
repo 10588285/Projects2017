@@ -29,25 +29,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1373834840836872
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4388229265787646}
-  - component: {fileID: 33219965545034034}
-  - component: {fileID: 65446909698488404}
-  - component: {fileID: 23186001586294980}
-  - component: {fileID: 114790976464036550}
-  m_Layer: 0
-  m_Name: ChickenTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1548452301535342
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,6 +43,8 @@ GameObject:
   - component: {fileID: 54665678929836890}
   - component: {fileID: 114004240630726252}
   - component: {fileID: 114693093705256318}
+  - component: {fileID: 114898109187288286}
+  - component: {fileID: 114642169004737550}
   m_Layer: 11
   m_Name: ChickenCollider
   m_TagString: Chicken
@@ -91,11 +74,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1301773726654222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.273, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 4112029070012534}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4112029070012534
 Transform:
@@ -107,22 +90,8 @@ Transform:
   m_LocalPosition: {x: 0.03999901, y: -0.0086631775, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4388229265787646}
   - {fileID: 4008987824266350}
   m_Father: {fileID: 4966298102348974}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4388229265787646
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373834840836872}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
-  m_Children: []
-  m_Father: {fileID: 4112029070012534}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4966298102348974
@@ -131,46 +100,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947604823759908}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.53, y: 1.14, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.08, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4112029070012534}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23186001586294980
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373834840836872}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!23 &23919023077456122
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -203,13 +140,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33219965545034034
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373834840836872}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33974694504781894
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -232,18 +162,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!65 &65446909698488404
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373834840836872}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65680641500124960
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -285,6 +203,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 4966298102348974}
+--- !u!114 &114642169004737550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548452301535342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a5559a1481d0a4da4924589ca6cc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  throwSpeed: 1
+  holdingItem: 0
 --- !u!114 &114693093705256318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,23 +228,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8f3c908489fdc43bb9541f57f58ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114790976464036550
+  sprite: {fileID: 1301773726654222}
+--- !u!114 &114898109187288286
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373834840836872}
+  m_GameObject: {fileID: 1548452301535342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91a5559a1481d0a4da4924589ca6cc3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 320ce0437812c1f409fdced0189fc9a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 1548452301535342}
-  character: {fileID: 0}
-  holdingPose: {fileID: 0}
-  weight: 1
-  throwSpeed: 1
-  holdingItem: 0
+  checkpoint: {fileID: 1947604823759908}
 --- !u!114 &114917791017686806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -325,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95561347585833550}
-  chicken: {fileID: 1373834840836872}
+  chicken: {fileID: 1548452301535342}
 --- !u!212 &212466604253288066
 SpriteRenderer:
   m_ObjectHideFlags: 1

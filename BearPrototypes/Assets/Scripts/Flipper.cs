@@ -40,7 +40,7 @@ public class Flipper : MonoBehaviour {
 		if (other.CompareTag ("Player")) {
 			player.GetComponent<Grab> ().canDrop = true;
 			inRange = false;
-			player = null;
+			//player = null;
 		}
 	}
 

@@ -70,7 +70,7 @@ public class Grab : MonoBehaviour {
 		item.GetComponent<GrabItem>().holdingItem = true;
 		body.useGravity = false;
 		body.isKinematic = true;
-		coll.enabled = false;
+		//coll.enabled = false;
 		body.velocity = new Vector3(0,0,0);
 		body.rotation =  Quaternion.Euler(0,0,0);
 		item.transform.position = holdingPose.position;
