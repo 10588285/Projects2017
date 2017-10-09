@@ -30,6 +30,11 @@ public class CharacterAnimation : MonoBehaviour {
 		}else{
 			animator.SetBool ("climbing", false);
 		}	
+		if(character.GetComponent<Move>().crouched == true){
+			animator.SetBool ("crouched", true);
+		}else{
+			animator.SetBool ("crouched", false);
+		}
 	}
 	void CheckHasObject(){
 		if (character.GetComponent<Move> ().hasChicken == true) {
