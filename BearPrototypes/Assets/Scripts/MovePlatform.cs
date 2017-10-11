@@ -8,29 +8,38 @@ public class MovePlatform : MonoBehaviour {
 	public Transform pose2;
 	public Vector3 newPose;
 	public string currentState;
-	public float smooth;
+	public float totTime = 4;
 	public float resetTime;
-
+	private Vector3 curPose;
+	private float elapTime;
 	void Start () {
 		ChangeTarget ();
 	}
 
 
 	void FixedUpdate () {
-		movingPlatform.position = Vector3.Lerp (movingPlatform.position, newPose, (smooth * Time.deltaTime));
+		elapTime += Time.deltaTime;
+		movingPlatform.position = Vector3.Lerp (curPose, newPose, (elapTime / totTime));
 	}
 	void ChangeTarget(){
+		
 		if (currentState == "moving to pose 1") {
+			elapTime = 0;
 			currentState = "moving to pose 2";
+			curPose = pose1.position;
 			newPose = pose2.position;
 		} 
 		else if (currentState == "moving to pose 2") {
+			elapTime = 0;
 			currentState = "moving to pose 1";
 			newPose = pose1.position;
+			curPose = pose2.position;
 		}
 		else if (currentState == "") {
+			elapTime = 0;
 			currentState = "moving to pose 2";
 			newPose = pose2.position;
+			curPose = pose1.position;
 		}
 		Invoke ("ChangeTarget", resetTime);
 	}
