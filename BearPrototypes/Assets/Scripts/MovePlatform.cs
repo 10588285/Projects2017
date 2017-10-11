@@ -13,6 +13,7 @@ public class MovePlatform : MonoBehaviour {
 	private Vector3 curPose;
 	private float elapTime;
 	void Start () {
+		elapTime = 0;
 		ChangeTarget ();
 	}
 

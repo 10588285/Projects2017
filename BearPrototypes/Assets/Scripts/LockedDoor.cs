@@ -10,6 +10,7 @@ public class LockedDoor : MonoBehaviour {
 		if (other.transform.gameObject == key){
 			key.SetActive (false);
 			door.SetActive (false);
+			door.GetComponent<OpenDoor> ().locked =  false;
 		}
 	}
 }

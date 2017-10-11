@@ -77,12 +77,12 @@ public class Grab : MonoBehaviour {
 		//StartCoroutine(MoveItem(item.transform.position,holdingPose.position));
 		GetComponent<Move> ().hasObject = true;
 		GetComponent<Move> ().GainWeight (item.GetComponent<GrabItem> ().weight);
-		item.transform.parent = transform;
+
 		if (item.tag == "Chicken") {
 			GetComponent<Move> ().PickUpChicken ();
 
 		}
-
+		item.transform.parent = transform;
 	}
 	void DropItem (Rigidbody body, Collider coll){
 		CharacterController Controller = GetComponent<CharacterController> ();
