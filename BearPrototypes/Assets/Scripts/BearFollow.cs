@@ -8,8 +8,8 @@ public class BearFollow : MonoBehaviour {
 	public Transform defaultPosition;
 	public bool chickenRange = false;
 	public bool inRange = false; 
-	public GameObject player;
-	public GameObject chicken;
+	public GameObject player;// do not delete
+	public GameObject chicken;//do not delete
 	void Update(){
 		if (inRange == true || chickenRange == true) {
 			if (chicken) {
@@ -43,7 +43,7 @@ public class BearFollow : MonoBehaviour {
 			player = null;
 		}
 			if (col.CompareTag("Chicken")){
-				inRange = false;
+				chickenRange = false;
 				chicken = null;
 			}
 	}
