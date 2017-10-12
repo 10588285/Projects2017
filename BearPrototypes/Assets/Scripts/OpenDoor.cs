@@ -20,6 +20,7 @@ public class OpenDoor : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		if (locked == false) {
+			locked = true;
 			StartCoroutine(MovePose());
 		}
 	}
