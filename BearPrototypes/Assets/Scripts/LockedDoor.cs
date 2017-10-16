@@ -9,7 +9,8 @@ public class LockedDoor : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.transform.gameObject == key){
 			key.SetActive (false);
-			door.SetActive (false);
+			//door.SetActive (false);
+			door.GetComponent<OpenDoor> ().locked =  false;
 		}
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Flipper : MonoBehaviour {
-
+	public Transform anchor;
 	public GameObject pivot;
 	private bool inRange = false;
 	private bool rotating = false;
@@ -46,13 +46,14 @@ public class Flipper : MonoBehaviour {
 
 	IEnumerator Flip(float start, float end){
 		rotating = true;
-		Vector3 offset = player.transform.position - transform.position;
+		anchor.position = player.transform.position;
+		//Vector3 offset = player.transform.position - transform.position;
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
 			Quaternion startRot = Quaternion.Euler (0,start,0);
 			Quaternion endRot = Quaternion.Euler (0,end,0);
 			pivot.transform.rotation = Quaternion.Lerp (startRot, endRot, (elapTime/ totTime));
-			player.transform.position = (transform.position + offset);
+			player.transform.position = anchor.position;//(transform.position + offset);
 			yield return null;
 		}
 		elapTime = 0;
