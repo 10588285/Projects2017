@@ -25,7 +25,8 @@ GameObject:
   - component: {fileID: 114277183265128766}
   - component: {fileID: 114977896615174052}
   - component: {fileID: 54114108131274860}
-  m_Layer: 0
+  - component: {fileID: 114941264977024980}
+  m_Layer: 8
   m_Name: LightBox
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
@@ -41,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462361744632984}
   - component: {fileID: 108137204243168716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,8 +68,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1273214447568386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 132.44, y: -0.35754, z: -0.26}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.88, y: -15.66, z: 0}
   m_LocalScale: {x: 0.86471474, y: 0.864715, z: 0.864715}
   m_Children:
   - {fileID: 4462361744632984}
@@ -151,8 +152,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.9766734, b: 0.66176474, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: 2
+  m_Range: 15
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -205,6 +206,18 @@ MonoBehaviour:
   weight: 1
   throwSpeed: 1
   holdingItem: 0
+--- !u!114 &114941264977024980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273214447568386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271e575ca88f69444b2a3d3776496296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnPose: {x: 0, y: 0, z: 0}
 --- !u!114 &114977896615174052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,4 +233,4 @@ MonoBehaviour:
   endColor: {r: 0.9558824, g: 0.9243751, b: 0.4990268, a: 1}
   speed: 1
   lit: {fileID: 108137204243168716}
-  rend: {fileID: 0}
+  rend: {fileID: 23963549594673722}

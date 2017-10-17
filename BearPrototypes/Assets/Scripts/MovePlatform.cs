@@ -23,7 +23,6 @@ public class MovePlatform : MonoBehaviour {
 		movingPlatform.position = Vector3.Lerp (curPose, newPose, (elapTime / totTime));
 	}
 	void ChangeTarget(){
-		
 		if (currentState == "moving to pose 1") {
 			elapTime = 0;
 			currentState = "moving to pose 2";

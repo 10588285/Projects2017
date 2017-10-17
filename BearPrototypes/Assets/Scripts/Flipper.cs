@@ -12,7 +12,7 @@ public class Flipper : MonoBehaviour {
 	public float totTime = 1.0F;
 	public float startAngle = 0;
 	public float endAngle = 180;
-	private bool flipped = false;
+	public bool flipped = false;
 	void Update(){
 		if (inRange == true && Input.GetKey (KeyCode.G) && rotating == false) {
 			switch (flipped) {
