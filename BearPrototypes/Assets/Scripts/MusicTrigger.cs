@@ -7,15 +7,16 @@ public class MusicTrigger : MonoBehaviour {
 	public Transform pointA;
 	public Transform pointB;
 	public AudioSource music;
+	public float volume = 1.0F;
 	private GameObject character; 
-	private float volume; 
+	private float lerp; 
 	// Use this for initialization
 	void Awake(){
 		
 	}
 	void Update(){
 		if (character) {
-			music.volume = ChangeVolume(); 
+			music.volume = ChangeVolume() * volume; 
 		}
 	}
 	void OnTriggerEnter(Collider other){
@@ -34,16 +35,16 @@ public class MusicTrigger : MonoBehaviour {
 
 			float space = pointA.position.x - pointB.position.x; 
 			float distance = pointA.position.x -  character.transform.position.x; 
-			volume = distance / space; 
+			lerp = distance / space; 
 		}
 		if (orient == "y" || orient == "Y") {
 
 			float space = pointA.position.y - pointB.position.y; 
 			float distance = pointA.position.y - character.transform.position.y;
-			volume = distance / space; 
+			lerp = distance / space; 
 
 		}
-		return volume;
+		return lerp;
 	}
 
 }

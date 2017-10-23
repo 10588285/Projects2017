@@ -11,6 +11,7 @@ public class Grab : MonoBehaviour {
 	private bool closeEnough = false;
 	private GameObject item;
 	public bool canDrop = true;
+	public GameObject audioManager;
 	void start (){
 		//orient = 1;
 	}
@@ -77,7 +78,7 @@ public class Grab : MonoBehaviour {
 		//StartCoroutine(MoveItem(item.transform.position,holdingPose.position));
 		GetComponent<Move> ().hasObject = true;
 		GetComponent<Move> ().GainWeight (item.GetComponent<GrabItem> ().weight);
-
+		audioManager.GetComponent<CharacterSoundManager> ().pickup.Play();
 		if (item.tag == "Chicken") {
 			GetComponent<Move> ().PickUpChicken ();
 
@@ -90,11 +91,14 @@ public class Grab : MonoBehaviour {
 			Vector3 pushDir = new Vector3 ((item.GetComponent<GrabItem> ().throwSpeed * Controller.velocity.x), item.GetComponent<GrabItem> ().throwSpeed *4, 0);
 			dropPose.gameObject.GetComponent<GrabRange>().item = null;
 			item.GetComponent<Rigidbody> ().velocity = pushDir * item.GetComponent<GrabItem> ().throwSpeed;
+			audioManager.GetComponent<CharacterSoundManager> ().throws.Play ();
 			print ("you threw the item!");
 		} else {
 			body.rotation =  Quaternion.Euler(0,0,0);
 			//StartCoroutine(MoveItem(item.transform.position,dropPose.position));
 			item.transform.position = dropPose.position;
+			audioManager.GetComponent<CharacterSoundManager> ().drop.Play();
+			//remember that there are multiple scripts handling the player sounds. like the move script
 			print ("dropping item");
 		}
 		item.GetComponent<GrabItem>().holdingItem = false;

@@ -22,6 +22,7 @@ public class CharacterAnimation : MonoBehaviour {
 		}
 		if (character.GetComponent<CharacterController> ().velocity.x > 0 || character.GetComponent<CharacterController> ().velocity.x < 0) {
 			animator.SetBool ("moving", true);
+
 		} else {
 			animator.SetBool ("moving", false);
 		}
@@ -39,13 +40,16 @@ public class CharacterAnimation : MonoBehaviour {
 	void CheckHasObject(){
 		if (character.GetComponent<Move> ().hasChicken == true) {
 			animator.SetBool ("hasChicken", true);
+
 		} else {
 			animator.SetBool ("hasChicken", false);
 		}
 		if (character.GetComponent<Move> ().hasObject == true) {
 			animator.SetBool ("hasObject", true);
+
 		} else {
 			animator.SetBool ("hasObject", false);
+
 		}
 	}
 }
