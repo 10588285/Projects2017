@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\MoveCamera.cs" />
      <Compile Include="Assets\Scripts\MovePlatform.cs" />
      <Compile Include="Assets\Scripts\Mud.cs" />
+     <Compile Include="Assets\Scripts\MusicTrigger.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\PushObject.cs" />
      <Compile Include="Assets\Scripts\ResetObjects.cs" />
