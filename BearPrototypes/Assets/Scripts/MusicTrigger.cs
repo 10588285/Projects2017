@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicTrigger : MonoBehaviour {
+	public GameObject AudioManager;
 	public string orient = "x";
 	public Transform pointA;
 	public Transform pointB;
@@ -10,10 +11,7 @@ public class MusicTrigger : MonoBehaviour {
 	public float volume = 1.0F;
 	private GameObject character; 
 	private float lerp; 
-	// Use this for initialization
-	void Awake(){
-		
-	}
+
 	void Update(){
 		if (character) {
 			music.volume = ChangeVolume() * volume; 
@@ -22,6 +20,13 @@ public class MusicTrigger : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag("Player")){
 			character = other.transform.gameObject; 
+			if (AudioManager.GetComponent<AudioManager> ().curSong != music) {
+				AudioManager.GetComponent<AudioManager> ().curSong.enabled = false;
+				AudioManager.GetComponent<AudioManager> ().curSong = music;
+				music.enabled = true;
+				music.Play ();
+			}
+
 		}
 		
 	}
