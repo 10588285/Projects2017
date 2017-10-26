@@ -121,11 +121,13 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 7308532e905140f4cf015308c323956e Assembly-CSharp.dll:.TriggerMessage
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HoldCharacter
 266ff08742cd3c3c50d75c85fbc0acd9 Assembly-CSharp.dll:.Rune
+362715d8803d6ab70fdd343a7b23dfcf Assembly-CSharp.dll:.AudioManager
 f3876b7ed52214cbae57a9afb9b52939 Assembly-CSharp.dll:.MovePlatform
 26f50d3933744dfe9452e5f9f25c1424 Assembly-CSharp.dll:.EatChicken
 0582ab416046655177cae8b19a146fe5 Assembly-CSharp.dll:.GrabRange
 0c19d92747612674aa95ab33530ddf8b Assembly-CSharp.dll:.MusicTrigger
 794019ae9593f3a765d8055a74372f87 Assembly-CSharp.dll:.WaterMill
+f88001dff69e30763b24487e7a56c06d Assembly-CSharp.dll:.ButtonSound
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -141,6 +143,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 7324986b00065400c3732f0cb6ab2084 Assembly-CSharp.dll:.Mud
+889d8cd5371670276935123c2638237f Assembly-CSharp.dll:.StartScreen
 fd18bc492540f4b896db191a82106183 Assembly-CSharp.dll:.ChickenAnimation
 82072db74204d7004f9f83f5d07117c4 Assembly-CSharp.dll:.Lives
 11b5ae1bc1c060e9f90021285ee00b66 Assembly-CSharp.dll:.GrabItem
@@ -166,6 +169,3 @@ b1491192c8ad098fb35d0ebea67e41dd Assembly-CSharp.dll:.PauseGame
 389d56be6d507551892bf56e067f105a Assembly-CSharp.dll:.ResetObjects
 d776f2fc9f1d9439ae17cd8631cdbc63 Assembly-CSharp.dll:.Chicken
 bc164c363c91897d88279baf312b63a6 Assembly-CSharp.dll:.MoveCamera
-889d8cd5371670276935123c2638237f Assembly-CSharp.dll:.StartScreen
-f88001dff69e30763b24487e7a56c06d Assembly-CSharp.dll:.ButtonSound
-362715d8803d6ab70fdd343a7b23dfcf Assembly-CSharp.dll:.AudioManager
