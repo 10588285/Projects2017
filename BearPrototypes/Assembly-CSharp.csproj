@@ -84,7 +84,6 @@
      <Compile Include="Assets\Scripts\PushObject.cs" />
      <Compile Include="Assets\Scripts\ResetObjects.cs" />
      <Compile Include="Assets\Scripts\Return.cs" />
-     <Compile Include="Assets\Scripts\Rune.cs" />
      <Compile Include="Assets\Scripts\SpriteFlip.cs" />
      <Compile Include="Assets\Scripts\StartScreen.cs" />
      <Compile Include="Assets\Scripts\TriggerActivate.cs" />

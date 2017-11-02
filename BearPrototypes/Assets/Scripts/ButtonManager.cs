@@ -33,7 +33,6 @@ public class ButtonManager : MonoBehaviour {
 		Color startColor = image.color;
 		Time.timeScale = 1;
 		while (elapTime < totTime) {
-			print (elapTime);
 			elapTime += Time.deltaTime;
 			value = 1 - elapTime / totTime; 
 			Color curColor =  Color.Lerp (startColor, endColor, (elapTime/ totTime));
