@@ -47,7 +47,8 @@ public class Flipper : MonoBehaviour {
 	IEnumerator Flip(float start, float end){
 		rotating = true;
 		anchor.position = player.transform.position;
-		//Vector3 offset = player.transform.position - transform.position;
+		player.GetComponent <Move>().zLock = false;
+
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
 			Quaternion startRot = Quaternion.Euler (0,start,0);
@@ -56,6 +57,8 @@ public class Flipper : MonoBehaviour {
 			player.transform.position = anchor.position;//(transform.position + offset);
 			yield return null;
 		}
+		player.GetComponent <Move>().zLockPose = anchor.position.z;
+		player.GetComponent <Move>().zLock = true;
 		elapTime = 0;
 		rotating = false;
 	}
