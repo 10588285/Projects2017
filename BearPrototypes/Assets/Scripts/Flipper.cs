@@ -33,12 +33,12 @@ public class Flipper : MonoBehaviour {
 		if (other.CompareTag ("Player")) {
 			inRange = true;
 			player = other.transform.gameObject;
-			player.GetComponent<Grab> ().canDrop = false;
+			player.GetComponent<Grab> ().hasObject = false;
 		}
 	}
 	void OnTriggerExit(Collider other){
 		if (other.CompareTag ("Player")) {
-			player.GetComponent<Grab> ().canDrop = true;
+			player.GetComponent<Grab> ().hasObject = true;
 			inRange = false;
 			//player = null;
 		}

@@ -9,8 +9,8 @@ public class Grab : MonoBehaviour {
 	public Transform dropPose;
 	//public Transform rayPose;
 	private bool closeEnough = false;
-	private GameObject item;
-	public bool canDrop = true;
+	public GameObject item;
+	public bool hasObject = true;
 	public GameObject audioManager;
 	void start (){
 		//orient = 1;
@@ -52,7 +52,7 @@ public class Grab : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.G)) {
 				switch (item.GetComponent<GrabItem> ().holdingItem) {
 				case(true):
-					if (canDrop == true) {
+					if (hasObject == true) {
 						DropItem (body, coll);
 					}
 					break;
@@ -66,7 +66,7 @@ public class Grab : MonoBehaviour {
 		}
 	}
 	void PickUpItem (Rigidbody body, Collider coll){
-
+		hasObject = true;
 		print ("Picking up item");
 		item.GetComponent<GrabItem>().holdingItem = true;
 		body.useGravity = false;
@@ -85,7 +85,8 @@ public class Grab : MonoBehaviour {
 		}
 		item.transform.parent = transform;
 	}
-	void DropItem (Rigidbody body, Collider coll){
+	public void DropItem (Rigidbody body, Collider coll){
+		hasObject = false;
 		CharacterController Controller = GetComponent<CharacterController> ();
 		if (Controller.velocity.x > 1 || Controller.velocity.x < -1) {
 			Vector3 pushDir = new Vector3 ((item.GetComponent<GrabItem> ().throwSpeed * Controller.velocity.x), item.GetComponent<GrabItem> ().throwSpeed *4, 0);
