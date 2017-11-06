@@ -11,27 +11,37 @@ ModelImporter:
     100006: Grass_Mount_04
     100008: Grass_Mount_05
     100010: //RootNode
+    100012: Grass_Hill_01
+    100014: Grass_Hill_02
     400000: Grass_Mount_01
     400002: Grass_Mount_02
     400004: Grass_Mount_03
     400006: Grass_Mount_04
     400008: Grass_Mount_05
     400010: //RootNode
+    400012: Grass_Hill_01
+    400014: Grass_Hill_02
     2300000: Grass_Mount_01
     2300002: Grass_Mount_02
     2300004: Grass_Mount_03
     2300006: Grass_Mount_04
     2300008: Grass_Mount_05
+    2300010: Grass_Hill_01
+    2300012: Grass_Hill_02
     3300000: Grass_Mount_01
     3300002: Grass_Mount_02
     3300004: Grass_Mount_03
     3300006: Grass_Mount_04
     3300008: Grass_Mount_05
+    3300010: Grass_Hill_01
+    3300012: Grass_Hill_02
     4300000: Grass_Mount_02
     4300002: Grass_Mount_01
     4300004: Grass_Mount_03
     4300006: Grass_Mount_05
     4300008: Grass_Mount_04
+    4300010: Grass_Hill_01
+    4300012: Grass_Hill_02
   materials:
     importMaterials: 1
     materialName: 0
