@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: 39c57b4c4aeee9f4789adfe2333bb0e9
-timeCreated: 1509815994
+guid: 6e0ac472bbff9b8458cc651077215ae1
+timeCreated: 1510031317
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: LilyPad
-    100002: //RootNode
-    400000: LilyPad
-    400002: //RootNode
-    2300000: LilyPad
-    3300000: LilyPad
-    4300000: LilyPad
+    100000: Cave_Wall_01
+    100002: Cave_Wall_02
+    100004: //RootNode
+    400000: Cave_Wall_01
+    400002: Cave_Wall_02
+    400004: //RootNode
+    2300000: Cave_Wall_01
+    2300002: Cave_Wall_02
+    3300000: Cave_Wall_01
+    3300002: Cave_Wall_02
+    4300000: Cave_Wall_01
+    4300002: Cave_Wall_02
   materials:
     importMaterials: 1
     materialName: 0

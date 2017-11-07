@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 54665678929836890}
   - component: {fileID: 114004240630726252}
   - component: {fileID: 114693093705256318}
-  - component: {fileID: 114898109187288286}
   - component: {fileID: 114642169004737550}
+  - component: {fileID: 114426949096751690}
   m_Layer: 11
   m_Name: ChickenCollider
   m_TagString: Chicken
@@ -101,7 +101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947604823759908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.08, y: 0, z: 0}
+  m_LocalPosition: {x: 194.55, y: -18.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4112029070012534}
@@ -203,6 +203,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 4966298102348974}
+--- !u!114 &114426949096751690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1548452301535342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271e575ca88f69444b2a3d3776496296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnPose: {x: 0, y: 0, z: 0}
 --- !u!114 &114642169004737550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -229,18 +241,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1301773726654222}
---- !u!114 &114898109187288286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1548452301535342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320ce0437812c1f409fdced0189fc9a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpoint: {fileID: 1947604823759908}
 --- !u!114 &114917791017686806
 MonoBehaviour:
   m_ObjectHideFlags: 1
