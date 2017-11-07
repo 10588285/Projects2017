@@ -10,23 +10,28 @@ ModelImporter:
     100004: WoodenPlank
     100006: WoodenPlank1
     100008: WoodenBeam
+    100010: WoodenPlank_Broken
     400000: //RootNode
     400002: WoodenPanel
     400004: WoodenPlank
     400006: WoodenPlank1
     400008: WoodenBeam
+    400010: WoodenPlank_Broken
     2300000: WoodenPanel
     2300002: WoodenPlank
     2300004: WoodenPlank1
     2300006: WoodenBeam
+    2300008: WoodenPlank_Broken
     3300000: WoodenPanel
     3300002: WoodenPlank
     3300004: WoodenPlank1
     3300006: WoodenBeam
+    3300008: WoodenPlank_Broken
     4300000: WoodenPanel
     4300002: WoodenPlank
     4300004: WoodenPlank1
     4300006: WoodenBeam
+    4300008: WoodenPlank_Broken
   materials:
     importMaterials: 1
     materialName: 0
