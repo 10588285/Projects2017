@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Grab.cs" />
      <Compile Include="Assets\Scripts\GrabItem.cs" />
      <Compile Include="Assets\Scripts\GrabRange.cs" />
+     <Compile Include="Assets\Scripts\HelpTrigger.cs" />
      <Compile Include="Assets\Scripts\HoldCharacter.cs" />
      <Compile Include="Assets\Scripts\Lives.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />

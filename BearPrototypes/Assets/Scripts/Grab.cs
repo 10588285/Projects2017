@@ -49,7 +49,7 @@ public class Grab : MonoBehaviour {
 			Rigidbody body = item.GetComponent<Rigidbody> ();
 			Collider coll = item.GetComponent<BoxCollider> ();
 
-			if (Input.GetKeyDown (KeyCode.G)) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
 				switch (item.GetComponent<GrabItem> ().holdingItem) {
 				case(true):
 					if (hasObject == true) {

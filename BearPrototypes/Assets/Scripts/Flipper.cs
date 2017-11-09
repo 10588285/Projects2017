@@ -14,7 +14,7 @@ public class Flipper : MonoBehaviour {
 	public float endAngle = 180;
 	public bool flipped = false;
 	void Update(){
-		if (inRange == true && Input.GetKey (KeyCode.G) && rotating == false) {
+		if (inRange == true && Input.GetKey (KeyCode.Space) && rotating == false) {
 			switch (flipped) {
 			case true:
 				StartCoroutine (Flip (endAngle, startAngle));

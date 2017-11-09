@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Lives.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Flipper.cs">
     <Files>
-      <File FileName="Assets\Scripts\GrabItem.cs" Line="8" Column="34" />
-      <File FileName="Assets\Scripts\ChangeCheckPoint.cs" Line="8" Column="31" />
-      <File FileName="Assets\Scripts\Lives.cs" Line="55" Column="5" />
-      <File FileName="Assets\Scripts\Return.cs" Line="15" Column="37" />
-      <File FileName="Assets\Scripts\Grab.cs" Line="87" Column="3" />
+      <File FileName="Assets\Scripts\HelpTrigger.cs" Line="73" Column="19" />
+      <File FileName="Assets\Scripts\Move.cs" Line="64" Column="39" />
+      <File FileName="Assets\Scripts\CharacterAnimation.cs" Line="11" Column="34" />
+      <File FileName="Assets\Scripts\Grab.cs" Line="52" Column="23" />
+      <File FileName="Assets\Scripts\Flipper.cs" Line="17" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

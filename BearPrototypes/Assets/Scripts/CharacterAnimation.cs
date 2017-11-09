@@ -8,9 +8,9 @@ public class CharacterAnimation : MonoBehaviour {
 
 
 	void Update () {
-		if (Input.GetKey (KeyCode.G ))
+		if (Input.GetKey (KeyCode.Space ))
 			CheckHasObject ();
-		if (Input.GetKeyDown (KeyCode.Space) && GameObject.Find("Character").GetComponent<Move>().jumpCount >= 0) {
+		if (Input.GetKeyDown (KeyCode.W) && GameObject.Find("Character").GetComponent<Move>().jumpCount >= 0) {
 			animator.SetBool ("jump", true);
 		}else{
 				animator.SetBool ("jump", false);
