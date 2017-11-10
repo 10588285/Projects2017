@@ -4,25 +4,21 @@ using UnityEngine;
 using UnityEngine.Networking;
 public class Projectile : MonoBehaviour {
 
-	private GameObject deathParticle; 
+	public ParticleSystem deathParticle;
+
 	void Start () {
-		deathParticle = GameObject.Find ("Particle_Exlosion");
-		//StartCoroutine (Recycle());
+		deathParticle.Stop ();
 	}
 
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag ("destructible")) {
 			Debug.Log ("Hit");
-			NetworkServer.Spawn (deathParticle);
+			deathParticle.Play();
 			//gameObject.SetActive (false);
 		}
 	}
 	void OnDisable(){
 		
 	}
-	/*
-	IEnumerator Recycle(){
-		 return null; 
-	}
-	*/
+
 }
