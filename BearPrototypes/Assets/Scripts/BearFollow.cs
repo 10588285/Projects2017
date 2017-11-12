@@ -49,15 +49,19 @@ public class BearFollow : MonoBehaviour {
 	}
 
 	void FollowPlayer(GameObject target){
+		if (GameObject.Find("BearDeathCube").GetComponent<EatChicken>().eating == false){
 		float xPose = Mathf.Lerp (bear.transform.position.x, target.transform.position.x, Time.deltaTime);
 		bear.transform.position = new Vector3 (xPose, defaultPosition.position.y, 0);
 		//bear.transform.position = Vector3.MoveTowards (bear.transform.position, player.transform.position, speed* Time.deltaTime);
+		}
 	}
 
 	void GoHome(){
-		if (bear.transform.position.x != defaultPosition.position.x) {
-			float xPose = Mathf.Lerp (bear.transform.position.x, defaultPosition.position.x, Time.deltaTime);
-			bear.transform.position = new Vector3 (xPose, defaultPosition.position.y, 0);
+		if (GameObject.Find ("BearDeathCube").GetComponent<EatChicken> ().eating == false) {
+			if (bear.transform.position.x < defaultPosition.position.x - 0.1 || bear.transform.position.x > defaultPosition.position.x + 0.1) {
+				float xPose = Mathf.Lerp (bear.transform.position.x, defaultPosition.position.x, Time.deltaTime);
+				bear.transform.position = new Vector3 (xPose, defaultPosition.position.y, 0);
+			}
 		}
 	}
 }
