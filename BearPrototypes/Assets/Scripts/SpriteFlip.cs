@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class SpriteFlip : MonoBehaviour {
 	public GameObject sprite;
+	public Vector3 lastPosition;
 	void Update(){
-		Rigidbody body = gameObject.GetComponent<Rigidbody> ();
-		float velocity = body.velocity.x;
-			if (velocity < 0){
+		float speed = (transform.position.x - lastPosition.x);
+		lastPosition = transform.position;
+			if (speed < 0){
 				sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
 			}
-			if(velocity > 0){
+			if(speed > 0){
 				sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
 			}
 		}

@@ -12,12 +12,15 @@ public class BearFollow : MonoBehaviour {
 	public GameObject chicken;//do not delete
 	void Update(){
 		if (inRange == true || chickenRange == true) {
-			if (chicken) {
-				FollowPlayer (chicken);
-			} 
-			if (!chicken && player)
-			{
-				FollowPlayer (player);
+			if (player.GetComponent<Lives> ().bearDead == true) {
+				GoHome ();
+			} else {
+				if (chicken) {
+					FollowPlayer (chicken);
+				} 
+				if (!chicken && player) {
+					FollowPlayer (player);
+				}
 			}
 
 		} else {

@@ -83,7 +83,6 @@
      <Compile Include="Assets\Scripts\MusicTrigger.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\PauseGame.cs" />
-     <Compile Include="Assets\Scripts\PushObject.cs" />
      <Compile Include="Assets\Scripts\ResetObjects.cs" />
      <Compile Include="Assets\Scripts\Return.cs" />
      <Compile Include="Assets\Scripts\SpriteFlip.cs" />

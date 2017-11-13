@@ -32,7 +32,7 @@ public class EatChicken : MonoBehaviour {
 	public IEnumerator Eat(){
 		eating = true;
 
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (0.8F);
 		eating = false;
 		rewards [chickenCount].SetActive (true);
 		chickenCount ++;

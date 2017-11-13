@@ -19,8 +19,9 @@ public class ChangeCheckPoint : MonoBehaviour {
 
 	}
 	void SetGrabSettings(){
-		if (GetComponent<Grab> ().hasObject) {
+		if (GetComponent<Move> ().hasObject == true) {
 			hasObject = true;
+			print ("player has object");
 			item = GetComponent<Grab> ().item;
 		} else {
 			hasObject = false;

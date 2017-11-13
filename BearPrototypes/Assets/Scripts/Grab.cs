@@ -10,9 +10,10 @@ public class Grab : MonoBehaviour {
 	//public Transform rayPose;
 	private bool closeEnough = false;
 	public GameObject item;
-	public bool hasObject = true;
+	public bool hasObject;
 	public GameObject audioManager;
 	void start (){
+		hasObject = false;
 		//orient = 1;
 	}
 	/*
@@ -44,7 +45,6 @@ public class Grab : MonoBehaviour {
 	void Update(){
 		closeEnough = dropPose.gameObject.GetComponent<GrabRange>().closeEnough;
 		item = dropPose.gameObject.GetComponent<GrabRange>().item;
-
 		if (item) {
 			Rigidbody body = item.GetComponent<Rigidbody> ();
 			Collider coll = item.GetComponent<BoxCollider> ();

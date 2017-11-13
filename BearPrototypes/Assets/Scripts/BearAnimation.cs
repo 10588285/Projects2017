@@ -6,10 +6,11 @@ public class BearAnimation : MonoBehaviour {
 	public Animator animator;
 	public GameObject bear;
 	public GameObject deathCube;
-
+	private Vector3 lastPosition;
 		void Update () {
-		if (bear.GetComponent<Rigidbody> ().velocity.x < -0.1F || bear.GetComponent<Rigidbody> ().velocity.x > 0.1F) {
-			print (bear.GetComponent<Rigidbody> ().velocity.x);
+		float speed = (bear.transform.position.x - lastPosition.x);
+		lastPosition = bear.transform.position;
+		if (speed < -0.01F || speed > 0.01F) {
 			animator.SetBool ("Moving",true);
 		} else {
 			animator.SetBool ("Moving", false);

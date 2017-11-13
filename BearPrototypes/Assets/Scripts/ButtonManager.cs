@@ -9,9 +9,15 @@ public class ButtonManager : MonoBehaviour {
 	public Color endColor;
 	public AudioSource newGameSound;
 	public AudioSource click;
+	private Image image;
+	public Color startColor;
+	public void Start(){
+		image = blackScreen.GetComponent<Image> ();
+		startColor = image.color;
+	}
 	public void NewGameBtn(string newGameLevel){
-		StartCoroutine (Transition (newGameLevel, newGameSound));
-
+		newGameSound.Play ();
+		StartCoroutine (Transition (startColor, endColor, newGameLevel));
 
 	}
 
@@ -20,26 +26,26 @@ public class ButtonManager : MonoBehaviour {
 	}
 
 	public void GoToMenuBtn(string mainMenu){
-		
-		StartCoroutine (Transition (mainMenu, click));
+		click.Play ();
+		StartCoroutine (Transition (startColor, endColor, mainMenu));
+
 	}
-	IEnumerator Transition(string level, AudioSource audio){
-		audio.Play ();
+	public IEnumerator Transition(Color start, Color end, string level){
+		
 		blackScreen.SetActive (true);
-		Image image = blackScreen.GetComponent<Image> ();
 		float totTime = 2;
 		float elapTime = 0;
 		float value = 1;
-		Color startColor = image.color;
 		Time.timeScale = 1;
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
 			value = 1 - elapTime / totTime; 
-			Color curColor =  Color.Lerp (startColor, endColor, (elapTime/ totTime));
+			Color curColor =  Color.Lerp (start, end, (elapTime/ totTime));
 			image.color = curColor;
 			yield return null;
 		}
-
-		SceneManager.LoadScene (level);
+		if (level != null) {
+			SceneManager.LoadScene (level);
+		}
 	}
 }
