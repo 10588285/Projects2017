@@ -16,9 +16,7 @@ public class EatChicken : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			StartCoroutine (Eat ());
 			//other.transform.parent.gameObject.SetActive (false);
-			if (chickenCount == chickenLimit) {
-				Sedate ();
-			}
+
 		}
 	}
 	public void Sedate (){
@@ -38,5 +36,8 @@ public class EatChicken : MonoBehaviour {
 		chickenCount ++;
 		GameObject.Find ("BearTriggerArea").GetComponent<BearFollow> ().chicken = null;
 		GameObject.Find ("BearTriggerArea").GetComponent<BearFollow> ().chickenRange = false;
+		if (chickenCount == chickenLimit) {
+			Sedate ();
+		}
 	}
 }

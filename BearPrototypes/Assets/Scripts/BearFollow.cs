@@ -14,14 +14,12 @@ public class BearFollow : MonoBehaviour {
 		if (inRange == true || chickenRange == true) {
 
 				if (chicken) {
-					print ("Chicken for dinner!");
 					FollowPlayer (chicken);
 				} 
 				if (!chicken && player) {
 					if (player.GetComponent<Lives> ().bearDead == true) {
 						GoHome ();
 					} else {
-						print ("Player for Dinner");
 						FollowPlayer (player);
 					}
 				}

@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\EatChicken.cs" />
      <Compile Include="Assets\Scripts\FallingPlatform.cs" />
      <Compile Include="Assets\Scripts\Flipper.cs" />
+     <Compile Include="Assets\Scripts\GoToWin.cs" />
      <Compile Include="Assets\Scripts\Grab.cs" />
      <Compile Include="Assets\Scripts\GrabItem.cs" />
      <Compile Include="Assets\Scripts\GrabRange.cs" />
