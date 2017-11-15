@@ -15,6 +15,7 @@ TagManager:
   - ChickenTrigger
   - CheckPoint
   - Grabbable
+  - Trigger
   layers:
   - Default
   - TransparentFX

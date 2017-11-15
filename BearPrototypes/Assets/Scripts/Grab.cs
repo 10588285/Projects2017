@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour {
 	public float maxDistance = 1.0F;
-	//private int orient; 
+	private int orient; 
 	public Transform holdingPose;
 	public Transform dropPose;
-	//public Transform rayPose;
+	public Transform rayPose;
 	private bool closeEnough = false;
 	public GameObject item;
 	public bool hasObject;
 	public GameObject audioManager;
+	private bool blocked;
 	void start (){
 		hasObject = false;
-		//orient = 1;
+		orient = 1;
+		blocked = false;
 	}
-	/*
+
 	void FixedUpdate(){
 		RaycastHit hit;
 
@@ -30,18 +32,23 @@ public class Grab : MonoBehaviour {
 		{
 			orient = -1;
 		}
+		if (Physics.Raycast (rayRight, out hit, maxDistance)){
+			blocked = true;
+		}else{
+			blocked = false;
+		}
 
+		/*
 		if (Physics.Raycast (rayRight, out hit, maxDistance) && GetComponent<Move>().hasObject == false) {
 			if (hit.transform.gameObject.CompareTag ("Grabbable") || hit.transform.gameObject.CompareTag ("Chicken")) {
 				item = hit.transform.gameObject;
-				closeEnough = true;
+				blocked = true;
 			}
 		} else {
-			closeEnough = false;
+			blocked = false;
 		}
-
-	}
 		*/
+	}
 	void Update(){
 		closeEnough = dropPose.gameObject.GetComponent<GrabRange>().closeEnough;
 		item = dropPose.gameObject.GetComponent<GrabRange>().item;
@@ -52,7 +59,7 @@ public class Grab : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				switch (item.GetComponent<GrabItem> ().holdingItem) {
 				case(true):
-					if (hasObject == true) {
+					if (hasObject == true && blocked == false) {
 						DropItem (body, coll);
 					}
 					break;
