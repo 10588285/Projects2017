@@ -58,7 +58,7 @@
      <Compile Include="Assets\Scripts\ButtonSound.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ChangeCheckPoint.cs" />
-     <Compile Include="Assets\Scripts\ChangeColorConstant.cs" />
+     <Compile Include="Assets\Scripts\ChangeColorOnStart.cs" />
      <Compile Include="Assets\Scripts\ChangeSceneColor.cs" />
      <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
      <Compile Include="Assets\Scripts\CharacterFlip.cs" />

@@ -13,6 +13,7 @@ public class Flipper : MonoBehaviour {
 	public float startAngle = 0;
 	public float endAngle = 180;
 	public bool flipped = false;
+	public GameObject gear; 
 	void Update(){
 		if (inRange == true && Input.GetKey (KeyCode.Space) && rotating == false) {
 			switch (flipped) {
@@ -56,6 +57,11 @@ public class Flipper : MonoBehaviour {
 			Quaternion endRot = Quaternion.Euler (0,end,0);
 			pivot.transform.rotation = Quaternion.Lerp (startRot, endRot, (elapTime/ totTime));
 			player.transform.position = anchor.position;//(transform.position + offset);
+
+			Quaternion startGear = Quaternion.Euler (-start,0,0);
+			Quaternion endGear = Quaternion.Euler (-end,0,0);
+			gear.transform.rotation = Quaternion.Lerp (startGear, endGear, (elapTime/ totTime));
+
 			yield return null;
 		}
 		player.GetComponent <Move>().zLockPose = anchor.position.z;
