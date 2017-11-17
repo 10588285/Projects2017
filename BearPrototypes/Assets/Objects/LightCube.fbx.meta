@@ -8,15 +8,20 @@ ModelImporter:
     100000: Light
     100002: Light1
     100004: //RootNode
+    100006: Frame
     400000: Light
     400002: Light1
     400004: //RootNode
+    400006: Frame
     2300000: Light
     2300002: Light1
+    2300004: Frame
     3300000: Light
     3300002: Light1
+    3300004: Frame
     4300000: Light
     4300002: Light1
+    4300004: Frame
     9500000: //RootNode
   materials:
     importMaterials: 1
