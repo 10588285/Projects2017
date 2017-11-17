@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Projectile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyAim.cs">
     <Files>
-      <File FileName="Assets\Scripts\Projectile.cs" Line="10" Column="25" />
-      <File FileName="Assets\Scripts\Disappear.cs" Line="15" Column="45" />
+      <File FileName="Assets\Scripts\EnemyAim.cs" Line="29" Column="9" />
+      <File FileName="Assets\Scripts\QuickPlayer.cs" Line="12" Column="26" />
+      <File FileName="Assets\Scripts\TestBullet.cs" Line="8" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
