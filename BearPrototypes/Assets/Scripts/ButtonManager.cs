@@ -11,13 +11,18 @@ public class ButtonManager : MonoBehaviour {
 	public AudioSource click;
 	private Image image;
 	public Color startColor;
+	public bool fadeOnEntry = false;
 	public void Start(){
 		image = blackScreen.GetComponent<Image> ();
-		startColor = image.color;
+		//startColor = image.color;
+		if (fadeOnEntry == true) {
+			StartCoroutine (Transition(endColor, startColor, ""));
+		}
+
 	}
 	public void NewGameBtn(string newGameLevel){
 		newGameSound.Play ();
-		StartCoroutine (Transition (startColor, endColor, newGameLevel));
+		StartCoroutine (Transition (startColor, endColor,  newGameLevel));
 
 	}
 
@@ -44,8 +49,9 @@ public class ButtonManager : MonoBehaviour {
 			image.color = curColor;
 			yield return null;
 		}
-		if (level != null) {
+		if (level != "") {
 			SceneManager.LoadScene (level);
 		}
+
 	}
 }

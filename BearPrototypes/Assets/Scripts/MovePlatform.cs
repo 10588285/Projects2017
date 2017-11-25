@@ -11,9 +11,9 @@ public class MovePlatform : MonoBehaviour {
 	public float totTime = 4;
 	public float resetTime;
 	private Vector3 curPose;
-	private float elapTime;
-	void Start () {
-		elapTime = 0;
+	public float elapTime = 0;
+	private bool invoked = false;
+	void Start(){
 		ChangeTarget ();
 	}
 
@@ -21,27 +21,35 @@ public class MovePlatform : MonoBehaviour {
 	void FixedUpdate () {
 		elapTime += Time.deltaTime;
 		movingPlatform.position = Vector3.Lerp (curPose, newPose, (elapTime / totTime));
+		if ((elapTime/totTime) > 1) {
+			if (invoked == false) {
+				invoked = true;	
+				Invoke ("ChangeTarget", resetTime);
+			}
+		}
 	}
 	void ChangeTarget(){
+		elapTime = 0;
 		if (currentState == "moving to pose 1") {
-			elapTime = 0;
+			
 			currentState = "moving to pose 2";
 			curPose = pose1.position;
 			newPose = pose2.position;
 		} 
 		else if (currentState == "moving to pose 2") {
-			elapTime = 0;
+
 			currentState = "moving to pose 1";
 			newPose = pose1.position;
 			curPose = pose2.position;
 		}
 		else if (currentState == "") {
-			elapTime = 0;
+
 			currentState = "moving to pose 2";
 			newPose = pose2.position;
 			curPose = pose1.position;
 		}
-		Invoke ("ChangeTarget", resetTime);
+		invoked = false;
+		//Invoke ("ChangeTarget", resetTime);
 	}
 }
 

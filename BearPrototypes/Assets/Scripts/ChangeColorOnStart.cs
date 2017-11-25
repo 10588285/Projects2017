@@ -10,28 +10,30 @@ public class ChangeColorOnStart : MonoBehaviour {
 	public float speed = 1.0F;
 	private Renderer rend;
 	void Awake(){
-		print ("Awake");
 		if (item.GetComponent<Renderer>()){
 			rend = item.GetComponent<Renderer> ();
 		}
 		startColor = rend.material.color;
 	}
-	void Start(){
-		print ("Start");
-		StartCoroutine (ChangeColor ());
+	void OnEnable(){
+		StartCoroutine (ChangeColor (startColor, endColor));
 	}
-	IEnumerator ChangeColor(){
+	IEnumerator ChangeColor(Color start, Color end){
 
 		float totTime = 1;
 		float elapTime = 0; 
 		Color newColor;
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
-			newColor = Color.Lerp (startColor, endColor, (elapTime / totTime));
+			newColor = Color.Lerp (start, end, (elapTime / totTime));
 			rend.material.color = newColor;
 			rend.material.SetColor("_EmissionColor", newColor);
 			yield return null;
 		}
+	}
+	void OnDisable(){
+		rend.material.color = startColor;
+		rend.material.SetColor("_EmissionColor", startColor);
 	}
 
 }

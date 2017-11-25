@@ -74,7 +74,6 @@ public class Grab : MonoBehaviour {
 	}
 	void PickUpItem (Rigidbody body, Collider coll){
 		hasObject = true;
-		print ("Picking up item");
 		item.GetComponent<GrabItem>().holdingItem = true;
 		body.useGravity = false;
 		body.isKinematic = true;
@@ -100,14 +99,12 @@ public class Grab : MonoBehaviour {
 			dropPose.gameObject.GetComponent<GrabRange>().item = null;
 			item.GetComponent<Rigidbody> ().velocity = pushDir * item.GetComponent<GrabItem> ().throwSpeed;
 			audioManager.GetComponent<CharacterSoundManager> ().throws.Play ();
-			print ("you threw the item!");
 		} else {
 			body.rotation =  Quaternion.Euler(0,0,0);
 			//StartCoroutine(MoveItem(item.transform.position,dropPose.position));
 			item.transform.position = dropPose.position;
 			audioManager.GetComponent<CharacterSoundManager> ().drop.Play();
 			//remember that there are multiple scripts handling the player sounds. like the move script
-			print ("dropping item");
 		}
 		item.GetComponent<GrabItem>().holdingItem = false;
 		body.isKinematic = false;

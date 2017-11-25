@@ -49,6 +49,13 @@ public class MusicTrigger : MonoBehaviour {
 			lerp = distance / space; 
 
 		}
+		if (orient == "z" || orient == "Z") {
+
+			float space = pointA.position.z - pointB.position.z; 
+			float distance = pointA.position.z - character.transform.position.z;
+			lerp = distance / space; 
+
+		}
 		return lerp;
 	}
 

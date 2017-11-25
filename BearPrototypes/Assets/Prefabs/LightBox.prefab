@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 54114108131274860}
   - component: {fileID: 65676035024998148}
   - component: {fileID: 114277183265128766}
+  - component: {fileID: 114282677766220832}
   m_Layer: 0
   m_Name: LightBox
   m_TagString: Grabbable
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1273214447568386}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -342.9287, y: 15.67, z: 0}
+  m_LocalPosition: {x: -7.3, y: 1.96, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 4541319056180578}
@@ -118,7 +119,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d13498854a0fba843aa2af47818d989f, type: 2}
+  - {fileID: 2100000, guid: f5521d608fa3d9242aaa555b6f33baf7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,7 +151,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d13498854a0fba843aa2af47818d989f, type: 2}
+  - {fileID: 2100000, guid: be180fd0dabdb9f499f35a79803ddd64, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -182,7 +183,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1333740909365564}
-  m_Mesh: {fileID: 4300002, guid: c90cb5648aeae4f488218de08bc50f35, type: 3}
+  m_Mesh: {fileID: 4300004, guid: c90cb5648aeae4f488218de08bc50f35, type: 3}
 --- !u!54 &54114108131274860
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -241,3 +242,15 @@ MonoBehaviour:
   weight: 1
   throwSpeed: 1
   holdingItem: 0
+--- !u!114 &114282677766220832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273214447568386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271e575ca88f69444b2a3d3776496296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnPose: {x: 0, y: 0, z: 0}

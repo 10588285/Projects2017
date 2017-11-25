@@ -6,22 +6,22 @@ public class OpenDoor : MonoBehaviour {
 	public Transform endMarker;
 	public Transform startMarker;
 	public float totTime = 2.0F;
-	public bool locked = true;
+	public GameObject key;
+	public GameObject door;
+	void OnTriggerEnter(Collider other){
+		if (other.transform.gameObject == key){
+			key.SetActive (false);
+			StartCoroutine(MovePose());
+		}
+	}
 	IEnumerator MovePose(){
 		float elapTime = 0;
-		while (Vector3.Distance(transform.position, endMarker.position) > .1F) {
+		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
-			transform.position = Vector3.Lerp (startMarker.position, endMarker.position, (elapTime / totTime));
+			door.transform.position = Vector3.Lerp (startMarker.position, endMarker.position, (elapTime / totTime));
 			yield return null;
 		}
 
 	}
-
-	// Update is called once per frame
-	void LateUpdate () {
-		if (locked == false) {
-			locked = true;
-			StartCoroutine(MovePose());
-		}
-	}
+		
 }
