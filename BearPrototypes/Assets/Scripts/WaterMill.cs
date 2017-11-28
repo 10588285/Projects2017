@@ -28,13 +28,15 @@ public class WaterMill : MonoBehaviour {
 
 	}
 	IEnumerator spin(){
+		float x = spinObject.transform.eulerAngles.x;
+		float y = spinObject.transform.eulerAngles.y;
 		float elapTime = 0;
 
 		while (elapTime < totTime) {
 			BuildStartUp ();
 			elapTime += Time.deltaTime * (spinSpeed * startUp);
-			Quaternion startRot = Quaternion.Euler (0,0,startAngle);
-			Quaternion endRot = Quaternion.Euler (0,0,endAngle);
+			Quaternion startRot = Quaternion.Euler (x,y,startAngle);
+			Quaternion endRot = Quaternion.Euler (x,y,endAngle);
 			spinObject.transform.rotation = Quaternion.Lerp (startRot, endRot, (elapTime/ totTime));
 			yield return null;
 		}
