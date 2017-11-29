@@ -11,6 +11,7 @@ public class WaterMill : MonoBehaviour {
 	public float totTime;
 	private float startUp;
 	public float startUpSpeed = 0.1f;
+	public string axis = "z";
 	// Update is called once per frame
 
 	void OnEnable(){
@@ -23,8 +24,14 @@ public class WaterMill : MonoBehaviour {
 	void Update () {
 		if (limited == false) {
 			BuildStartUp ();
-			spinObject.transform.Rotate (0, 0, (spinSpeed*startUp));
+			if (axis == "x"|| axis == "X")
+				spinObject.transform.Rotate ((spinSpeed*startUp),0, 0);
+			if (axis == "y"|| axis == "Y")
+				spinObject.transform.Rotate (0,(spinSpeed*startUp), 0 );
+			if (axis == "z"|| axis == "Z")
+				spinObject.transform.Rotate (0, 0, (spinSpeed*startUp));
 		}
+
 
 	}
 	IEnumerator spin(){

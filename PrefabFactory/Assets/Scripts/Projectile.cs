@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 public class Projectile : MonoBehaviour {
-
-	public ParticleSystem deathParticle;
-
+	public string tag;
+	public GameObject deathParticle; 
 	void Start () {
-		deathParticle.Stop ();
+		print (deathParticle);
+		//StartCoroutine (Recycle());
 	}
 
 	void OnTriggerEnter(Collider other){
-		if (other.CompareTag ("destructible")) {
-			Debug.Log ("Hit");
-			deathParticle.Play();
-			//gameObject.SetActive (false);
-		}
+		if (other.CompareTag (tag))
+			gameObject.SetActive (false);
 	}
 	void OnDisable(){
-		
-	}
 
+		NetworkServer.Spawn (deathParticle);
+		deathParticle.transform.position = transform.position;
+		deathParticle.GetComponent<ParticleSystem> ().Play ();
+	}
+	/*
+	IEnumerator Recycle(){
+		 return null; 
+	}
+	*/
 }

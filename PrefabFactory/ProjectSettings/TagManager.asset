@@ -6,6 +6,8 @@ TagManager:
   tags:
   - destructible
   - tank
+  - projectile
+  - target
   layers:
   - Default
   - TransparentFX
