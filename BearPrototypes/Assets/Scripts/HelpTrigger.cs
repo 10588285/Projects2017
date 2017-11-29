@@ -21,9 +21,10 @@ public class HelpTrigger : MonoBehaviour {
 		len = message.Length;
 	}
 	void Update(){
-		if (Input.GetKeyDown (KeyCode.G)) {
-
-			DisplayMessage ();
+		if (prox == true ){
+			if (Input.GetKeyDown (KeyCode.G)) {
+				DisplayMessage ();
+			}
 
 
 		}
@@ -39,6 +40,8 @@ public class HelpTrigger : MonoBehaviour {
 	void OnTriggerExit(Collider other){
 		if(other.CompareTag ("Player")){
 			icon.SetActive (false);
+			window.SetActive (false);
+			index = 0;
 			StopCoroutine ("StartFade");
 			prox = false;
 		}
@@ -70,13 +73,12 @@ public class HelpTrigger : MonoBehaviour {
 	}
 	void DisplayMessage (){
 
-		if (prox == true && index < len) {
+		if (index < len) {
 			window.SetActive (true);
 			text.text = message [index];
 			index++;
 
 		} else {
-			print (prox);
 			window.SetActive (false);
 			index = 0; 
 		}
