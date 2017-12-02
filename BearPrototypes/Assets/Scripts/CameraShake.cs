@@ -23,45 +23,50 @@ public class CameraShake : MonoBehaviour {
 
 	public bool smooth;//Smooth rotation?
 	public float smoothAmount = 5f;//Amount to smooth
+	private float count;
+	void OnEnable(){
+		count++; 
 
+		returnPose = camera.localRotation;
+		ShakeCamera ();
+	}
+	/*
 	void Start () {
 		returnPose = camera.localRotation;
 		if(debugMode) ShakeCamera ();
 	}
-
+*/
 
 	void ShakeCamera() {
-
 		startAmount = shakeAmount;//Set default (start) values
 		startDuration = shakeDuration;//Set default (start) values
 
-		if (!isRunning) StartCoroutine (Shake());//Only call the coroutine if it isn't currently running. Otherwise, just set the variables.
+		if (!isRunning) StartCoroutine (Shake(shakeAmount, shakeDuration));//Only call the coroutine if it isn't currently running. Otherwise, just set the variables.
 	}
 
 	public void ShakeCamera(float amount, float duration) {
-
-		shakeAmount += amount;//Add to the current amount.
-		startAmount = shakeAmount;//Reset the start amount, to determine percentage.
+		amount += amount;//Add to the current amount.
+		startAmount = amount;//Reset the start amount, to determine percentage.
 		shakeDuration += duration;//Add to the current time.
 		startDuration = shakeDuration;//Reset the start time.
 
-		if(!isRunning) StartCoroutine (Shake());//Only call the coroutine if it isn't currently running. Otherwise, just set the variables.
+		if(!isRunning) StartCoroutine (Shake(amount, duration));//Only call the coroutine if it isn't currently running. Otherwise, just set the variables.
 	}
 
 
-	IEnumerator Shake() {
+	IEnumerator Shake(float amount, float duration) {
 		isRunning = true;
 		Vector3 offset = camera.eulerAngles;
-		while (shakeDuration > 0.01f) {
+		while (duration > 0.01f) {
 			
 
-			Vector3 rotationAmount = (Random.insideUnitSphere * shakeAmount) + offset;//A Vector3 to add to the Local Rotation
+			Vector3 rotationAmount = (Random.insideUnitSphere * amount) + offset;//A Vector3 to add to the Local Rotation
 			rotationAmount.z = 0;//Don't change the Z; it looks funny.
 
-			shakePercentage = shakeDuration / startDuration;//Used to set the amount of shake (% * startAmount).
+			shakePercentage = duration / startDuration;//Used to set the amount of shake (% * startAmount).
 
-			shakeAmount = startAmount * shakePercentage;//Set the amount of shake (% * startAmount).
-			shakeDuration = Mathf.Lerp(shakeDuration, 0, Time.deltaTime);//Lerp the time, so it is less and tapers off towards the end.
+			amount = startAmount * shakePercentage;//Set the amount of shake (% * startAmount).
+			duration = Mathf.Lerp(duration, 0, Time.deltaTime);//Lerp the time, so it is less and tapers off towards the end.
 
 
 			if(smooth)
@@ -73,6 +78,7 @@ public class CameraShake : MonoBehaviour {
 		}
 		camera.localRotation = returnPose;//Set the local rotation to 0 when done, just to get rid of any fudging stuff.
 		isRunning = false;
+
 	}
 
 }

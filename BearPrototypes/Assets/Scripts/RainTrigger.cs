@@ -25,7 +25,11 @@ public class RainTrigger : MonoBehaviour {
 	public Color startLightning;
 	public Color endLightning;
 
+	public GameObject thunder;
+	public float thunderTime = 1;
 	void Start(){
+		thunder.GetComponent<CameraShake> ().enabled = false;
+		thunder.GetComponent<AudioSource> ().enabled = false;
 		lightning.SetActive (false);
 	}
 	void Update(){
@@ -57,7 +61,6 @@ public class RainTrigger : MonoBehaviour {
 	}
 	void Lightning(){
 		StartCoroutine (ChangeColor());
-
 	}
 
 	IEnumerator ChangeColor(){
@@ -70,7 +73,7 @@ public class RainTrigger : MonoBehaviour {
 		Color startLight = lit.color;
 
 		lightning.SetActive(true);
-
+		StartCoroutine (Thunder());
 
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
@@ -92,6 +95,15 @@ public class RainTrigger : MonoBehaviour {
 		if (character != null) {
 			Lightning ();
 		}
+	}
+
+	IEnumerator Thunder(){
+		yield return new WaitForSeconds (thunderTime);
+		thunder.GetComponent<CameraShake> ().enabled = true;
+		thunder.GetComponent<AudioSource> ().enabled = true;
+		yield return new WaitForSeconds (10);
+		thunder.GetComponent<CameraShake> ().enabled = false;
+		thunder.GetComponent<AudioSource> ().enabled = false;
 	}
 }
 
