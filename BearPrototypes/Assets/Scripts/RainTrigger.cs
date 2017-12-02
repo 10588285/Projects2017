@@ -60,13 +60,16 @@ public class RainTrigger : MonoBehaviour {
 			return distance / space; 
 	}
 	void Lightning(){
+		
 		StartCoroutine (ChangeColor());
 	}
 
 	IEnumerator ChangeColor(){
 		float waitTime = Random.Range(timeRange.x, timeRange.y);
 		yield return new WaitForSeconds (waitTime * (2 - ChangeRain()));
-
+		if (character == null) {
+			yield break;
+		}
 		float elapTime = 0;
 		Color startColor = sky.GetColor("_EmissionColor");
 		Color startAmbience = RenderSettings.ambientLight; 
@@ -92,9 +95,9 @@ public class RainTrigger : MonoBehaviour {
 		}
 		lightning.SetActive (false);
 		elapTime = 0;
-		if (character != null) {
-			Lightning ();
-		}
+
+		Lightning ();
+
 	}
 
 	IEnumerator Thunder(){
@@ -104,6 +107,7 @@ public class RainTrigger : MonoBehaviour {
 		yield return new WaitForSeconds (10);
 		thunder.GetComponent<CameraShake> ().enabled = false;
 		thunder.GetComponent<AudioSource> ().enabled = false;
+
 	}
 }
 

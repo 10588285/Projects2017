@@ -7,7 +7,7 @@ public class UpDraft : MonoBehaviour {
 	void OnTriggerStay(Collider other){
 		if (other.CompareTag("Player")){
 			if (other.gameObject.GetComponent<Move>().hasChicken == true){
-				other.gameObject.GetComponent<Move> ().moveDirection.y += liftSpeed * Time.deltaTime;
+				other.gameObject.GetComponent<Move> ().moveDirection.y += liftSpeed * Time.deltaTime * 1.5f;
 			}
 		}
 	}
