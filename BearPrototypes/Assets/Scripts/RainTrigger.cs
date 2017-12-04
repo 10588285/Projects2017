@@ -27,20 +27,26 @@ public class RainTrigger : MonoBehaviour {
 
 	public GameObject thunder;
 	public float thunderTime = 1;
+
+	public AudioSource rainSound;
+	public float rainVolume = 1;
+
 	void Start(){
+		rainSound.enabled = false;
 		thunder.GetComponent<CameraShake> ().enabled = false;
 		thunder.GetComponent<AudioSource> ().enabled = false;
 		lightning.SetActive (false);
 	}
 	void Update(){
 		if (character) {
+			rainSound.volume = ChangeRain() * rainVolume;
 			var em = rain.emission;
 			em.rateOverTime = ChangeRain() * rate; 
 		}
 	}
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag("Player")){
-
+			rainSound.enabled = true;
 			character = other.transform.gameObject; 
 			Lightning ();
 
@@ -49,6 +55,7 @@ public class RainTrigger : MonoBehaviour {
 	}
 	void OnTriggerExit(Collider other){
 		if (other.CompareTag("Player")){
+			rainSound.enabled = false;
 			character = null; 
 			StopCoroutine (ChangeColor());
 		}
@@ -77,7 +84,8 @@ public class RainTrigger : MonoBehaviour {
 
 		lightning.SetActive(true);
 		StartCoroutine (Thunder());
-
+		Vector3 ligPose = lightning.transform.position;
+		Vector3 offset = lightning.transform.position - lightning.transform.parent.position;
 		while (elapTime < totTime) {
 			elapTime += Time.deltaTime;
 
@@ -91,9 +99,13 @@ public class RainTrigger : MonoBehaviour {
 			Color curColor = Color.Lerp (endColor,startColor,  (elapTime/ totTime));
 			lightning.GetComponent<Renderer> ().material.color = Color.Lerp(startLightning, endLightning, (elapTime/ totTime));
 			sky.SetColor ("_EmissionColor", curColor);
+
+			lightning.transform.position = ligPose;
+
 			yield return null;
 		}
 		lightning.SetActive (false);
+		lightning.transform.position = lightning.transform.parent.position + offset;
 		elapTime = 0;
 
 		Lightning ();
