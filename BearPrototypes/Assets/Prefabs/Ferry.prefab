@@ -908,7 +908,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d13498854a0fba843aa2af47818d989f, type: 2}
+  - {fileID: 2100000, guid: 0fae5aba0fc0b484c93aa230bfaa07de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1036,7 +1036,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d13498854a0fba843aa2af47818d989f, type: 2}
+  - {fileID: 2100000, guid: 0fae5aba0fc0b484c93aa230bfaa07de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1100,7 +1100,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d13498854a0fba843aa2af47818d989f, type: 2}
+  - {fileID: 2100000, guid: 0fae5aba0fc0b484c93aa230bfaa07de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1428,6 +1428,7 @@ MonoBehaviour:
   endAngle: 0
   totTime: 0
   startUpSpeed: 0.5
+  axis: z
 --- !u!114 &114186315521692448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1465,6 +1466,7 @@ MonoBehaviour:
   endAngle: 0
   totTime: 0
   startUpSpeed: 0.5
+  axis: z
 --- !u!114 &114540640366418246
 MonoBehaviour:
   m_ObjectHideFlags: 1
