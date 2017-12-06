@@ -14,6 +14,7 @@ public class Flipper : MonoBehaviour {
 	public float endAngle = 180;
 	public bool flipped = false;
 	public GameObject gear; 
+	public AudioSource sound;
 	void Update(){
 		if (inRange == true && Input.GetKey (KeyCode.Space) && rotating == false) {
 			switch (flipped) {
@@ -47,6 +48,7 @@ public class Flipper : MonoBehaviour {
 	}
 
 	IEnumerator Flip(float start, float end){
+		sound.Play();
 		rotating = true;
 		anchor.position = player.transform.position;
 		player.GetComponent <Move>().zLock = false;

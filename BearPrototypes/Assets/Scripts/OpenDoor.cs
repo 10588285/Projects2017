@@ -11,6 +11,7 @@ public class OpenDoor : MonoBehaviour {
 	public GameObject colorManager;
 	public GameObject particle1;
 	public GameObject particle2;
+	public AudioSource sound;
 	void OnTriggerEnter(Collider other){
 		if (other.transform.gameObject == key){
 			key.SetActive (false);
@@ -18,6 +19,7 @@ public class OpenDoor : MonoBehaviour {
 		}
 	}
 	IEnumerator MovePose(){
+		sound.Play ();
 		float elapTime = 0;
 		colorManager.SetActive(true);
 		particle1.SetActive (true);

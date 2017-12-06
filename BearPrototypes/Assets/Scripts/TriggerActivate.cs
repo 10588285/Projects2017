@@ -7,9 +7,11 @@ public class TriggerActivate : MonoBehaviour {
 	public GameObject[] machine;
 	public bool useTag;
 	public string tag;
+	public AudioSource sound; 
 
 	void Start(){
 		Activate(false);
+		sound.enabled = false;
 
 	}
 	void OnTriggerEnter(Collider other){
@@ -36,6 +38,7 @@ public class TriggerActivate : MonoBehaviour {
 			}
 		}
 	void Activate(bool active){
+		sound.enabled = true; 
 		int len = machine.Length;
 		for (int i = 0; i < len; i++) {
 			machine[i].SetActive (active);
