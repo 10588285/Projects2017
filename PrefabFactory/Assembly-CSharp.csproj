@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Compass\Compass.cs" />
      <Compile Include="Assets\Scripts\Disappear.cs" />
      <Compile Include="Assets\Scripts\EnemyAim.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />

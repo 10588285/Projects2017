@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/10588285/Documents/Project_2017/Projects2017/BearPrototypes/Assets/Scenes/Level_01.unity
+- path: Assets/Compass.unity
   isLoaded: 1
   isActive: 1
