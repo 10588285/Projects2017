@@ -81,7 +81,7 @@ public class RainTrigger : MonoBehaviour {
 		Color startColor = sky.GetColor("_EmissionColor");
 		Color startAmbience = RenderSettings.ambientLight; 
 		Color startLight = lit.color;
-
+		thunder.GetComponent<AudioSource> ().enabled = true;
 		lightning.SetActive(true);
 		StartCoroutine (Thunder());
 		Vector3 ligPose = lightning.transform.position;
@@ -115,7 +115,7 @@ public class RainTrigger : MonoBehaviour {
 	IEnumerator Thunder(){
 		yield return new WaitForSeconds (thunderTime);
 		thunder.GetComponent<CameraShake> ().enabled = true;
-		thunder.GetComponent<AudioSource> ().enabled = true;
+		//thunder.GetComponent<AudioSource> ().enabled = true;
 		yield return new WaitForSeconds (10);
 		thunder.GetComponent<CameraShake> ().enabled = false;
 		thunder.GetComponent<AudioSource> ().enabled = false;
