@@ -28,6 +28,7 @@ ModelImporter:
     100040: Rail7
     100042: Roof
     100044: //RootNode
+    100046: Rims
     400000: Column_01
     400002: Column_02
     400004: Column_03
@@ -51,6 +52,7 @@ ModelImporter:
     400040: Rail7
     400042: Roof
     400044: //RootNode
+    400046: Rims
     2300000: Column_01
     2300002: Column_02
     2300004: Column_03
@@ -73,6 +75,7 @@ ModelImporter:
     2300038: Rail6
     2300040: Rail7
     2300042: Roof
+    2300044: Rims
     3300000: Column_01
     3300002: Column_02
     3300004: Column_03
@@ -95,6 +98,7 @@ ModelImporter:
     3300038: Rail6
     3300040: Rail7
     3300042: Roof
+    3300044: Rims
     4300000: floor
     4300002: Rail2
     4300004: Rail3
@@ -117,6 +121,7 @@ ModelImporter:
     4300038: Column_08
     4300040: floor2
     4300042: Roof
+    4300044: Rims
     9500000: //RootNode
   materials:
     importMaterials: 1

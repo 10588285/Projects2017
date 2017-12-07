@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Deck
     100002: //RootNode
+    100004: Deck1
     400000: Deck
     400002: //RootNode
+    400004: Deck1
     2300000: Deck
+    2300002: Deck1
     3300000: Deck
+    3300002: Deck1
     4300000: Deck
+    4300002: Deck1
   materials:
     importMaterials: 1
     materialName: 0

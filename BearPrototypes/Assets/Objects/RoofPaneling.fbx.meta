@@ -8,15 +8,20 @@ ModelImporter:
     100000: Roof_Frame
     100002: //RootNode
     100004: RoofSegment
+    100006: Underside
     400000: Roof_Frame
     400002: //RootNode
     400004: RoofSegment
+    400006: Underside
     2300000: Roof_Frame
     2300002: RoofSegment
+    2300004: Underside
     3300000: Roof_Frame
     3300002: RoofSegment
+    3300004: Underside
     4300000: RoofSegment
     4300002: Roof_Frame
+    4300004: Underside
   materials:
     importMaterials: 1
     materialName: 0
