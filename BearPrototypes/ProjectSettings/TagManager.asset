@@ -17,6 +17,7 @@ TagManager:
   - Grabbable
   - Trigger
   - Ferry
+  - Flipper
   layers:
   - Default
   - TransparentFX

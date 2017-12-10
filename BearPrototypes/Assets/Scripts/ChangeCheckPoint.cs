@@ -7,11 +7,13 @@ public class ChangeCheckPoint : MonoBehaviour {
 	public GameObject checkPoint;
 	public bool hasObject = false; 
 	public GameObject item; 
-	void OnTriggerEnter(Collider col){
-		if (col.CompareTag ("CheckPoint")) {
-			respawnPoint.transform.position = col.transform.position;
-			checkPoint = col.transform.gameObject;
-			//gameObject.SetActive (false);
+	public GameObject audioManager;
+	private Animation animation; 
+	void OnTriggerEnter(Collider other){
+		if (other.CompareTag ("CheckPoint")) {
+			if (checkPoint != other.transform.gameObject) {
+				NewCheckPoint (other.transform.gameObject);
+			}
 			if (tag == "Player") {
 				SetGrabSettings ();
 			}
@@ -25,5 +27,13 @@ public class ChangeCheckPoint : MonoBehaviour {
 		} else {
 			hasObject = false;
 		}
+	}
+	void NewCheckPoint(GameObject other){
+		respawnPoint.transform.position = other.transform.position;
+		checkPoint = other.transform.gameObject;
+		audioManager.GetComponent<CharacterSoundManager> ().checkPoint.Play();
+		GameObject parent = other.transform.parent.gameObject;
+		animation = parent.GetComponentInChildren<Animation> ();
+		animation.Play("CheckPointAnimation");
 	}
 }

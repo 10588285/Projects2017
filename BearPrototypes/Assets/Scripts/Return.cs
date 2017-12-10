@@ -5,7 +5,6 @@ using UnityEngine;
 public class Return : MonoBehaviour {
 
 	public Vector3 returnPose;
-
 	void Start () {
 		returnPose = transform.position;
 	}
@@ -17,6 +16,8 @@ public class Return : MonoBehaviour {
 		}
 		if (other.CompareTag ("CheckPoint")) {
 			returnPose = other.transform.position;
+			if (!other.GetComponent<ResetObjects>().resetObjects.Contains(this.gameObject))
+				other.GetComponent<ResetObjects> ().resetObjects.Add (this.gameObject);
 		}
 	}
 }

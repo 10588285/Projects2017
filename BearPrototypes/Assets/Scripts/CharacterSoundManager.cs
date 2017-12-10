@@ -12,5 +12,9 @@ public class CharacterSoundManager : MonoBehaviour {
 	public AudioSource chickenJump;
 	public AudioSource chickenPickup;
 	public AudioSource chickenDrop;
+	public AudioSource waterDeath;
+	public AudioSource bearDeath;
+	public AudioSource checkPoint;
+	public AudioSource totemSound;
 
 }

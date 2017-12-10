@@ -14,7 +14,9 @@ public class HelpTrigger : MonoBehaviour {
 	public Text text; 
 	private int len; 
 	private int index;
+	public GameObject audioManager;
 	void Start () {
+		audioManager = GameObject.Find ("Sounds");
 		icon.SetActive (false);
 		rend = icon.GetComponent<SpriteRenderer> ();
 		startColor = rend.color;
@@ -74,6 +76,7 @@ public class HelpTrigger : MonoBehaviour {
 	void DisplayMessage (){
 
 		if (index < len) {
+			audioManager.GetComponent<CharacterSoundManager> ().totemSound.Play();
 			window.SetActive (true);
 			text.text = message [index];
 			index++;

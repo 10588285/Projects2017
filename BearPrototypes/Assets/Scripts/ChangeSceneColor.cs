@@ -40,11 +40,14 @@ public class ChangeSceneColor : MonoBehaviour {
 				Color curLight =  Color.Lerp (startLight, endLight, (elapTime/ totTime));
 				lit.color = curLight;
 			}
+
 			Color curAmbience =  Color.Lerp (startAmbience, endAmbience, (elapTime/ totTime));
 			RenderSettings.ambientLight = curAmbience;
+
 			//change the sky color
 			Color curColor = Color.Lerp (startColor, endColor, (elapTime/ totTime));
 			sky.SetColor ("_EmissionColor", curColor);
+			RenderSettings.fogColor = curColor;
 			yield return null;
 		}
 		elapTime = 0;

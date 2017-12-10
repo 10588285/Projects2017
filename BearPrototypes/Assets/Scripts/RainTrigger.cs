@@ -21,6 +21,8 @@ public class RainTrigger : MonoBehaviour {
 	public float totTime = 2;
 	public Vector2 timeRange;
 
+	public GameObject light;
+	private float lightIntensity; 
 	public GameObject lightning;
 	public Color startLightning;
 	public Color endLightning;
@@ -32,6 +34,7 @@ public class RainTrigger : MonoBehaviour {
 	public float rainVolume = 1;
 
 	void Start(){
+		lightIntensity = light.GetComponent<Light> ().intensity;
 		rainSound.enabled = false;
 		thunder.GetComponent<CameraShake> ().enabled = false;
 		thunder.GetComponent<AudioSource> ().enabled = false;
@@ -101,6 +104,8 @@ public class RainTrigger : MonoBehaviour {
 			sky.SetColor ("_EmissionColor", curColor);
 
 			lightning.transform.position = ligPose;
+
+			light.GetComponent<Light> ().intensity = Mathf.Lerp ( lightIntensity,0, (elapTime / totTime));
 
 			yield return null;
 		}

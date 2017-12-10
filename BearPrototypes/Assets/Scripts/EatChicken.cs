@@ -10,6 +10,7 @@ public class EatChicken : MonoBehaviour {
 	public GameObject awakeBear;
 	public GameObject[] rewards;
 	public bool eating = false;
+	public AudioSource eatSound;
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag ("Chicken")) {
 			print ("The Bear ate a chicken");
@@ -29,7 +30,7 @@ public class EatChicken : MonoBehaviour {
 	}
 	public IEnumerator Eat(){
 		eating = true;
-
+		eatSound.Play ();
 		yield return new WaitForSeconds (0.8F);
 		eating = false;
 		rewards [chickenCount].SetActive (true);
