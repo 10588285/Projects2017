@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 23
+  controlID: 118
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 24
+  controlID: 76
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 25
+  controlID: 52
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 337
     height: 490
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -367,9 +367,9 @@ MonoBehaviour:
     height: 469
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5c91efff
-    m_LastClickedID: -1076900
-    m_ExpandedIDs: 4cb9f1ffd856f6ffda56f6ff1eaff9ff5aaff9ff5eaff9ffa655fdff9867feff9e67feff4edcffff58dcffff86dcffff8adcffffdcdfffffa0e2ffffa4e2ffffcae3ffff24e8ffffc8ebffffe0ebffffe4ebffff74effffff2efffffbaf0ffffb0f9ffffb2f9ffff3cfaffff80fbffff84fbffff1afcffff00000000d62f0000c03400001637000038390000bc3b0000083c0000244100008a4200006e4300001a47000022470000404a0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 6cdfffffcedfffffa8e2ffff0aeaffff7cfbffff00000000e4330000fe340000e63a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -424,9 +424,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -23.824041, y: -3.347484, z: 16.106783}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -23.824041, y: -3.347484, z: 16.106783}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -449,13 +449,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.15533248, y: -0.029659986, z: 0.0045239646, w: -0.98760366}
+    m_Target: {x: 0.053854372, y: 0.07185357, z: 0.003754405, w: -0.9961673}
     speed: 2
-    m_Value: {x: -0.15530224, y: -0.029654214, z: 0.004523084, w: -0.98741144}
+    m_Value: {x: 0.05384289, y: 0.07183825, z: 0.0037536046, w: -0.9959549}
   m_Size:
-    m_Target: 10.53117
+    m_Target: 24.71233
     speed: 2
-    m_Value: 10.53117
+    m_Value: 24.71233
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -530,19 +530,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Objects
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Objects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\home\Projects2017\BearPrototypes
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 149}
-    m_SelectedIDs: 9a2a0000
-    m_LastClickedID: 10906
-    m_ExpandedIDs: 000000006e270000c0270000e0280000a8290000a62b0000622c00006e2c0000dc2c0000162d000048540000ffffff7f
+    m_SelectedIDs: 902c0000
+    m_LastClickedID: 11408
+    m_ExpandedIDs: 0000000086270000d6270000fa280000c6290000ca2b0000902c00009c2c00000c2d0000442d0000c0540000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e270000c0270000e0280000be2a0000a62b0000622c00006e2c0000dc2c0000162d000048540000
+    m_ExpandedIDs: 0000000086270000d6270000fa280000c6290000ca2b0000902c00009c2c00000c2d0000442d0000c0540000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000082270000ec280000362a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 133.5}
+    m_ScrollPosition: {x: 0, y: 267}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 250
 --- !u!114 &17
