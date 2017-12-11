@@ -10,6 +10,7 @@ public class PauseGame : MonoBehaviour {
 	public GameObject AudioManager;
 	public AudioSource pauseSound;
 	public AudioSource unPauseSound;
+	public GameObject blkScreen; 
 	void Start(){
 		canvas.gameObject.SetActive (false);
 	}
@@ -20,6 +21,9 @@ public class PauseGame : MonoBehaviour {
 		}
 	}
 	public void Pause(){
+		if (blkScreen.active == true) {
+			blkScreen.SetActive (false);
+		}
 		if (canvas.gameObject.activeInHierarchy == false) {
 			canvas.gameObject.SetActive (true);
 			Time.timeScale = 0;

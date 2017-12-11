@@ -8,19 +8,19 @@ public class MoveCamera : MonoBehaviour {
 	public float waitTime = 1.0F;
 	public float totTime = 5.0F;
 	private bool triggered = true;
-	private bool moving = false;
+	public bool moving = false;
 	private Vector3 offset;
 	private GameObject player;
 	private Vector3 playerOffset;
-	private GameObject skipImage;
+	public GameObject skipImage;
 	void Start(){
-		skipImage = GameObject.Find ("GSkip");
+		//skipImage = GameObject.Find ("GSkip");
 		skipImage.SetActive (false);
 		player = GameObject.Find ("Character");
 		offset = camera.transform.position - player.transform.position;
 	}
 	void Update(){
-		if (moving = true && Input.GetKeyDown (KeyCode.G)) {
+		if (moving == true && Input.GetKeyDown (KeyCode.G)) {
 			StopCoroutine (Move ());
 			camera.GetComponent<CameraController> ().enabled = true;
 			gameObject.SetActive (false);
