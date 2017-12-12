@@ -5,8 +5,12 @@ using UnityEngine;
 public class CharacterAnimation : MonoBehaviour {
 	public Animator animator;
 	public GameObject character; 
+	public ParticleSystem dust;
+	public bool canDust; 
 
-
+	void Start(){
+		canDust = false;
+	}
 	void Update () {
 		if (Input.GetKey (KeyCode.Space ))
 			CheckHasObject ();
@@ -17,11 +21,17 @@ public class CharacterAnimation : MonoBehaviour {
 			}
 		if (character.GetComponent<CharacterController> ().isGrounded) {
 			animator.SetBool ("grounded", true);
+			if (canDust == true){
+				Dust (1.0f,3);
+			}
 		}else{
 			animator.SetBool ("grounded", false);
+
+			canDust = true;
 		}
 		if (character.GetComponent<CharacterController> ().velocity.x > 0 || character.GetComponent<CharacterController> ().velocity.x < 0) {
 			animator.SetBool ("moving", true);
+
 
 		} else {
 			animator.SetBool ("moving", false);
@@ -61,5 +71,16 @@ public class CharacterAnimation : MonoBehaviour {
 			animator.SetBool ("hasObject", false);
 
 		}
+	}
+	public void Dust(float size, short emmision){
+		canDust = false; 
+		ParticleSystem newDust = Instantiate (dust, dust.transform.position, Quaternion.identity);
+		newDust.emission.SetBursts(
+			new ParticleSystem.Burst[]{
+				new ParticleSystem.Burst(0.0f, emmision)
+			});
+
+		newDust.Play ();
+		Destroy(newDust.transform.gameObject, 2);
 	}
 }
