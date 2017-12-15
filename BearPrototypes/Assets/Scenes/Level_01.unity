@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1123602042}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.21340536, g: 0.30971563, b: 0.45974106, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 2288441}
   - component: {fileID: 2288440}
   - component: {fileID: 2288439}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 12054196}
   - component: {fileID: 12054195}
   - component: {fileID: 12054194}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: water (5)
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 12057060}
   m_LocalRotation: {x: 0.082369074, y: 0.9964558, z: -0.0037894095, w: 0.01663777}
-  m_LocalPosition: {x: -71.93, y: 6.83, z: 0}
+  m_LocalPosition: {x: -71.93, y: 6.83, z: 0.8899994}
   m_LocalScale: {x: 1.3047898, y: 1.3047898, z: 23.8249}
   m_Children: []
   m_Father: {fileID: 2128245724}
@@ -692,7 +692,7 @@ BoxCollider:
   m_GameObject: {fileID: 12057060}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2, y: 5.85, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5523,7 +5523,7 @@ GameObject:
   - component: {fileID: 49164656}
   - component: {fileID: 49164655}
   - component: {fileID: 49164654}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water (1)
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -8288,7 +8288,7 @@ MonoBehaviour:
   dropPose: {fileID: 1201313882}
   rayPose: {fileID: 1540149008}
   item: {fileID: 0}
-  hasObject: 1
+  hasObject: 0
   audioManager: {fileID: 1457183230}
 --- !u!114 &121947835
 MonoBehaviour:
@@ -8337,9 +8337,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 121947832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01af6a242f3e44340a466e864be1798e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e82fd28685f6ab4aafb2e8dff37f2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  closeEnough: 0
+  item: {fileID: 0}
 --- !u!114 &121947838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8354,7 +8356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedFactor: 8
   gravityFactor: 20
-  jumpSpeedFactor: 8
+  jumpSpeedFactor: 9
   climbSpeed: 3
   speed: 5
   gravity: 1
@@ -8404,7 +8406,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a171ad3b7f26b1c45867b9771768181c, type: 2}
+  - {fileID: 2100000, guid: f5521d608fa3d9242aaa555b6f33baf7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13804,7 +13806,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &193901717
 Transform:
@@ -13813,7 +13815,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 193901716}
   m_LocalRotation: {x: 0.5133395, y: -0.48629484, z: 0.48629472, w: 0.51333946}
-  m_LocalPosition: {x: -156.41, y: 2.73, z: 0}
+  m_LocalPosition: {x: -156.41, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1989475447}
@@ -13829,7 +13831,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3.500001, z: 0.20000005}
+  m_Size: {x: 3.5, y: 3.500001, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &193901719
 SpriteRenderer:
@@ -26879,7 +26881,7 @@ GameObject:
   - component: {fileID: 339987577}
   - component: {fileID: 339987576}
   - component: {fileID: 339987575}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water (2)
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -32171,7 +32173,7 @@ GameObject:
   - component: {fileID: 487266841}
   - component: {fileID: 487266840}
   - component: {fileID: 487266839}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: World Catcher
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -50099,7 +50101,7 @@ GameObject:
   - component: {fileID: 830437201}
   - component: {fileID: 830437200}
   - component: {fileID: 830437199}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: water (3)
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -53256,7 +53258,7 @@ GameObject:
   - component: {fileID: 883796358}
   - component: {fileID: 883796357}
   - component: {fileID: 883796356}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Bottom of world
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -76449,7 +76451,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1192331887
 Transform:
@@ -76458,7 +76460,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1192331886}
   m_LocalRotation: {x: 0.5133395, y: -0.48629484, z: 0.48629472, w: 0.51333946}
-  m_LocalPosition: {x: -163.27, y: 2.7299995, z: 0}
+  m_LocalPosition: {x: -163.27, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1989475447}
@@ -76474,7 +76476,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3.500001, z: 0.20000005}
+  m_Size: {x: 3.5, y: 3.500001, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1192331889
 SpriteRenderer:
@@ -76917,7 +76919,7 @@ GameObject:
   - component: {fileID: 1201313885}
   - component: {fileID: 1201313884}
   - component: {fileID: 1201313883}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: DropPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76932,7 +76934,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201313881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.81, y: 0.43, z: 0.02}
+  m_LocalPosition: {x: 0.92, y: -0.35, z: 0.02}
   m_LocalScale: {x: 1.4775326, y: 2.1571696, z: 1}
   m_Children: []
   m_Father: {fileID: 1540149008}
@@ -76994,10 +76996,10 @@ BoxCollider:
   m_GameObject: {fileID: 1201313881}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.36, y: -0.18, z: 0}
 --- !u!33 &1201313886
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -86163,7 +86165,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1395947457
 Transform:
@@ -86172,7 +86174,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1395947456}
   m_LocalRotation: {x: 0.5133395, y: -0.48629484, z: 0.48629472, w: 0.51333946}
-  m_LocalPosition: {x: -173.95, y: 2.7299995, z: 0}
+  m_LocalPosition: {x: -173.95, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1989475447}
@@ -86188,7 +86190,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 3.500001, z: 0.20000005}
+  m_Size: {x: 3.5, y: 3.500001, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1395947459
 SpriteRenderer:
@@ -91696,7 +91698,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1446060776}
   m_LocalRotation: {x: -0, y: -0, z: 0.06800745, w: 0.99768484}
-  m_LocalPosition: {x: -54.8, y: 4.35, z: 0}
+  m_LocalPosition: {x: -54.8, y: 4.35, z: 0.89}
   m_LocalScale: {x: 1.3047872, y: 1.3047876, z: 23.824898}
   m_Children: []
   m_Father: {fileID: 2128245724}
@@ -91752,7 +91754,7 @@ BoxCollider:
   m_GameObject: {fileID: 1446060776}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2, y: 5.85, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -97418,7 +97420,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1540149008}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: RayPose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97433,7 +97435,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1540149007}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.608, z: 0}
+  m_LocalPosition: {x: 0, y: 0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1201313882}
@@ -115383,7 +115385,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1801518859}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water_Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119243,7 +119245,7 @@ GameObject:
   - component: {fileID: 1867961413}
   - component: {fileID: 1867961412}
   - component: {fileID: 1867961411}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: water (4)
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -130062,7 +130064,7 @@ GameObject:
   - component: {fileID: 2013992000}
   - component: {fileID: 2013991999}
   - component: {fileID: 2013991998}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: water (2)
   m_TagString: Death
   m_Icon: {fileID: 0}

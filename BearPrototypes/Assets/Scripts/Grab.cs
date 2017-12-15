@@ -13,6 +13,7 @@ public class Grab : MonoBehaviour {
 	public bool hasObject;
 	public GameObject audioManager;
 	private bool blocked;
+
 	void start (){
 		hasObject = false;
 		orient = 1;
@@ -37,17 +38,7 @@ public class Grab : MonoBehaviour {
 		}else{
 			blocked = false;
 		}
-
-		/*
-		if (Physics.Raycast (rayRight, out hit, maxDistance) && GetComponent<Move>().hasObject == false) {
-			if (hit.transform.gameObject.CompareTag ("Grabbable") || hit.transform.gameObject.CompareTag ("Chicken")) {
-				item = hit.transform.gameObject;
-				blocked = true;
-			}
-		} else {
-			blocked = false;
-		}
-		*/
+			
 	}
 	void Update(){
 		closeEnough = dropPose.gameObject.GetComponent<GrabRange>().closeEnough;

@@ -47,11 +47,13 @@ public class CharacterAnimation : MonoBehaviour {
 			animator.SetBool ("crouched", false);
 		}
 		if (character.GetComponent<Lives> ().bearDead == true) {
+			CheckHasObject ();
 			animator.SetBool ("bearDeath", true);
 		} else {
 			animator.SetBool ("bearDeath", false);
 		}
 		if (character.GetComponent<Lives> ().waterDead == true) {
+			CheckHasObject ();
 			animator.SetBool ("waterDeath", true);
 		} else {
 			animator.SetBool ("waterDeath", false);
