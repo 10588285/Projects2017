@@ -1,12 +1,8 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Projectile.cs">
+﻿<Properties StartupItem="PrefabFactory.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shaders\Projection.shader">
     <Files>
-      <File FileName="Assets\Scripts\EnemyAim.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\QuickPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TestBullet.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Projectile.cs" Line="20" Column="57" />
-      <File FileName="Assets\Scripts\Target.cs" Line="6" Column="8" />
+      <File FileName="Assets\Shaders\Projection.shader" Line="43" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
