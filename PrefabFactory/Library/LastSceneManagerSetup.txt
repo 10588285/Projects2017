@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Compass.unity
+- path: Assets/Enemy.unity
   isLoaded: 1
   isActive: 1

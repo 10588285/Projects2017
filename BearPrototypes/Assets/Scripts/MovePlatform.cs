@@ -24,7 +24,7 @@ public class MovePlatform : MonoBehaviour {
 		if ((elapTime/totTime) > 1) {
 			if (invoked == false) {
 				invoked = true;	
-				Invoke ("ChangeTarget", resetTime);
+				//Invoke ("ChangeTarget", resetTime);
 			}
 		}
 	}

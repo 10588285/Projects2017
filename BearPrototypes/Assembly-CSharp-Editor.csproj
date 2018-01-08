@@ -83,6 +83,7 @@
      <None Include="Assets\RockVR\Video\Shaders\Cubemap2EquirectangularPro.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\RockVR\Video\Shaders\CubemapToCylindrical.shader" />
+     <None Include="Assets\CustomShaders\NewShader.shader" />
      <None Include="Assets\RockVR\Video\Shaders\FlippingTexture.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
