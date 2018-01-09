@@ -8,6 +8,7 @@ TagManager:
   - tank
   - projectile
   - target
+  - Garbage
   layers:
   - Default
   - TransparentFX
