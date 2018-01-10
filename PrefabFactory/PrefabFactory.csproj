@@ -90,10 +90,11 @@
     <Compile Include="Assets\Compass\Compass.cs" />
     <Compile Include="Assets\Scripts\Disappear.cs" />
     <Compile Include="Assets\Scripts\EnemyAim.cs" />
+    <Compile Include="Assets\Scripts\GarbageManagement.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\QuickPlayer.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
-    <Compile Include="Assets\Scripts\TestBullet.cs" />
+    <Compile Include="Assets\Scripts\Trajectory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\Projection.shader" />

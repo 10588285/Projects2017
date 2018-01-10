@@ -1,10 +1,10 @@
-﻿Shader "Custom/NewSurfaceShader" {
+﻿Shader "Custom/Scrolling" {
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_Glossiness ("Smoothness", Range(0,1)) = 0.5
 		_Metallic ("Metallic", Range(0,1)) = 0.0
-		_UVSpeed("UVSpeed",Range(0,10)) = 0.5
+
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -26,8 +26,8 @@
 		half _Glossiness;
 		half _Metallic;
 		fixed4 _Color;
-		float _UVSpeed;
-
+		float _UVSpeedX;
+		float _UVSpeedY;
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
 		// #pragma instancing_options assumeuniformscaling
@@ -37,17 +37,16 @@
 
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
-			float2 UVPlacement = IN.uv_MainTex;
-   			UVPlacement -= (0, (_Time * _UVSpeed));
-   			float4 colorTemp = 0.1;
-			_Color -= (colorTemp,colorTemp,colorTemp,colorTemp) * _Time;
 
-			fixed4 c = tex2D (_MainTex, UVPlacement) * _Color;
-			o.Albedo = c.rgb;
-			// Metallic and smoothness come from slider variables
-			o.Metallic = _Metallic;
-			o.Smoothness = _Glossiness;
+
+			fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+			float ca = tex2D (_MainTex, IN.uv_MainTex).a;
 			o.Alpha = c.a;
+			o.Albedo = c.rgb;
+//			// Metallic and smoothness come from slider variables
+//			o.Metallic = _Metallic;
+//			o.Smoothness = _Glossiness;
+
 		}
 		ENDCG
 	}
