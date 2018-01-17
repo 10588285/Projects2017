@@ -1,0 +1,6 @@
+scene trigger for lava chicken still active
+player can get stuck in the first jump in the deep deep cave
+still need to populate the background of the boat ride
+sign for deep deep cave
+sign for across the lava ravine
+(have camera rotate with player movement?)
