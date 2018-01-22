@@ -696,7 +696,7 @@ LineRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 3
     numCornerVertices: 3
-    numCapVertices: 5
+    numCapVertices: 0
     alignment: 0
     textureMode: 3
     generateLightingData: 1
@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 100
-  resolution: 10
+  resolution: 100
   Distance: 10
   lr: {fileID: 1932356970}
 --- !u!4 &1932356972
