@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ElementPickup.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Player.cs" Line="12" Column="49" />
+      <File FileName="Assets\Scripts\ElementPickup.cs" Line="15" Column="55" />
+      <File FileName="Assets\Scripts\Elemental.cs" Line="6" Column="36" />
+      <File FileName="Assets\Scripts\Animal.cs" Line="9" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
