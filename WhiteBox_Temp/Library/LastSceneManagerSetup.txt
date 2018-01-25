@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/WhiteBox_Env.unity
+  isLoaded: 1
+  isActive: 1
