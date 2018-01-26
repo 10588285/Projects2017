@@ -636,6 +636,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 5
+  followSpeed: 5
+  animalMoveState: 0
 --- !u!23 &285977618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -825,6 +827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  followSpeed: 5
+  animalMoveState: 0
 --- !u!1001 &527569677
 Prefab:
   m_ObjectHideFlags: 0
@@ -834,15 +838,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0.166
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.015
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.207
+      value: -0.047
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
       propertyPath: m_LocalRotation.x
@@ -875,6 +879,10 @@ Prefab:
     - target: {fileID: 400000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0021229668
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
+      propertyPath: m_Name
+      value: Character_Model
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
@@ -911,8 +919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446, y: 249.9}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 45, y: 159}
+  m_SizeDelta: {x: 200, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554287335
 MonoBehaviour:
@@ -926,7 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -935,10 +943,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -986,6 +994,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  followSpeed: 5
+  animalMoveState: 0
 --- !u!23 &604506723
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1081,6 +1091,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+  followSpeed: 5
+  animalMoveState: 0
 --- !u!23 &645616587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1309,6 +1321,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 704386431}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &763710123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 763710124}
+  - component: {fileID: 763710125}
+  m_Layer: 0
+  m_Name: Animal_Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &763710124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763710123}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.29699993, z: -1.202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1516553632}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &763710125
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763710123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9eff7a609df6a874b91af68e8b60749d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &827196146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,20 +1415,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1436,20 +1480,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1764,6 +1794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01312fbf348bee14594cfe5ccafa43d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementTxt: {fileID: 0}
 --- !u!114 &1014184432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,6 +1807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentElement: 0
+  currentAnimal: {fileID: 0}
 --- !u!1 &1202242455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,7 +2051,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2126,6 +2158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1828834177}
+  - {fileID: 763710124}
   m_Father: {fileID: 443899762}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2336,6 +2369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
+  followSpeed: 5
+  animalMoveState: 0
 --- !u!23 &1801062788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2404,6 +2439,34 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 8a9a88e8ea5c30b49ae9f30b4c3ef429, type: 3}
   m_PrefabInternal: {fileID: 527569677}
+--- !u!1 &1909886851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1909886852}
+  m_Layer: 0
+  m_Name: animals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1909886852
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909886851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1927693471
 GameObject:
   m_ObjectHideFlags: 0
