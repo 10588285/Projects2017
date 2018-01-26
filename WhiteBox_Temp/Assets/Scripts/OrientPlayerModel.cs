@@ -7,6 +7,8 @@ public class OrientPlayerModel : MonoBehaviour {
 	public GameObject character;
 	private CharacterController body;
 	private Vector3 offset;
+	private Quaternion targetRot;
+	public float rotSpeed = 5.0F;
 	void Start(){
 		body = character.GetComponent<CharacterController> ();
 		offset = transform.position - character.transform.position; 
@@ -16,6 +18,8 @@ public class OrientPlayerModel : MonoBehaviour {
 		//so the player model will follow everywhere the controller goes, despite not being parented. 
 		//Vector3 offsetTest = new Vector3 (0,0,0); 
 		transform.position = character.transform.position + offset;
+		FollowPlayer ();
+
 	}
 	void Update(){
 		//we don't want the player model to orient the dirrection the controller is going
@@ -28,9 +32,12 @@ public class OrientPlayerModel : MonoBehaviour {
 			//extract an angle of dirrection from the x and y velocity
 			float angle = Mathf.Atan2 (vel.x, vel.y) * Mathf.Rad2Deg;
 			//apply the velocity angle to the rotation of the player model
-			transform.rotation = Quaternion.AngleAxis (angle, Vector3.up);
+			targetRot = Quaternion.AngleAxis (angle, Vector3.up);
 		}
 
+	}
+	void FollowPlayer(){
+		transform.rotation = Quaternion.Lerp (transform.rotation, targetRot, Time.deltaTime  * rotSpeed);
 	}
 
 }

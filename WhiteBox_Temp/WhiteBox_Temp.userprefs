@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CopyXRotation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\OrientPlayerModel.cs">
     <Files>
-      <File FileName="Assets\Scripts\CopyYRotation.cs" Line="11" Column="11" />
-      <File FileName="Assets\Scripts\OrientPlayerModel.cs" Line="27" Column="24" />
-      <File FileName="Assets\Scripts\CopyXRotation.cs" Line="12" Column="49" />
+      <File FileName="Assets\Scripts\OrientPlayerModel.cs" Line="40" Column="98" />
+      <File FileName="..\Dave_Game_Prototypes\Assets\Scripts\Animal.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
