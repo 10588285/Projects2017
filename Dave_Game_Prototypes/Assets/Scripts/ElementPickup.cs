@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//script is to be put on the player. 
 public class ElementPickup : MonoBehaviour {
 	//Text UI that display the name of the element the play currently has. 
+	public Player player;
 	public Text elementTxt;
 	private GameObject animal;
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.E) && animal != null) {
-			if(animal.GetComponent<Animal> ().type != GetComponent<Player>().currentElement){
+			if(animal.GetComponent<Animal> ().type != player.currentElement){
 				ChangePlayerElement();
 			}
 		}
@@ -31,14 +33,14 @@ public class ElementPickup : MonoBehaviour {
 		}
 	}
 	void ChangePlayerElement(){
-		if (GetComponent<Player> ().currentAnimal != null)
+		if  (player.currentAnimal != null)
 		{
-			GetComponent<Player> ().currentAnimal.SetActive (false);
+			player.currentAnimal.SetActive (false);
 		}
 
 		elementTxt.text = "" + animal.GetComponent<Animal> ().type;
-		GetComponent<Player>().currentElement = animal.GetComponent<Animal> ().type;
-		GetComponent<Player> ().currentAnimal =  animal.gameObject;
+		player.currentElement = animal.GetComponent<Animal> ().type;
+		player.currentAnimal =  animal.gameObject;
 		animal.GetComponent<Animal> ().animalMoveState = Animal.moveState.FollowPlayer;
 	}
 }

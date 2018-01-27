@@ -1675,7 +1675,6 @@ GameObject:
   - component: {fileID: 1014184427}
   - component: {fileID: 1014184426}
   - component: {fileID: 1014184431}
-  - component: {fileID: 1014184432}
   m_Layer: 0
   m_Name: Character_Move
   m_TagString: Untagged
@@ -1794,20 +1793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01312fbf348bee14594cfe5ccafa43d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: 92059e2bb516b2f499b902477a3ac5c7, type: 2}
   elementTxt: {fileID: 0}
---- !u!114 &1014184432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1014184424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bf8484577caca7409bf84db7c595f55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentElement: 0
-  currentAnimal: {fileID: 0}
 --- !u!1 &1202242455
 GameObject:
   m_ObjectHideFlags: 0

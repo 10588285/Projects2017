@@ -20,6 +20,7 @@ public class Animal : MonoBehaviour {
 			break;
 		}
 	}
+		
 
 	void FollowPlayer(){
 		Vector3 targetPos = GameObject.Find ("Animal_Target").transform.position;

@@ -1,17 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Player : MonoBehaviour {
+[CreateAssetMenu(fileName = "New Player", menuName = "PLayer")]
+public class Player : ScriptableObject {
 	//class to manager the states of the player
-
-	public Elemental.elementType currentElement;
+	public new string name;
+	public Elemental.elementType currentElement = Elemental.elementType.Neutral;
 	public GameObject currentAnimal;
-	void Start()
-	{
-
-		currentElement = Elemental.elementType.Neutral;
-
-	}
 
 }

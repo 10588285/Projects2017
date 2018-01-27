@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class ElementPickup2 : MonoBehaviour {
+
+//unlike the elemental pickup script, this script is placed on the elemental itself and not the player. 
+public class MousePickup : MonoBehaviour {
 	//Text UI that display the name of the element the play currently has. 
 	public Text elementTxt;
 	public bool active = false;

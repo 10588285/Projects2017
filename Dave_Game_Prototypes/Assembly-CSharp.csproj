@@ -55,7 +55,7 @@
      <Compile Include="Assets\Scripts\CameraOrient.cs" />
      <Compile Include="Assets\Scripts\Elemental.cs" />
      <Compile Include="Assets\Scripts\ElementPickup.cs" />
-     <Compile Include="Assets\Scripts\ElementPickup2.cs" />
+     <Compile Include="Assets\Scripts\MousePickup.cs" />
      <Compile Include="Assets\Scripts\OrientPlayerModel.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
