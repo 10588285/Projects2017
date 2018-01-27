@@ -11,6 +11,7 @@ public class ElementPickup : MonoBehaviour {
 
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.E) && animal != null) {
+
 			if(animal.GetComponent<Animal> ().type != player.currentElement){
 				ChangePlayerElement();
 			}
@@ -18,6 +19,7 @@ public class ElementPickup : MonoBehaviour {
 	}
 	void Start(){
 		elementTxt = GameObject.Find("Element_Display_Text").GetComponent<Text>();
+		player.currentAnimal = null;
 	}
 	void OnTriggerEnter(Collider other)
 	{
@@ -37,7 +39,7 @@ public class ElementPickup : MonoBehaviour {
 		{
 			player.currentAnimal.SetActive (false);
 		}
-
+		print ("new animal");
 		elementTxt.text = "" + animal.GetComponent<Animal> ().type;
 		player.currentElement = animal.GetComponent<Animal> ().type;
 		player.currentAnimal =  animal.gameObject;

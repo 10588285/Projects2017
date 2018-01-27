@@ -7,14 +7,20 @@ public class CameraOrient : MonoBehaviour {
 	public float mouseSensitivityY = 1;
 	float xClamp = 0.0f;
 	private bool canRotate = true;
-
+	public Vector3 cameraOffset;
 	//insert the character move object so that it's oreintation can be affected. 
 	public GameObject character; 
-
+	private Transform mainCamera;
 	void Awake () {
 		//hide the cursor
 		Cursor.lockState = CursorLockMode.Locked;
+
 	}
+	void Start(){
+		mainCamera = Camera.main.transform;
+		MoveCamera();
+	}
+
 	void Update(){
 		//call a function that changes the rotation of the object base on mouse input
 		if (canRotate == true)
@@ -24,6 +30,7 @@ public class CameraOrient : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			Toggle ();
 		}
+		MoveCamera ();
 	}
 	void RotateCamera(){
 		// get the input of the mouse movement, whether it moves up or sideways
@@ -66,6 +73,11 @@ public class CameraOrient : MonoBehaviour {
 			canRotate = true;
 			return;
 		}
+	}
+	void MoveCamera (){
+		mainCamera.position = transform.position;
+		mainCamera.rotation = transform.rotation;
+		mainCamera.Translate (cameraOffset);
 	}
 	
 
