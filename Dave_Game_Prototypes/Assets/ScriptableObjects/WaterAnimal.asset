@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf337a416bee1b4398f303aaf07eabf, type: 3}
   m_Name: WaterAnimal
   m_EditorClassIdentifier: 
-  name: 
+  name: Strelka
   type: 2

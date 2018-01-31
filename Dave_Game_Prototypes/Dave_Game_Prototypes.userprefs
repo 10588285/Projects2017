@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MeteorSpawn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MeteorCrash.cs">
     <Files>
-      <File FileName="Assets\Scripts\MeteorSpawn.cs" Line="32" Column="37" />
+      <File FileName="Assets\Scripts\MeteorSpawn.cs" Line="36" Column="31" />
+      <File FileName="Assets\Scripts\MeteorCrash.cs" Line="24" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
