@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: WaterAnimal
   m_EditorClassIdentifier: 
   name: 
-  type: 0
+  type: 2

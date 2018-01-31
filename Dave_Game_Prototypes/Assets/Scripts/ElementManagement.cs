@@ -10,18 +10,21 @@ public class ElementManagement : MonoBehaviour {
 	//private GameObject animal;
 	//This is whatever animal is within range of the player. 
 	public Animal animal;
-
+	public GameObject animalGO;
 	void Start(){
+		player.animals.Clear ();
 		elementTxt = GameObject.Find("Element_Display_Text").GetComponent<Text>();
 		player.currentAnimal = null;
 	}
 
 	void Update (){
-		if (Input.GetKeyDown (KeyCode.E) && animal != null) {
+		if (Input.GetKeyDown (KeyCode.E) && animalGO != null) {
 			PickUpElement ();
 		}
 		if (Input.GetKeyDown (KeyCode.Q)) {
-			SwapElements ();
+			if (player.animals.Count == 2) {
+				SwapElements ();
+			}
 		}
 	}
 
@@ -29,36 +32,71 @@ public class ElementManagement : MonoBehaviour {
 	{
 		if(other.CompareTag("Animal")){
 			animal = other.GetComponent<AnimalBehavior> ().animal;
+			animalGO = other.gameObject;
 
 		}
 	}
 	void OnTriggerExit(Collider other){
 		if(other.CompareTag("Animal")){
-			animal = null;
+			animalGO = null;
 
 		}
 	}
 
 	void PickUpElement(){
-		if (player.animals.Count >= 2) {
-			print("after count");
+		switch (player.animals.Count){
+		case 1:
+			player.animals.Add (animalGO);
+			player.animals [1] = animalGO;
+			player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
+			break;
+		case 0:
+			player.animals.Add (animalGO);
+			player.animals [0] = animalGO;
+			player.animals [0].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose0;
+			break;
+		case 2:
 			DropElement ();
+			player.animals [1] = animalGO;
+			player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
+			break;
 		}
-		player.animals [0] = animal;
-		player.currentAnimal = animal;
+
+		player.currentAnimal = animalGO;
 		elementTxt.text = "" + animal.type;
-		print ("Here?");
+		player.currentElement = animal.type;
+
+
+
 	}
 	void SwapElements(){
-		Animal _temp = player.animals [1];
+		GameObject _temp = player.animals [1];
 		player.animals [1] = player.animals [0];
+
 		player.animals [0] = _temp;
 		player.currentAnimal = _temp;
-		print (player.currentAnimal);
+
+		player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
+		player.animals [0].GetComponent<AnimalMove>().animalMoveState = AnimalMove.moveState.Pose0;
+		elementTxt.text = "" + player.animals[0].GetComponent<AnimalBehavior>().animal.type;
 	}
 	void DropElement(){
-		player.currentAnimal = null;
-		player.animals [0] = null;
+
+		player.animals [0].GetComponent<Rigidbody> ().useGravity = true;
+		player.animals [0].GetComponent<BoxCollider> ().isTrigger = false;
+		player.animals [0].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Sitting;
+		if (player.animals.Count == 2) {
+			player.currentAnimal = player.animals [1];
+			player.animals [0] = player.animals [1];
+			player.animals [0].GetComponent<AnimalMove>().animalMoveState = AnimalMove.moveState.Pose0;
+			elementTxt.text = "" + player.animals[0].GetComponent<AnimalBehavior>().animal.type;
+
+		} else {
+			player.currentAnimal = null;
+			player.animals [0] = null;
+		}
+
+
 	}
 
 //

@@ -26,7 +26,9 @@ public class AnimalMove : MonoBehaviour {
 
 	void FollowPlayer(string target){
 		Vector3 targetPos = GameObject.Find (target).transform.position;
+		Quaternion targetRot = GameObject.Find (target).transform.rotation;
 		transform.position = Vector3.Lerp (transform.position, targetPos, followSpeed * Time.deltaTime);
+		transform.rotation = Quaternion.Lerp (transform.rotation, targetRot, followSpeed * Time.deltaTime);
 	}
 
 }

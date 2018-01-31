@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: AirAnimal
   m_EditorClassIdentifier: 
   name: 
-  type: 0
+  type: 3

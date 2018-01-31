@@ -4,8 +4,9 @@
     <Files>
       <File FileName="Assets\Scripts\Elemental.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\AnimalBehavior.cs" Line="7" Column="24" />
-      <File FileName="Assets\Scripts\AnimalMove.cs" Line="21" Column="37" />
-      <File FileName="Assets\Scripts\ElementManagement.cs" Line="42" Column="23" />
+      <File FileName="Assets\Scripts\AnimalMove.cs" Line="20" Column="13" />
+      <File FileName="Assets\Scripts\ElementManagement.cs" Line="86" Column="68" />
+      <File FileName="Assets\Scripts\Player.cs" Line="9" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
