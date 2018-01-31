@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\CameraOrient.cs" />
      <Compile Include="Assets\Scripts\Elemental.cs" />
      <Compile Include="Assets\Scripts\ElementManagement.cs" />
+     <Compile Include="Assets\Scripts\MeteorSpawn.cs" />
      <Compile Include="Assets\Scripts\MousePickup.cs" />
      <Compile Include="Assets\Scripts\Networking\SetupLocalPlayer.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

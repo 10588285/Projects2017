@@ -15,6 +15,7 @@ public class ElementManagement : MonoBehaviour {
 		player.animals.Clear ();
 		elementTxt = GameObject.Find("Element_Display_Text").GetComponent<Text>();
 		player.currentAnimal = null;
+		player.currentElement = Elemental.elementType.Neutral;
 	}
 
 	void Update (){
@@ -49,11 +50,16 @@ public class ElementManagement : MonoBehaviour {
 			player.animals.Add (animalGO);
 			player.animals [1] = animalGO;
 			player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
+			print ("pickingup another element");
 			break;
 		case 0:
 			player.animals.Add (animalGO);
 			player.animals [0] = animalGO;
 			player.animals [0].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose0;
+			elementTxt.text = "" + animal.type;
+			player.currentAnimal = animalGO;
+			player.currentElement = animal.type;
+			print ("picking up first element");
 			break;
 		case 2:
 			DropElement ();
@@ -62,14 +68,13 @@ public class ElementManagement : MonoBehaviour {
 			break;
 		}
 
-		player.currentAnimal = animalGO;
-		elementTxt.text = "" + animal.type;
-		player.currentElement = animal.type;
+
 
 
 
 	}
 	void SwapElements(){
+		print ("swapping elements");
 		GameObject _temp = player.animals [1];
 		player.animals [1] = player.animals [0];
 
@@ -79,6 +84,7 @@ public class ElementManagement : MonoBehaviour {
 		player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
 		player.animals [0].GetComponent<AnimalMove>().animalMoveState = AnimalMove.moveState.Pose0;
 		elementTxt.text = "" + player.animals[0].GetComponent<AnimalBehavior>().animal.type;
+		player.currentElement = player.animals[0].GetComponent<AnimalBehavior>().animal.type;
 	}
 	void DropElement(){
 
