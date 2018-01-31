@@ -9,7 +9,7 @@ public class CameraOrient : MonoBehaviour {
 	private bool canRotate = true;
 	public Vector3 cameraOffset;
 	//insert the character move object so that it's oreintation can be affected. 
-	public GameObject character; 
+	private GameObject cameraPivot;
 	private Transform mainCamera;
 	void Awake () {
 		//hide the cursor
@@ -17,6 +17,12 @@ public class CameraOrient : MonoBehaviour {
 
 	}
 	void Start(){
+		//Check to see if there is a camera pivot in the scene. 
+		if (GameObject.Find ("CameraPivot")) {
+			cameraPivot = GameObject.Find ("CameraPivot");
+		} else {
+			CreatePivot ();
+		}
 		mainCamera = Camera.main.transform;
 		MoveCamera();
 	}
@@ -43,8 +49,8 @@ public class CameraOrient : MonoBehaviour {
 		xClamp -= rotAmountY;
 		//create a variable that can use angle degrees
 		//one for character y rotation and one for camera verticle rotation
-		Vector3 targetRotCam = transform.rotation.eulerAngles;
-		Vector3 targetRotChar = character.transform.rotation.eulerAngles;
+		Vector3 targetRotCam = cameraPivot.transform.rotation.eulerAngles;
+		Vector3 targetRotChar = transform.rotation.eulerAngles;
 		//add the mouse input to the x and y axis's of our new variable
 		targetRotCam.x -= rotAmountY;
 		targetRotCam.z = 0;
@@ -56,8 +62,11 @@ public class CameraOrient : MonoBehaviour {
 			xClamp = targetRotCam.x =  -90;
 		}
 		//Convert the rotation into a quaternion and rotate the object
-		transform.rotation = Quaternion.Euler (targetRotCam);
-		character.transform.rotation = Quaternion.Euler (targetRotChar);
+
+		//apply the x rotations to the camera pivot object
+		cameraPivot.transform.rotation = Quaternion.Euler (targetRotCam);
+		//apply the y rotations to the object (so the foreward vector points in the right dirrection)
+		transform.rotation = Quaternion.Euler (targetRotChar);
 
 	}
 
@@ -75,10 +84,17 @@ public class CameraOrient : MonoBehaviour {
 		}
 	}
 	void MoveCamera (){
-		mainCamera.position = transform.position;
-		mainCamera.rotation = transform.rotation;
+		mainCamera.position = cameraPivot.transform.position;
+		mainCamera.rotation = cameraPivot.transform.rotation;
 		mainCamera.Translate (cameraOffset);
 	}
-	
+
+	void CreatePivot(){
+		cameraPivot = new GameObject();
+		cameraPivot.name = "CameraPivot";
+		cameraPivot.transform.position = transform.position;
+		cameraPivot.transform.rotation = transform.rotation;
+		cameraPivot.transform.parent = transform;
+	}
 
 }

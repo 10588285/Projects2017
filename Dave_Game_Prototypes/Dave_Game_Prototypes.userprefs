@@ -1,13 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraOrient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ElementManagement.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="3" Column="19" />
-      <File FileName="Assets\Scripts\Animal.cs" Line="24" Column="2" />
-      <File FileName="Assets\Scripts\PlayerMove.cs" Line="10" Column="58" />
-      <File FileName="Assets\Scripts\ElementPickup.cs" Line="22" Column="31" />
-      <File FileName="Assets\Scripts\SetupLocalPlayer.cs" Line="3" Column="30" />
-      <File FileName="Assets\Scripts\CameraOrient.cs" Line="80" Column="39" />
+      <File FileName="Assets\Scripts\Elemental.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AnimalBehavior.cs" Line="7" Column="24" />
+      <File FileName="Assets\Scripts\AnimalMove.cs" Line="21" Column="37" />
+      <File FileName="Assets\Scripts\ElementManagement.cs" Line="42" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
