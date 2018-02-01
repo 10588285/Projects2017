@@ -3,23 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //script is to be put on the player. 
-public class ElementManagement : MonoBehaviour {
+public class ElementFirstPerson : MonoBehaviour {
 	//Text UI that display the name of the element the play currently has. 
 	public Player player;
-	public Text elementTxt;
-	//private GameObject animal;
-	//This is whatever animal is within range of the player. 
-	public Animal animal;
-	public GameObject animalGO;
+	private Text elementTxt;
+	private Animal animal;
+	private Renderer rend;
+	private bool mouseOver;
 	void Start(){
 		player.animals.Clear ();
 		elementTxt = GameObject.Find("Element_Display_Text").GetComponent<Text>();
 		player.currentAnimal = null;
 		player.currentElement = Elemental.elementType.Neutral;
+		animal = GetComponent<AnimalBehavior> ().animal;
+		rend = GetComponent<Renderer> ();
 	}
 
 	void Update (){
-		if (Input.GetKeyDown (KeyCode.E) && animalGO != null) {
+		if (Input.GetKeyDown (KeyCode.E) && mouseOver == true) {
 			PickUpElement ();
 		}
 		if (Input.GetKeyDown (KeyCode.Q)) {
@@ -28,42 +29,50 @@ public class ElementManagement : MonoBehaviour {
 			}
 		}
 	}
-
-	void OnTriggerEnter(Collider other)
-	{
-		if(other.CompareTag("Animal")){
-			animal = other.GetComponent<AnimalBehavior> ().animal;
-			animalGO = other.gameObject;
-
-		}
+	void OnMouseOver(){
+		mouseOver = true;
+		rend.material.SetFloat ("_Outline", 1);
 	}
-	void OnTriggerExit(Collider other){
-		if(other.CompareTag("Animal")){
-			animalGO = null;
-
-		}
+	void OnMouseExit(){
+		mouseOver = false;
+		rend.material.SetFloat ("_Outline", 0);
 	}
+
+//	void OnTriggerEnter(Collider other)
+//	{
+//		if(other.CompareTag("Animal")){
+//			animal = other.GetComponent<AnimalBehavior> ().animal;
+//			animalGO = other.gameObject;
+//
+//		}
+//	}
+//	void OnTriggerExit(Collider other){
+//		if(other.CompareTag("Animal")){
+//			animalGO = null;
+//
+//		}
+//	}
 
 	void PickUpElement(){
 		switch (player.animals.Count){
 		case 1:
-			player.animals.Add (animalGO);
-			player.animals [1] = animalGO;
+			player.animals.Add (gameObject);
+			player.animals [1] = gameObject;
 			player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
 			print ("pickingup another element");
 			break;
 		case 0:
-			player.animals.Add (animalGO);
-			player.animals [0] = animalGO;
+			player.animals.Add (gameObject);
+			player.animals [0] = gameObject;
 			player.animals [0].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose0;
 			elementTxt.text = "" + animal.type;
-			player.currentAnimal = animalGO;
+			player.currentAnimal = gameObject;
 			player.currentElement = animal.type;
 			print ("picking up first element");
 			break;
 		case 2:
 			DropElement ();
-			player.animals [1] = animalGO;
+			player.animals [1] = gameObject;
 			player.animals [1].GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.Pose1;
 			break;
 		}
@@ -104,41 +113,5 @@ public class ElementManagement : MonoBehaviour {
 
 
 	}
-
-//
-//	void Update(){
-//		if (Input.GetKeyDown (KeyCode.E) && animal != null) {
-//
-//			if(animal.GetComponent<Animal> ().type != player.currentElement){
-//				ChangePlayerElement();
-//			}
-//		}
-//	}
-//	void Start(){
-//		elementTxt = GameObject.Find("Element_Display_Text").GetComponent<Text>();
-//		player.currentAnimal = null;
-//	}
-//	void OnTriggerEnter(Collider other)
-//	{
-//		if(other.CompareTag("Animal")){
-//			animal = other.gameObject;
-//
-//		}
-//	}
-//	void OnTriggerExit(Collider other){
-//		if(other.CompareTag("Animal")){
-//			animal = null;
-//
-//		}
-//	}
-//	void ChangePlayerElement(){
-//		if  (player.currentAnimal != null)
-//		{
-//			player.currentAnimal.SetActive (false);
-//		}
-//		//elementTxt.text = "" + animal.GetComponent<Animal> ().type;
-//		//player.currentElement = animal.GetComponent<Animal> ().type;
-//		player.currentAnimal =  animal
-//		//animal.GetComponent<AnimalMove> ().animalMoveState = AnimalMove.moveState.FollowPlayer;
-//	}
+		
 }

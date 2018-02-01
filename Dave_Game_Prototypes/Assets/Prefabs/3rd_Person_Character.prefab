@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114124098308508004}
   - component: {fileID: 114609317908277530}
   m_Layer: 0
-  m_Name: Character
+  m_Name: 3rd_Person_Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,6 +362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11400000, guid: 92059e2bb516b2f499b902477a3ac5c7, type: 2}
   elementTxt: {fileID: 0}
+  animal: {fileID: 0}
+  animalGO: {fileID: 0}
 --- !u!114 &114363417823112832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -408,7 +410,6 @@ MonoBehaviour:
   mouseSensitivityX: 2
   mouseSensitivityY: 1
   cameraOffset: {x: 0, y: 1, z: -4}
-  character: {fileID: 1111944018306586}
 --- !u!114 &114609317908277530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -432,6 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1111944018306586}
+  rotSpeed: 5
 --- !u!136 &136616285218725710
 CapsuleCollider:
   m_ObjectHideFlags: 1

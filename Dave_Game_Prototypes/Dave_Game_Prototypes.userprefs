@@ -5,7 +5,8 @@
       <File FileName="Assets\Scripts\MeteorSpawn.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MeteorCrash.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ElementManagement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ElementFirstPerson.cs" Line="16" Column="57" />
+      <File FileName="Assets\Scripts\ElementFirstPerson.cs" Line="19" Column="36" />
+      <File FileName="Assets\Shaders\HighLight.shader" Line="8" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
