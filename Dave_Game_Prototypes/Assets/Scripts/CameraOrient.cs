@@ -7,10 +7,13 @@ public class CameraOrient : MonoBehaviour {
 	public float mouseSensitivityY = 1;
 	float xClamp = 0.0f;
 	private bool canRotate = true;
-	public Vector3 cameraOffset;
+
 	//insert the character move object so that it's oreintation can be affected. 
 	private GameObject cameraPivot;
 	private Transform mainCamera;
+	public float cameraHeight;
+	public float cameraDistance;
+
 	void Awake () {
 		//hide the cursor
 		Cursor.lockState = CursorLockMode.Locked;
@@ -86,13 +89,13 @@ public class CameraOrient : MonoBehaviour {
 	void MoveCamera (){
 		mainCamera.position = cameraPivot.transform.position;
 		mainCamera.rotation = cameraPivot.transform.rotation;
-		mainCamera.Translate (cameraOffset);
+		mainCamera.Translate (new Vector3 (0,0,cameraDistance));
 	}
 
 	void CreatePivot(){
 		cameraPivot = new GameObject();
 		cameraPivot.name = "CameraPivot";
-		cameraPivot.transform.position = transform.position;
+		cameraPivot.transform.position = transform.position + new Vector3 (0,cameraHeight,0);
 		cameraPivot.transform.rotation = transform.rotation;
 		cameraPivot.transform.parent = transform;
 	}
