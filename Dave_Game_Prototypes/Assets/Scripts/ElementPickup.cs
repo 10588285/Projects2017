@@ -70,8 +70,13 @@ public class ElementPickup : MonoBehaviour {
 			break;
 		}
 
-		symbol1.sprite = player.animals[1].GetComponent<AnimalBehavior>().animal.symbol;
-		symbol0.sprite = player.animals[0].GetComponent<AnimalBehavior>().animal.symbol;
+
+		if (player.animals [0] != null) {
+			symbol0.sprite = player.animals [0].GetComponent<AnimalBehavior> ().animal.symbol;
+		}
+		if (player.animals [1] != null) {
+			symbol1.sprite = player.animals [1].GetComponent<AnimalBehavior> ().animal.symbol;
+		}
 
 
 
