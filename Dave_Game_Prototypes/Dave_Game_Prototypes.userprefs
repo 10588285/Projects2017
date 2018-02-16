@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CursorFollow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NewABS.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraOrient.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ElementPickup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ElementManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Animal.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CursorFollow.cs" Line="7" Column="11" />
+      <File FileName="Assets\Scripts\Abs_Test.cs" Line="5" Column="49" />
+      <File FileName="Assets\Scripts\Abs_Behavior.cs" Line="10" Column="25" />
+      <File FileName="..\..\Desktop\SophomoreProject\2019juniorGame\TheGameGame\Assets\Scripts\MechanicScripts\ABS_Abilities.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NewABS.cs" Line="11" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
