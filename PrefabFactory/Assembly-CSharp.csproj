@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Compass\Compass.cs" />
+     <Compile Include="Assets\Scripts\Animation_Adjustment_Script.cs" />
      <Compile Include="Assets\Scripts\Disappear.cs" />
      <Compile Include="Assets\Scripts\EnemyAim.cs" />
      <Compile Include="Assets\Scripts\GarbageManagement.cs" />
