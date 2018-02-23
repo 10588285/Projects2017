@@ -287,6 +287,47 @@ ModelImporter:
     100558: Wire_Case4
     100560: Wire_Case5
     100562: Wire_Case6
+    100564: Basket_Beam 1
+    100566: Basket_Beam 2
+    100568: Basket_Beam 3
+    100570: Basket_Weld_Piece 1
+    100572: Basket_Weld_Piece 2
+    100574: Basket_Weld_Piece 3
+    100576: Beam_Grp1
+    100578: Beam_Grp2
+    100580: Beam_Grp3
+    100582: Beam_Grp4
+    100584: Bottom_Ring
+    100586: Cupola_Handle1
+    100588: Cupola_Handle1 1
+    100590: Firing_Mechanism
+    100592: Light_Block
+    100594: Light_Blocks
+    100596: Light_Switch
+    100598: Light_Switch 1
+    100600: Light_Switch_Casing
+    100602: Metal_Caging
+    100604: New_Traverse1
+    100606: pCube64
+    100608: pCube65
+    100610: pCube66
+    100612: pCube68
+    100614: pCube69
+    100616: pCylinder100
+    100618: pCylinder101
+    100620: pCylinder102
+    100622: pCylinder103
+    100624: pCylinder104
+    100626: pCylinder90
+    100628: pCylinder94
+    100630: pCylinder95
+    100632: pCylinder96
+    100634: pCylinder97
+    100636: pCylinder98
+    100638: pCylinder99
+    100640: Pivot_HandWheel3
+    100642: Right_Cupola1
+    100644: Rivets
     400000: Ammo_Box1
     400002: Ammo_Box2
     400004: Ammo_Box3
@@ -569,6 +610,47 @@ ModelImporter:
     400558: Wire_Case4
     400560: Wire_Case5
     400562: Wire_Case6
+    400564: Basket_Beam 1
+    400566: Basket_Beam 2
+    400568: Basket_Beam 3
+    400570: Basket_Weld_Piece 1
+    400572: Basket_Weld_Piece 2
+    400574: Basket_Weld_Piece 3
+    400576: Beam_Grp1
+    400578: Beam_Grp2
+    400580: Beam_Grp3
+    400582: Beam_Grp4
+    400584: Bottom_Ring
+    400586: Cupola_Handle1
+    400588: Cupola_Handle1 1
+    400590: Firing_Mechanism
+    400592: Light_Block
+    400594: Light_Blocks
+    400596: Light_Switch
+    400598: Light_Switch 1
+    400600: Light_Switch_Casing
+    400602: Metal_Caging
+    400604: New_Traverse1
+    400606: pCube64
+    400608: pCube65
+    400610: pCube66
+    400612: pCube68
+    400614: pCube69
+    400616: pCylinder100
+    400618: pCylinder101
+    400620: pCylinder102
+    400622: pCylinder103
+    400624: pCylinder104
+    400626: pCylinder90
+    400628: pCylinder94
+    400630: pCylinder95
+    400632: pCylinder96
+    400634: pCylinder97
+    400636: pCylinder98
+    400638: pCylinder99
+    400640: Pivot_HandWheel3
+    400642: Right_Cupola1
+    400644: Rivets
     2300000: Ammo_Box1
     2300002: Ammo_Box2
     2300004: Ammo_Box3
@@ -802,6 +884,38 @@ ModelImporter:
     2300460: Wire_Case4
     2300462: Wire_Case5
     2300464: Wire_Case6
+    2300466: Basket_Beam 1
+    2300468: Basket_Beam 2
+    2300470: Basket_Beam 3
+    2300472: Basket_Weld_Piece 1
+    2300474: Basket_Weld_Piece 2
+    2300476: Basket_Weld_Piece 3
+    2300478: Bottom_Ring
+    2300480: Cupola_Handle1
+    2300482: Cupola_Handle1 1
+    2300484: Light_Block
+    2300486: Light_Blocks
+    2300488: Light_Switch 1
+    2300490: Light_Switch_Casing
+    2300492: Metal_Caging
+    2300494: pCube64
+    2300496: pCube65
+    2300498: pCube66
+    2300500: pCube68
+    2300502: pCube69
+    2300504: pCylinder100
+    2300506: pCylinder101
+    2300508: pCylinder102
+    2300510: pCylinder103
+    2300512: pCylinder104
+    2300514: pCylinder90
+    2300516: pCylinder94
+    2300518: pCylinder95
+    2300520: pCylinder96
+    2300522: pCylinder97
+    2300524: pCylinder98
+    2300526: pCylinder99
+    2300528: Pivot_HandWheel3
     3300000: Ammo_Box1
     3300002: Ammo_Box2
     3300004: Ammo_Box3
@@ -1035,6 +1149,38 @@ ModelImporter:
     3300460: Wire_Case4
     3300462: Wire_Case5
     3300464: Wire_Case6
+    3300466: Basket_Beam 1
+    3300468: Basket_Beam 2
+    3300470: Basket_Beam 3
+    3300472: Basket_Weld_Piece 1
+    3300474: Basket_Weld_Piece 2
+    3300476: Basket_Weld_Piece 3
+    3300478: Bottom_Ring
+    3300480: Cupola_Handle1
+    3300482: Cupola_Handle1 1
+    3300484: Light_Block
+    3300486: Light_Blocks
+    3300488: Light_Switch 1
+    3300490: Light_Switch_Casing
+    3300492: Metal_Caging
+    3300494: pCube64
+    3300496: pCube65
+    3300498: pCube66
+    3300500: pCube68
+    3300502: pCube69
+    3300504: pCylinder100
+    3300506: pCylinder101
+    3300508: pCylinder102
+    3300510: pCylinder103
+    3300512: pCylinder104
+    3300514: pCylinder90
+    3300516: pCylinder94
+    3300518: pCylinder95
+    3300520: pCylinder96
+    3300522: pCylinder97
+    3300524: pCylinder98
+    3300526: pCylinder99
+    3300528: Pivot_HandWheel3
     4300000: Metal_Plate_Turret_Base
     4300002: Turret_Support
     4300004: Turret_Base
@@ -1268,6 +1414,38 @@ ModelImporter:
     4300460: bs
     4300462: Grated_Metal
     4300464: pCube63
+    4300466: Metal_Caging
+    4300468: Cupola_Handle1
+    4300470: Cupola_Handle1
+    4300472: Light_Blocks
+    4300474: Bottom_Ring
+    4300476: Basket_Beam
+    4300478: Basket_Weld_Piece
+    4300480: Basket_Beam
+    4300482: Basket_Weld_Piece
+    4300484: Basket_Beam
+    4300486: Basket_Weld_Piece
+    4300488: Light_Switch_Casing
+    4300490: Light_Switch
+    4300492: pCube68
+    4300494: pCylinder98
+    4300496: pCube64
+    4300498: pCube65
+    4300500: pCylinder97
+    4300502: pCylinder99
+    4300504: pCylinder100
+    4300506: pCylinder96
+    4300508: pCylinder90
+    4300510: pCylinder95
+    4300512: pCylinder94
+    4300514: Pivot_HandWheel3
+    4300516: pCylinder104
+    4300518: pCube66
+    4300520: pCylinder101
+    4300522: pCylinder102
+    4300524: pCylinder103
+    4300526: Light_Block
+    4300528: pCube69
     9500000: //RootNode
   materials:
     importMaterials: 1
