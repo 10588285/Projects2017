@@ -57,6 +57,7 @@ ModelImporter:
     100098: Window_Shard_08
     100100: Window_Shard_09
     100102: Wall_Rubble_03
+    100104: Shattered_Props
     400000: Brick14
     400002: Brick15
     400004: Brick16
@@ -109,6 +110,7 @@ ModelImporter:
     400098: Window_Shard_08
     400100: Window_Shard_09
     400102: Wall_Rubble_03
+    400104: Shattered_Props
     2300000: Brick14
     2300002: Brick15
     2300004: Brick16

@@ -10,20 +10,34 @@ ModelImporter:
     100004: shard6
     100006: shard7
     100008: shard8
+    100010: Column_Shatter_02
+    100012: shard10
+    100014: shard9
+    100016: Shattered_Props
     400000: //RootNode
     400002: Column_Shatter_04
     400004: shard6
     400006: shard7
     400008: shard8
+    400010: Column_Shatter_02
+    400012: shard10
+    400014: shard9
+    400016: Shattered_Props
     2300000: shard6
     2300002: shard7
     2300004: shard8
+    2300006: shard10
+    2300008: shard9
     3300000: shard6
     3300002: shard7
     3300004: shard8
+    3300006: shard10
+    3300008: shard9
     4300000: shard6
     4300002: shard7
     4300004: shard8
+    4300006: shard9
+    4300008: shard10
   materials:
     importMaterials: 1
     materialName: 0

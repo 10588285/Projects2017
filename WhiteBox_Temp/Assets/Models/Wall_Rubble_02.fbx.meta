@@ -45,6 +45,7 @@ ModelImporter:
     100074: Window_Piece_05
     100076: Window_Piece_06
     100078: Wall_Rubble_03
+    100080: Shattered_Props
     400000: Beam_Shatter_01
     400002: Beam_Shatter_02
     400004: Beam_Shatters
@@ -85,6 +86,7 @@ ModelImporter:
     400074: Window_Piece_05
     400076: Window_Piece_06
     400078: Wall_Rubble_03
+    400080: Shattered_Props
     2300000: Beam_Shatter_01
     2300002: Beam_Shatter_02
     2300004: Bottom_piece
