@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WhiteBox_Env.unity
+- path: Assets/Tank_Inside_Test.unity
   isLoaded: 1
   isActive: 1
