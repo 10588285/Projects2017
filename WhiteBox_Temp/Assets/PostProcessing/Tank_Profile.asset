@@ -25,7 +25,7 @@ MonoBehaviour:
         motionVectorsResolution: 24
         motionVectorsAmplitude: 64
   fog:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       excludeSkybox: 1
   antialiasing:
@@ -69,7 +69,7 @@ MonoBehaviour:
       screenEdgeMask:
         intensity: 0.03
   depthOfField:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       focusDistance: 10
       aperture: 7.2
@@ -134,13 +134,13 @@ MonoBehaviour:
       colorWheels:
         mode: 0
         log:
-          slope: {r: 1, g: 1, b: 1, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0}
-          offset: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 1, g: 0.98778605, b: 0.9358475, a: 0}
+          power: {r: 0.84243345, g: 0.83671135, b: 1, a: 0}
+          offset: {r: 0.8772433, g: 1, b: 0.94685763, a: 0}
         linear:
-          lift: {r: 0.77473915, g: 0.85780483, b: 1, a: 0}
-          gamma: {r: 1, g: 0.7889672, b: 0.6850336, a: 0}
-          gain: {r: 1, g: 1, b: 1, a: 0}
+          lift: {r: 1, g: 0.86182827, b: 0.81535596, a: 0}
+          gamma: {r: 0.8183279, g: 0.8867419, b: 1, a: 0}
+          gain: {r: 0.7909499, g: 0.86234915, b: 1, a: 0}
       curves:
         master:
           curve:
@@ -281,10 +281,10 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.1
+      intensity: 0.35
   grain:
     m_Enabled: 0
     m_Settings:
@@ -293,13 +293,13 @@ MonoBehaviour:
       size: 1
       luminanceContribution: 0.8
   vignette:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.45
-      smoothness: 0.2
+      intensity: 0.304
+      smoothness: 0.118
       roundness: 1
       mask: {fileID: 0}
       opacity: 1
