@@ -632,6 +632,7 @@ ModelImporter:
     101248: Wire_End_04
     101250: Wire_Ends
     101252: Wood_Crate
+    101254: Gauge6
     400000: Ammo_Box1
     400002: Ammo_Box2
     400004: Ammo_Box3
@@ -1259,6 +1260,7 @@ ModelImporter:
     401248: Wire_End_04
     401250: Wire_Ends
     401252: Wood_Crate
+    401254: Gauge6
     2300000: Ammo_Box1
     2300002: Ammo_Box2
     2300004: Ammo_Box3
@@ -1763,6 +1765,7 @@ ModelImporter:
     2301002: Wire_End_02
     2301004: Wire_End_03
     2301006: Wire_End_04
+    2301008: Gauge6
     3300000: Ammo_Box1
     3300002: Ammo_Box2
     3300004: Ammo_Box3
@@ -2267,6 +2270,7 @@ ModelImporter:
     3301002: Wire_End_02
     3301004: Wire_End_03
     3301006: Wire_End_04
+    3301008: Gauge6
     4300000: Metal_Plate_Turret_Base
     4300002: Turret_Support
     4300004: Turret_Base
@@ -2771,6 +2775,7 @@ ModelImporter:
     4301002: Left_Barrel_Stand1
     4301004: Chassis_Light_Block
     4301006: Turret_Cover_Plate
+    4301008: Gauge6
     9500000: //RootNode
   materials:
     importMaterials: 1
