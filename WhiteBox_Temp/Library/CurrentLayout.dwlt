@@ -365,10 +365,10 @@ MonoBehaviour:
     width: 377
     height: 552
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1129}
+    scrollPos: {x: 0, y: 505}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4ef5ffffe6f7ffff9af8ffffcaf8ffff1ef9ffff48f9ffff74f9ffffaaf9ffffbcf9ffff28faffff5cfaffff7efaffffaafaffffd6faffff0afbffffb0fbffffc8fbffffcefbffff14fcffff16fcffff18fcffff1afcffff00000000
+    m_ExpandedIDs: e6b3fbff982efeff1af7ffff1af8ffff4af8ffff7af8ffff42f9ffff72f9ffffcef9ffff38faffff66faffff74faffff4efbffff54fbffff9afbffff9efbffffa0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,14 +418,14 @@ MonoBehaviour:
     width: 1148
     height: 552
   m_SceneLighting: 1
-  lastFramingTime: 7564.32729791204
+  lastFramingTime: 15418.853061659169
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.22586125, y: 0.30799553, z: 0.9553285}
+    m_Target: {x: -0.5427987, y: -0.049470037, z: 1.1204154}
     speed: 2
-    m_Value: {x: -0.22586125, y: 0.30799553, z: 0.9553285}
+    m_Value: {x: -0.5427987, y: -0.049470037, z: 1.1204154}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -448,13 +448,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.10956562, y: -0.024707202, z: 0.0029493708, w: 0.99378616}
+    m_Target: {x: 0.17756335, y: -0.058973633, z: 0.010974427, w: 0.98251384}
     speed: 2
-    m_Value: {x: 0.10955277, y: -0.024704304, z: 0.0029490248, w: 0.99366957}
+    m_Value: {x: 0.1775225, y: -0.05896006, z: 0.010971901, w: 0.9822877}
   m_Size:
-    m_Target: 1.7057672
+    m_Target: 1.7216969
     speed: 2
-    m_Value: 1.7057672
+    m_Value: 1.7216969
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -529,19 +529,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Models/Materials/Rivets
+    - Assets/Models/Materials/Accessories
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models/Materials/Rivets
+  - Assets/Models/Materials/Accessories
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\10588285\Desktop\Projects2018\Projects2017\WhiteBox_Temp
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 4}
-    m_SelectedIDs: 303d0000
-    m_LastClickedID: 15664
-    m_ExpandedIDs: 00000000da260000e4260000682b000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 36}
+    m_SelectedIDs: 7c400000
+    m_LastClickedID: 16508
+    m_ExpandedIDs: 00000000622a00006e2a0000182f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da260000e4260000682b0000
+    m_ExpandedIDs: 00000000622a00006e2a0000182f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
