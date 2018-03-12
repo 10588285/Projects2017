@@ -20,9 +20,9 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.1278655, g: 0.32430878, b: 0.4044118, a: 1}
-  m_AmbientEquatorColor: {r: 0.18247189, g: 0.52093273, b: 0.5514706, a: 1}
-  m_AmbientGroundColor: {r: 0.3328287, g: 0.5955882, b: 0.5629698, a: 1}
+  m_AmbientSkyColor: {r: 0.16435988, g: 0.24608643, b: 0.2794118, a: 1}
+  m_AmbientEquatorColor: {r: 0.18079585, g: 0.31171697, b: 0.32352942, a: 1}
+  m_AmbientGroundColor: {r: 0.31401384, g: 0.4852941, b: 0.46403173, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.276
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.050392598, g: 0.06300886, b: 0.08478341, a: 0.276}
+  m_IndirectSpecularColor: {r: 0.050392598, g: 0.06300885, b: 0.08478341, a: 0.276}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2788,19 +2788,19 @@ Prefab:
       objectReference: {fileID: 2100000, guid: f10a3604184f1a04c80323bc15d0495d, type: 2}
     - target: {fileID: 401018, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 401018, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6921797
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 401018, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7217252
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 401018, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -87.606
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 401124, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2844,19 +2844,51 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401012, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.222
+      value: 0.2845
       objectReference: {fileID: 0}
     - target: {fileID: 401012, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.0473
       objectReference: {fileID: 0}
     - target: {fileID: 401012, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1756
+      value: 0.1322
       objectReference: {fileID: 0}
     - target: {fileID: 400602, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.623
+      objectReference: {fileID: 0}
+    - target: {fileID: 401018, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401252, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 400196, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.873
+      objectReference: {fileID: 0}
+    - target: {fileID: 400508, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400508, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400508, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400508, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400508, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81b84e97164722d42b1e5deccf23d1aa, type: 3}
@@ -2887,8 +2919,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.9411765, g: 0.7202959, b: 0.32525948, a: 1}
-  m_Intensity: 1.25
-  m_Range: 10
+  m_Intensity: 0.79
+  m_Range: 8.81
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2909,6 +2941,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -3173,6 +3219,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -3293,7 +3353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1253122754
 Transform:
   m_ObjectHideFlags: 0
@@ -3356,6 +3416,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -3470,6 +3544,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -3882,6 +3970,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0

@@ -633,6 +633,13 @@ ModelImporter:
     101250: Wire_Ends
     101252: Wood_Crate
     101254: Gauge6
+    101256: Chassis_Right_Wall
+    101258: Chassis_Right_Wall_01
+    101260: Right_Add_Panel
+    101262: Right_Panel
+    101264: Right_Wall_Turret_Chamber
+    101266: Right_Wheel_Cover
+    101268: Rivit_Plate9 1
     400000: Ammo_Box1
     400002: Ammo_Box2
     400004: Ammo_Box3
@@ -1261,6 +1268,13 @@ ModelImporter:
     401250: Wire_Ends
     401252: Wood_Crate
     401254: Gauge6
+    401256: Chassis_Right_Wall
+    401258: Chassis_Right_Wall_01
+    401260: Right_Add_Panel
+    401262: Right_Panel
+    401264: Right_Wall_Turret_Chamber
+    401266: Right_Wheel_Cover
+    401268: Rivit_Plate9 1
     2300000: Ammo_Box1
     2300002: Ammo_Box2
     2300004: Ammo_Box3
@@ -1766,6 +1780,12 @@ ModelImporter:
     2301004: Wire_End_03
     2301006: Wire_End_04
     2301008: Gauge6
+    2301010: Chassis_Right_Wall_01
+    2301012: Right_Add_Panel
+    2301014: Right_Panel
+    2301016: Right_Wall_Turret_Chamber
+    2301018: Right_Wheel_Cover
+    2301020: Rivit_Plate9 1
     3300000: Ammo_Box1
     3300002: Ammo_Box2
     3300004: Ammo_Box3
@@ -2271,6 +2291,12 @@ ModelImporter:
     3301004: Wire_End_03
     3301006: Wire_End_04
     3301008: Gauge6
+    3301010: Chassis_Right_Wall_01
+    3301012: Right_Add_Panel
+    3301014: Right_Panel
+    3301016: Right_Wall_Turret_Chamber
+    3301018: Right_Wheel_Cover
+    3301020: Rivit_Plate9 1
     4300000: Metal_Plate_Turret_Base
     4300002: Turret_Support
     4300004: Turret_Base
@@ -2776,6 +2802,12 @@ ModelImporter:
     4301004: Chassis_Light_Block
     4301006: Turret_Cover_Plate
     4301008: Gauge6
+    4301010: Right_Panel
+    4301012: Chassis_Right_Wall_01
+    4301014: Rivit_Plate9
+    4301016: Right_Wall_Turret_Chamber
+    4301018: Right_Add_Panel
+    4301020: Right_Wheel_Cover
     9500000: //RootNode
   materials:
     importMaterials: 1
