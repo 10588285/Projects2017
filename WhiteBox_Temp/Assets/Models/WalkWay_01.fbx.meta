@@ -11,12 +11,14 @@ ModelImporter:
     100006: Corner
     100008: Length
     100010: WalkWay_Pieces
+    100012: Env_Set__01
     400000: pCube1
     400002: pCube2
     400004: //RootNode
     400006: Corner
     400008: Length
     400010: WalkWay_Pieces
+    400012: Env_Set__01
     2300000: pCube1
     2300002: pCube2
     2300004: Corner

@@ -9,10 +9,12 @@ ModelImporter:
     100002: Sign
     100004: //RootNode
     100006: Stop_Sign
+    100008: Env_Set__02
     400000: Post
     400002: Sign
     400004: //RootNode
     400006: Stop_Sign
+    400008: Env_Set__02
     2300000: Post
     2300002: Sign
     3300000: Post

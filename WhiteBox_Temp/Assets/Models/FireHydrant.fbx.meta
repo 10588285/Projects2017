@@ -7,8 +7,10 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Fire_Hydrant
     100002: //RootNode
+    100004: Env_Set__02
     400000: Fire_Hydrant
     400002: //RootNode
+    400004: Env_Set__02
     2300000: Fire_Hydrant
     3300000: Fire_Hydrant
     4300000: Fire_Hydrant

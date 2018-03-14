@@ -7,8 +7,10 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Blockade
+    100004: Env_Set__01
     400000: //RootNode
     400002: Blockade
+    400004: Env_Set__01
     2300000: //RootNode
     2300002: Blockade
     3300000: //RootNode

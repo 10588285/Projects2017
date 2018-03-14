@@ -11,12 +11,14 @@ ModelImporter:
     100006: Mound
     100008: Rubble_Pile_01
     100010: //RootNode
+    100012: Env_Set__01
     400000: Brick_Bundle_02
     400002: BrickBundle_01
     400004: Bricks
     400006: Mound
     400008: Rubble_Pile_01
     400010: //RootNode
+    400012: Env_Set__01
     2300000: Brick_Bundle_02
     2300002: BrickBundle_01
     2300004: Bricks

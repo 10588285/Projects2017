@@ -6,11 +6,18 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Env_Set__02
+    100004: Tank_Trap
     400000: //RootNode
+    400002: Env_Set__02
+    400004: Tank_Trap
     2300000: //RootNode
+    2300002: Tank_Trap
     3300000: //RootNode
+    3300002: Tank_Trap
     4300000: TankTrap
     4300002: New_Tank_Trap
+    4300004: Tank_Trap
     9500000: //RootNode
   materials:
     importMaterials: 1

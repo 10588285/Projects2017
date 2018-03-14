@@ -20,6 +20,7 @@ ModelImporter:
     100024: Picket_09
     100026: Post_01
     100028: Post_02
+    100030: Env_Set__01
     400000: Cross_Beam_01
     400002: Cross_Beam_02
     400004: Fence
@@ -35,6 +36,7 @@ ModelImporter:
     400024: Picket_09
     400026: Post_01
     400028: Post_02
+    400030: Env_Set__01
     2300000: Cross_Beam_01
     2300002: Cross_Beam_02
     2300004: Picket_01

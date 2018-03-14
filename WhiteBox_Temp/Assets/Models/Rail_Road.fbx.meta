@@ -9,10 +9,12 @@ ModelImporter:
     100002: //RootNode
     100004: RailRoad
     100006: Rails
+    100008: Env_Set__02
     400000: Boards
     400002: //RootNode
     400004: RailRoad
     400006: Rails
+    400008: Env_Set__02
     2300000: Boards
     2300002: Rails
     3300000: Boards

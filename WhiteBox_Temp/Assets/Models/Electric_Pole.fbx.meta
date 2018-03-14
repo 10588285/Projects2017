@@ -7,8 +7,10 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Electric_Pole
     100002: //RootNode
+    100004: Env_Set__02
     400000: Electric_Pole
     400002: //RootNode
+    400004: Env_Set__02
     2300000: Electric_Pole
     3300000: Electric_Pole
     4300000: Electric_Pole
