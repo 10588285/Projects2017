@@ -44,7 +44,7 @@ MonoBehaviour:
     m_Settings:
       intensity: 1
       radius: 0.3
-      sampleCount: 10
+      sampleCount: 16
       downsampling: 1
       forceForwardCompatibility: 0
       ambientOnly: 0
@@ -69,13 +69,13 @@ MonoBehaviour:
       screenEdgeMask:
         intensity: 0.03
   depthOfField:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      focusDistance: 10
-      aperture: 7.2
-      focalLength: 32
+      focusDistance: 13.1
+      aperture: 3.02
+      focalLength: 49.84
       useCameraFov: 0
-      kernelSize: 0
+      kernelSize: 2
   motionBlur:
     m_Enabled: 0
     m_Settings:
@@ -134,13 +134,13 @@ MonoBehaviour:
       colorWheels:
         mode: 0
         log:
-          slope: {r: 1, g: 0.98778605, b: 0.9358475, a: 0}
-          power: {r: 0.84243345, g: 0.83671135, b: 1, a: 0}
-          offset: {r: 0.8772433, g: 1, b: 0.94685763, a: 0}
+          slope: {r: 0.97453266, g: 1, b: 1, a: 0.055427253}
+          power: {r: 0.9693922, g: 1, b: 0.9828139, a: -0.12933025}
+          offset: {r: 1, g: 0.9891651, b: 0.9336993, a: 0}
         linear:
-          lift: {r: 1, g: 0.86182827, b: 0.81535596, a: 0}
-          gamma: {r: 0.8183279, g: 0.8867419, b: 1, a: 0}
-          gain: {r: 0.7909499, g: 0.86234915, b: 1, a: 0}
+          lift: {r: 0.36969757, g: 0.7318097, b: 1, a: 0}
+          gamma: {r: 1, g: 0.64655036, b: 0.5977812, a: 0}
+          gain: {r: 1, g: 0.97469664, b: 0.9217359, a: 0}
       curves:
         master:
           curve:
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.35
+      intensity: 0.223
   grain:
     m_Enabled: 0
     m_Settings:
@@ -296,11 +296,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       mode: 0
-      color: {r: 0, g: 0, b: 0, a: 1}
+      color: {r: 0, g: 0.10015214, b: 0.5808823, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.304
-      smoothness: 0.118
-      roundness: 1
+      intensity: 0.529
+      smoothness: 0.108
+      roundness: 0.822
       mask: {fileID: 0}
       opacity: 1
       rounded: 0
