@@ -6,10 +6,19 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Rails1
+    100004: Road
     400000: //RootNode
+    400002: Rails1
+    400004: Road
     2300000: //RootNode
+    2300002: Rails1
+    2300004: Road
     3300000: //RootNode
+    3300002: Rails1
+    3300004: Road
     4300000: Road
+    4300002: Rails1
   materials:
     importMaterials: 1
     materialName: 0
