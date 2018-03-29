@@ -1,0 +1,1959 @@
+fileFormatVersion: 2
+guid: 9c475cc61a1e6584ebd16f30cac92274
+timeCreated: 1521143193
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: AD_Button
+    100002: AD_Button 1
+    100004: AD_Button_Case
+    100006: AD_EX_Drawer
+    100008: AD_EX_Drawer1
+    100010: AD_Frame
+    100012: AD_Handle
+    100014: AD_Handle1
+    100016: AD_Handles
+    100018: AD_Rubber_Barrier
+    100020: AD_Shell
+    100022: Ammo_Case
+    100024: Ammo_Clamp_Bottom_01
+    100026: Ammo_Clamp_Bottom_02
+    100028: Ammo_Clamp_Latch
+    100030: Ammo_Clamp_Latch 1
+    100032: Ammo_Clamp_Latch 2
+    100034: Ammo_Clamp_Latch 3
+    100036: Ammo_Clamp_Latch 4
+    100038: Ammo_Clamp_Latch 5
+    100040: Ammo_Clamp_Latch 6
+    100042: Ammo_Clamp_Latch 7
+    100044: Ammo_Clamp_Middle_01
+    100046: Ammo_Clamp_Middle_02
+    100048: Ammo_Clamp_Middle_03
+    100050: Ammo_Clamp_Middle_04
+    100052: Ammo_Clamp_Ring
+    100054: Ammo_Clamp_Ring 1
+    100056: Ammo_Clamp_Ring 2
+    100058: Ammo_Clamp_Ring 3
+    100060: Ammo_Clamp_Ring 4
+    100062: Ammo_Clamp_Ring 5
+    100064: Ammo_Clamp_Ring 6
+    100066: Ammo_Clamp_Ring 7
+    100068: Ammo_Clamp_Stand
+    100070: Ammo_Clamp_Stand 1
+    100072: Ammo_Clamp_Stand 2
+    100074: Ammo_Clamp_Stand 3
+    100076: Ammo_Clamp_Stand 4
+    100078: Ammo_Clamp_Stand 5
+    100080: Ammo_Clamp_Stand 6
+    100082: Ammo_Clamp_Stand 7
+    100084: Ammo_Clamp_Top_01
+    100086: Ammo_Clamp_Top_02
+    100088: Ammo_Clamps
+    100090: Ammo_Dispenser
+    100092: Ammo_Storrage_Frame
+    100094: Another_pipe_Turret
+    100096: Back_Plate
+    100098: Back_Wall
+    100100: Back_Wall_TUrret_Chamber
+    100102: Base
+    100104: Basket_Beam
+    100106: Basket_Beam3
+    100108: Basket_Beam4
+    100110: Basket_Beam5
+    100112: Basket_Beams
+    100114: Basket_Floor
+    100116: Basket_Floor_Guards
+    100118: Basket_Grating_Connection
+    100120: Basket_Handles
+    100122: Basket_Rivets
+    100124: Basket_Scafold
+    100126: Basket_Weld_Piece
+    100128: Basket_Weld_Piece1
+    100130: Basket_Weld_Piece2
+    100132: Basket_Weld_Piece3
+    100134: Beam_Guards
+    100136: Bottom_Hull
+    100138: Bottom_Panel
+    100140: Bottom_Ring
+    100142: Breach
+    100144: Breach_Block
+    100146: Breach_Lever
+    100148: Breach_Lever_Bolt
+    100150: Bulb
+    100152: Cabinet_Body
+    100154: Cabinet_Door_03
+    100156: Cabinet_Door_04
+    100158: Cabinet_Shelf
+    100160: Cabinet_Shelf1
+    100162: Canister
+    100164: Canister_Body
+    100166: Canister_Knob
+    100168: Cannon
+    100170: Cannon_Brace
+    100172: Cannon_Piston
+    100174: Casing
+    100176: Casing 1
+    100178: Chair
+    100180: Chair_Frame
+    100182: Chair_Padding
+    100184: Chassis
+    100186: Chassis_Accessories
+    100188: Chassis_Chamber_Divider
+    100190: Chassis_Cieling_Light
+    100192: Chassis_Controls
+    100194: Chassis_Gage_Panel
+    100196: Chassis_Hull
+    100198: Chassis_Left_Wall
+    100200: Chassis_Left_Wall_01
+    100202: Chassis_Light_Block
+    100204: Chassis_Light_Switch
+    100206: Chassis_Outter_Wall
+    100208: Chassis_Right_Wall
+    100210: Chassis_Right_Wall_01
+    100212: Chassis_Small_Power_Box
+    100214: Chassis_Wires_Pipes
+    100216: Cieling_Turret_Chamber
+    100218: Circular_Plate
+    100220: Circular_Plate1
+    100222: Clamp
+    100224: Clamp1
+    100226: Cradle_Plate
+    100228: Crate_Box
+    100230: Crate_Lid
+    100232: Cupola_Handle
+    100234: Cupola_Handle 1
+    100236: Cupola_Rim
+    100238: Cupola_Rim 1
+    100240: Dispenser_Wires
+    100242: Divider_Ammo1
+    100244: Divider_Ammo2
+    100246: Divider_Ammo3
+    100248: Divider_Ammo4
+    100250: Divider_Ammo5
+    100252: Divider_Ammo6
+    100254: Door
+    100256: Door 1
+    100258: Driver_Chords
+    100260: Driver_Hatch
+    100262: Driver_Hatch_Pad
+    100264: Driver_Levers
+    100266: Driving_Chamber
+    100268: Driving_Couplings
+    100270: Driving_Floor_Plate
+    100272: Driving_Pivot
+    100274: Driving_Shaft
+    100276: Elevation_Control
+    100278: Elevation_GearBox
+    100280: Elevation_Pipe
+    100282: Elevation_Ring_1_12
+    100284: elv_Gear1
+    100286: Engine_Brake_Case
+    100288: Exterior_Handle
+    100290: Fan_Blades
+    100292: Fan_Blades 1
+    100294: Fan_Case
+    100296: Fan_Case 1
+    100298: Fan_Grate
+    100300: Fan_Grate 1
+    100302: FE_Body
+    100304: FE_Handle
+    100306: Female_Tread1
+    100308: Female_Tread2
+    100310: Female_Tread3
+    100312: Fire_Extinguisher
+    100314: Firing_Mechanism
+    100316: Floor
+    100318: Floor_Pipe
+    100320: FM_Casing
+    100322: FM_Chord
+    100324: FM_Clutch
+    100326: FM_Handle
+    100328: FM_Pin
+    100330: FM_Piston
+    100332: FM_Shaft
+    100334: Front_Armor
+    100336: gage_Wire
+    100338: Gages
+    100340: Gages 1
+    100342: Gas_Can1
+    100344: gas_Cap_02
+    100346: GasCap_01
+    100348: Gauge1
+    100350: Gauge2
+    100352: Gauge3
+    100354: Gauge4
+    100356: Gauge5
+    100358: Gauge6
+    100360: Gauge_Spindle
+    100362: Gauge_Spindle 1
+    100364: Gauge_Spindle 2
+    100366: Gauge_Spindle 3
+    100368: Gauge_Spindle 4
+    100370: Gause_Dial
+    100372: Gause_Dial 1
+    100374: Gause_Dial 2
+    100376: Gause_Dial 3
+    100378: Gause_Dial 4
+    100380: Gause_Dial 5
+    100382: Gause_Glass
+    100384: Gause_Glass 1
+    100386: Gause_Glass 2
+    100388: Gause_Glass 3
+    100390: Gause_Glass 4
+    100392: Gause_Glass 5
+    100394: Glass
+    100396: Glass 1
+    100398: Gun_Craddle
+    100400: Gun_Cradle_Pivot
+    100402: Gun_Sheild
+    100404: Hand_Wheel_Elevation
+    100406: Hand_Wheel_Elevation1
+    100408: Handle
+    100410: Hatch
+    100412: Hatch_Visor
+    100414: Hull_Frame
+    100416: Inner_Barrel
+    100418: Inner_Transmission
+    100420: Left_Add_Panel
+    100422: Left_Barrel
+    100424: Left_Barrel_Stand
+    100426: Left_Barrel_Stand1
+    100428: Left_Clutch
+    100430: Left_Cupola
+    100432: Left_Driver_Lever
+    100434: Left_Driving_Chorde
+    100436: Left_Driving_Lever
+    100438: Left_Exterior_Barrel
+    100440: Left_Panel
+    100442: Left_Vent
+    100444: Left_Wall_Turret_Chamber
+    100446: Left_Wheel_Cover
+    100448: Light_Blocks
+    100450: Light_Switch
+    100452: Light_Switch 1
+    100454: Light_Switch 2
+    100456: Light_Switch_Casing
+    100458: Light_Switch_Casing 1
+    100460: Light_Switch_Casing 2
+    100462: Lower_Piston
+    100464: Lower_Piston_Shaft
+    100466: Male_Tread
+    100468: Male_Tread1
+    100470: Male_Tread2
+    100472: Metal_Caging
+    100474: Metal_Plate
+    100476: Metal_Plate1
+    100478: Metal_Plate3
+    100480: Metal_Plate4
+    100482: Metal_Plate_Turret_Base
+    100484: outlet
+    100486: outlet1
+    100488: Outter_Accesories
+    100490: Outter_Barrel
+    100492: Outter_Gun_Shield
+    100494: Outter_Hatch
+    100496: Outter_Top_Plate
+    100498: Outter_Turret
+    100500: Parking_Brake
+    100502: Parking_Brake_Clutch
+    100504: pCube110
+    100506: pCube111
+    100508: Pipe_Line_01
+    100510: Pipeline_02
+    100512: Pipeline_03
+    100514: Pistol_Hatch
+    100516: Pistol_Hole
+    100518: Piston
+    100520: Piston 1
+    100522: Piston 2
+    100524: Piston_Knob
+    100526: Piston_Knob 1
+    100528: Piston_Pivot
+    100530: Piston_Pivot 1
+    100532: Piston_Shaft
+    100534: Piston_Shaft 1
+    100536: Pivot_Engine_Brake
+    100538: Plates
+    100540: Right_Add_Panel
+    100542: Right_Barrel
+    100544: Right_Barrel_Stand
+    100546: Right_Barrel_Stand1
+    100548: Right_Clutch
+    100550: Right_Cupola
+    100552: Right_Driver_Lever
+    100554: Right_Driving_Chord
+    100556: Right_Driving_Lever
+    100558: Right_Exterior_Barrel
+    100560: Right_Panel
+    100562: Right_Vent
+    100564: Right_Wall_Turret_Chamber
+    100566: Right_Wheel_Cover
+    100568: Ring_Gear
+    100570: Ring_Gear_Guard
+    100572: Ring_Shiled
+    100574: Rivit_Plate5
+    100576: Rivit_Plate6
+    100578: Rivit_Plate7
+    100580: Rivit_Plate7 1
+    100582: Rivit_Plate8
+    100584: Rivit_Plate8 1
+    100586: Rivit_Plate9
+    100588: Rivit_Plate9 1
+    100590: Shaft_Case_Back
+    100592: Shaft_Case_Front
+    100594: Small_Light
+    100596: Small_Rivet_Plate10
+    100598: Small_Rivet_Plate10 1
+    100600: Small_Rivet_Plate11
+    100602: Small_Rivet_Plate12
+    100604: Small_Rivet_Plate15
+    100606: Small_Rivet_Plate2
+    100608: Small_Rivet_Plate2 1
+    100610: Small_Rivet_Plate3
+    100612: Small_Rivet_Plate4
+    100614: Small_Rivet_Plate5
+    100616: Small_Rivet_Plate6
+    100618: Small_Rivet_Plate7
+    100620: Small_Rivet_Plate8
+    100622: //RootNode
+    100624: Top_Panel_Turret
+    100626: Trans_Case
+    100628: Trans_Fluid_Cap
+    100630: Trans_Fluid_Pipe
+    100632: Trans_Gear_Back
+    100634: Trans_Gear_Casing
+    100636: Trans_Gear_Front
+    100638: Trans_Gear_MIddle
+    100640: Trans_Hatch
+    100642: Trans_Oil_Cap
+    100644: Trans_Oil_Pipe
+    100646: Transmission
+    100648: Traverse_Control
+    100650: Traverse_Gear
+    100652: Traverse_Gear_Box
+    100654: Traverse_Pipe
+    100656: Traverse_Pipe_Connection
+    100658: Traverse_Shelf
+    100660: Tread_Grp
+    100662: Turret
+    100664: Turret_Accessories
+    100666: Turret_Ammo_Storage
+    100668: Turret_Back_Wall
+    100670: Turret_Base
+    100672: Turret_Basket
+    100674: Turret_Bottom_Shell
+    100676: Turret_Cabinet
+    100678: Turret_Chamber
+    100680: Turret_Chamber_Hull
+    100682: Turret_Chamber_Pipes
+    100684: Turret_Cieling_Light
+    100686: Turret_Controls
+    100688: Turret_Cover_Plate
+    100690: Turret_Fan_01
+    100692: Turret_Fan_02
+    100694: Turret_Fan_Switch
+    100696: Turret_Front_Right_Wall
+    100698: Turret_Front_Wall
+    100700: Turret_Gage_Panel
+    100702: Turret_Hatch
+    100704: Turret_Hatch_Door
+    100706: Turret_Hatch_Door_Handle
+    100708: Turret_Hatch_Pad
+    100710: Turret_Hull
+    100712: Turret_Left_Panel_01
+    100714: Turret_Left_Panel_02
+    100716: Turret_Left_Wall
+    100718: Turret_Light_Switch
+    100720: Turret_Pipe
+    100722: Turret_Pistol_Port
+    100724: Turret_Port_Bolted_Frame
+    100726: Turret_Right_Panel_01
+    100728: Turret_Right_Panel_02
+    100730: Turret_Right_Wall
+    100732: Turret_Ring
+    100734: Turret_Ring 1
+    100736: Turret_Roof
+    100738: Turret_Small_Power_Box
+    100740: Turret_Support
+    100742: Turret_Support 1
+    100744: Turret_View_Port
+    100746: Turret_WIre_Clamps
+    100748: Turret_Wires_Pipes
+    100750: Upper_Piston
+    100752: Upper_Piston_Shaft
+    100754: Upper_Turret
+    100756: Visor_Handle
+    100758: Wire
+    100760: wire
+    100762: wire1
+    100764: Wire5
+    100766: Wire6
+    100768: Wire7
+    100770: WIre8
+    100772: Wire8
+    100774: WIre9
+    100776: Wire9
+    100778: Wire_Clamp
+    100780: Wire_Clamp1
+    100782: Wire_Clamp10
+    100784: Wire_Clamp2
+    100786: Wire_Clamp3
+    100788: Wire_Clamp4
+    100790: Wire_Clamp5
+    100792: Wire_Clamp6
+    100794: Wire_Clamp7
+    100796: Wire_Clamp8
+    100798: Wire_Clamp9
+    100800: Wire_End
+    100802: Wire_End1
+    100804: Wire_End10
+    100806: Wire_End11
+    100808: Wire_End12
+    100810: Wire_End13
+    100812: Wire_End14
+    100814: Wire_End15
+    100816: Wire_End16
+    100818: Wire_End17
+    100820: Wire_End18
+    100822: Wire_End19
+    100824: Wire_End2
+    100826: Wire_End20
+    100828: Wire_End21
+    100830: Wire_End3
+    100832: Wire_End4
+    100834: Wire_End5
+    100836: Wire_End6
+    100838: Wire_End7
+    100840: Wire_End8
+    100842: Wire_End9
+    100844: Wire_End_01
+    100846: Wire_End_02
+    100848: Wire_End_03
+    100850: Wire_End_04
+    100852: Wire_Ends
+    100854: Wood_Crate
+    400000: AD_Button
+    400002: AD_Button 1
+    400004: AD_Button_Case
+    400006: AD_EX_Drawer
+    400008: AD_EX_Drawer1
+    400010: AD_Frame
+    400012: AD_Handle
+    400014: AD_Handle1
+    400016: AD_Handles
+    400018: AD_Rubber_Barrier
+    400020: AD_Shell
+    400022: Ammo_Case
+    400024: Ammo_Clamp_Bottom_01
+    400026: Ammo_Clamp_Bottom_02
+    400028: Ammo_Clamp_Latch
+    400030: Ammo_Clamp_Latch 1
+    400032: Ammo_Clamp_Latch 2
+    400034: Ammo_Clamp_Latch 3
+    400036: Ammo_Clamp_Latch 4
+    400038: Ammo_Clamp_Latch 5
+    400040: Ammo_Clamp_Latch 6
+    400042: Ammo_Clamp_Latch 7
+    400044: Ammo_Clamp_Middle_01
+    400046: Ammo_Clamp_Middle_02
+    400048: Ammo_Clamp_Middle_03
+    400050: Ammo_Clamp_Middle_04
+    400052: Ammo_Clamp_Ring
+    400054: Ammo_Clamp_Ring 1
+    400056: Ammo_Clamp_Ring 2
+    400058: Ammo_Clamp_Ring 3
+    400060: Ammo_Clamp_Ring 4
+    400062: Ammo_Clamp_Ring 5
+    400064: Ammo_Clamp_Ring 6
+    400066: Ammo_Clamp_Ring 7
+    400068: Ammo_Clamp_Stand
+    400070: Ammo_Clamp_Stand 1
+    400072: Ammo_Clamp_Stand 2
+    400074: Ammo_Clamp_Stand 3
+    400076: Ammo_Clamp_Stand 4
+    400078: Ammo_Clamp_Stand 5
+    400080: Ammo_Clamp_Stand 6
+    400082: Ammo_Clamp_Stand 7
+    400084: Ammo_Clamp_Top_01
+    400086: Ammo_Clamp_Top_02
+    400088: Ammo_Clamps
+    400090: Ammo_Dispenser
+    400092: Ammo_Storrage_Frame
+    400094: Another_pipe_Turret
+    400096: Back_Plate
+    400098: Back_Wall
+    400100: Back_Wall_TUrret_Chamber
+    400102: Base
+    400104: Basket_Beam
+    400106: Basket_Beam3
+    400108: Basket_Beam4
+    400110: Basket_Beam5
+    400112: Basket_Beams
+    400114: Basket_Floor
+    400116: Basket_Floor_Guards
+    400118: Basket_Grating_Connection
+    400120: Basket_Handles
+    400122: Basket_Rivets
+    400124: Basket_Scafold
+    400126: Basket_Weld_Piece
+    400128: Basket_Weld_Piece1
+    400130: Basket_Weld_Piece2
+    400132: Basket_Weld_Piece3
+    400134: Beam_Guards
+    400136: Bottom_Hull
+    400138: Bottom_Panel
+    400140: Bottom_Ring
+    400142: Breach
+    400144: Breach_Block
+    400146: Breach_Lever
+    400148: Breach_Lever_Bolt
+    400150: Bulb
+    400152: Cabinet_Body
+    400154: Cabinet_Door_03
+    400156: Cabinet_Door_04
+    400158: Cabinet_Shelf
+    400160: Cabinet_Shelf1
+    400162: Canister
+    400164: Canister_Body
+    400166: Canister_Knob
+    400168: Cannon
+    400170: Cannon_Brace
+    400172: Cannon_Piston
+    400174: Casing
+    400176: Casing 1
+    400178: Chair
+    400180: Chair_Frame
+    400182: Chair_Padding
+    400184: Chassis
+    400186: Chassis_Accessories
+    400188: Chassis_Chamber_Divider
+    400190: Chassis_Cieling_Light
+    400192: Chassis_Controls
+    400194: Chassis_Gage_Panel
+    400196: Chassis_Hull
+    400198: Chassis_Left_Wall
+    400200: Chassis_Left_Wall_01
+    400202: Chassis_Light_Block
+    400204: Chassis_Light_Switch
+    400206: Chassis_Outter_Wall
+    400208: Chassis_Right_Wall
+    400210: Chassis_Right_Wall_01
+    400212: Chassis_Small_Power_Box
+    400214: Chassis_Wires_Pipes
+    400216: Cieling_Turret_Chamber
+    400218: Circular_Plate
+    400220: Circular_Plate1
+    400222: Clamp
+    400224: Clamp1
+    400226: Cradle_Plate
+    400228: Crate_Box
+    400230: Crate_Lid
+    400232: Cupola_Handle
+    400234: Cupola_Handle 1
+    400236: Cupola_Rim
+    400238: Cupola_Rim 1
+    400240: Dispenser_Wires
+    400242: Divider_Ammo1
+    400244: Divider_Ammo2
+    400246: Divider_Ammo3
+    400248: Divider_Ammo4
+    400250: Divider_Ammo5
+    400252: Divider_Ammo6
+    400254: Door
+    400256: Door 1
+    400258: Driver_Chords
+    400260: Driver_Hatch
+    400262: Driver_Hatch_Pad
+    400264: Driver_Levers
+    400266: Driving_Chamber
+    400268: Driving_Couplings
+    400270: Driving_Floor_Plate
+    400272: Driving_Pivot
+    400274: Driving_Shaft
+    400276: Elevation_Control
+    400278: Elevation_GearBox
+    400280: Elevation_Pipe
+    400282: Elevation_Ring_1_12
+    400284: elv_Gear1
+    400286: Engine_Brake_Case
+    400288: Exterior_Handle
+    400290: Fan_Blades
+    400292: Fan_Blades 1
+    400294: Fan_Case
+    400296: Fan_Case 1
+    400298: Fan_Grate
+    400300: Fan_Grate 1
+    400302: FE_Body
+    400304: FE_Handle
+    400306: Female_Tread1
+    400308: Female_Tread2
+    400310: Female_Tread3
+    400312: Fire_Extinguisher
+    400314: Firing_Mechanism
+    400316: Floor
+    400318: Floor_Pipe
+    400320: FM_Casing
+    400322: FM_Chord
+    400324: FM_Clutch
+    400326: FM_Handle
+    400328: FM_Pin
+    400330: FM_Piston
+    400332: FM_Shaft
+    400334: Front_Armor
+    400336: gage_Wire
+    400338: Gages
+    400340: Gages 1
+    400342: Gas_Can1
+    400344: gas_Cap_02
+    400346: GasCap_01
+    400348: Gauge1
+    400350: Gauge2
+    400352: Gauge3
+    400354: Gauge4
+    400356: Gauge5
+    400358: Gauge6
+    400360: Gauge_Spindle
+    400362: Gauge_Spindle 1
+    400364: Gauge_Spindle 2
+    400366: Gauge_Spindle 3
+    400368: Gauge_Spindle 4
+    400370: Gause_Dial
+    400372: Gause_Dial 1
+    400374: Gause_Dial 2
+    400376: Gause_Dial 3
+    400378: Gause_Dial 4
+    400380: Gause_Dial 5
+    400382: Gause_Glass
+    400384: Gause_Glass 1
+    400386: Gause_Glass 2
+    400388: Gause_Glass 3
+    400390: Gause_Glass 4
+    400392: Gause_Glass 5
+    400394: Glass
+    400396: Glass 1
+    400398: Gun_Craddle
+    400400: Gun_Cradle_Pivot
+    400402: Gun_Sheild
+    400404: Hand_Wheel_Elevation
+    400406: Hand_Wheel_Elevation1
+    400408: Handle
+    400410: Hatch
+    400412: Hatch_Visor
+    400414: Hull_Frame
+    400416: Inner_Barrel
+    400418: Inner_Transmission
+    400420: Left_Add_Panel
+    400422: Left_Barrel
+    400424: Left_Barrel_Stand
+    400426: Left_Barrel_Stand1
+    400428: Left_Clutch
+    400430: Left_Cupola
+    400432: Left_Driver_Lever
+    400434: Left_Driving_Chorde
+    400436: Left_Driving_Lever
+    400438: Left_Exterior_Barrel
+    400440: Left_Panel
+    400442: Left_Vent
+    400444: Left_Wall_Turret_Chamber
+    400446: Left_Wheel_Cover
+    400448: Light_Blocks
+    400450: Light_Switch
+    400452: Light_Switch 1
+    400454: Light_Switch 2
+    400456: Light_Switch_Casing
+    400458: Light_Switch_Casing 1
+    400460: Light_Switch_Casing 2
+    400462: Lower_Piston
+    400464: Lower_Piston_Shaft
+    400466: Male_Tread
+    400468: Male_Tread1
+    400470: Male_Tread2
+    400472: Metal_Caging
+    400474: Metal_Plate
+    400476: Metal_Plate1
+    400478: Metal_Plate3
+    400480: Metal_Plate4
+    400482: Metal_Plate_Turret_Base
+    400484: outlet
+    400486: outlet1
+    400488: Outter_Accesories
+    400490: Outter_Barrel
+    400492: Outter_Gun_Shield
+    400494: Outter_Hatch
+    400496: Outter_Top_Plate
+    400498: Outter_Turret
+    400500: Parking_Brake
+    400502: Parking_Brake_Clutch
+    400504: pCube110
+    400506: pCube111
+    400508: Pipe_Line_01
+    400510: Pipeline_02
+    400512: Pipeline_03
+    400514: Pistol_Hatch
+    400516: Pistol_Hole
+    400518: Piston
+    400520: Piston 1
+    400522: Piston 2
+    400524: Piston_Knob
+    400526: Piston_Knob 1
+    400528: Piston_Pivot
+    400530: Piston_Pivot 1
+    400532: Piston_Shaft
+    400534: Piston_Shaft 1
+    400536: Pivot_Engine_Brake
+    400538: Plates
+    400540: Right_Add_Panel
+    400542: Right_Barrel
+    400544: Right_Barrel_Stand
+    400546: Right_Barrel_Stand1
+    400548: Right_Clutch
+    400550: Right_Cupola
+    400552: Right_Driver_Lever
+    400554: Right_Driving_Chord
+    400556: Right_Driving_Lever
+    400558: Right_Exterior_Barrel
+    400560: Right_Panel
+    400562: Right_Vent
+    400564: Right_Wall_Turret_Chamber
+    400566: Right_Wheel_Cover
+    400568: Ring_Gear
+    400570: Ring_Gear_Guard
+    400572: Ring_Shiled
+    400574: Rivit_Plate5
+    400576: Rivit_Plate6
+    400578: Rivit_Plate7
+    400580: Rivit_Plate7 1
+    400582: Rivit_Plate8
+    400584: Rivit_Plate8 1
+    400586: Rivit_Plate9
+    400588: Rivit_Plate9 1
+    400590: Shaft_Case_Back
+    400592: Shaft_Case_Front
+    400594: Small_Light
+    400596: Small_Rivet_Plate10
+    400598: Small_Rivet_Plate10 1
+    400600: Small_Rivet_Plate11
+    400602: Small_Rivet_Plate12
+    400604: Small_Rivet_Plate15
+    400606: Small_Rivet_Plate2
+    400608: Small_Rivet_Plate2 1
+    400610: Small_Rivet_Plate3
+    400612: Small_Rivet_Plate4
+    400614: Small_Rivet_Plate5
+    400616: Small_Rivet_Plate6
+    400618: Small_Rivet_Plate7
+    400620: Small_Rivet_Plate8
+    400622: //RootNode
+    400624: Top_Panel_Turret
+    400626: Trans_Case
+    400628: Trans_Fluid_Cap
+    400630: Trans_Fluid_Pipe
+    400632: Trans_Gear_Back
+    400634: Trans_Gear_Casing
+    400636: Trans_Gear_Front
+    400638: Trans_Gear_MIddle
+    400640: Trans_Hatch
+    400642: Trans_Oil_Cap
+    400644: Trans_Oil_Pipe
+    400646: Transmission
+    400648: Traverse_Control
+    400650: Traverse_Gear
+    400652: Traverse_Gear_Box
+    400654: Traverse_Pipe
+    400656: Traverse_Pipe_Connection
+    400658: Traverse_Shelf
+    400660: Tread_Grp
+    400662: Turret
+    400664: Turret_Accessories
+    400666: Turret_Ammo_Storage
+    400668: Turret_Back_Wall
+    400670: Turret_Base
+    400672: Turret_Basket
+    400674: Turret_Bottom_Shell
+    400676: Turret_Cabinet
+    400678: Turret_Chamber
+    400680: Turret_Chamber_Hull
+    400682: Turret_Chamber_Pipes
+    400684: Turret_Cieling_Light
+    400686: Turret_Controls
+    400688: Turret_Cover_Plate
+    400690: Turret_Fan_01
+    400692: Turret_Fan_02
+    400694: Turret_Fan_Switch
+    400696: Turret_Front_Right_Wall
+    400698: Turret_Front_Wall
+    400700: Turret_Gage_Panel
+    400702: Turret_Hatch
+    400704: Turret_Hatch_Door
+    400706: Turret_Hatch_Door_Handle
+    400708: Turret_Hatch_Pad
+    400710: Turret_Hull
+    400712: Turret_Left_Panel_01
+    400714: Turret_Left_Panel_02
+    400716: Turret_Left_Wall
+    400718: Turret_Light_Switch
+    400720: Turret_Pipe
+    400722: Turret_Pistol_Port
+    400724: Turret_Port_Bolted_Frame
+    400726: Turret_Right_Panel_01
+    400728: Turret_Right_Panel_02
+    400730: Turret_Right_Wall
+    400732: Turret_Ring
+    400734: Turret_Ring 1
+    400736: Turret_Roof
+    400738: Turret_Small_Power_Box
+    400740: Turret_Support
+    400742: Turret_Support 1
+    400744: Turret_View_Port
+    400746: Turret_WIre_Clamps
+    400748: Turret_Wires_Pipes
+    400750: Upper_Piston
+    400752: Upper_Piston_Shaft
+    400754: Upper_Turret
+    400756: Visor_Handle
+    400758: Wire
+    400760: wire
+    400762: wire1
+    400764: Wire5
+    400766: Wire6
+    400768: Wire7
+    400770: WIre8
+    400772: Wire8
+    400774: WIre9
+    400776: Wire9
+    400778: Wire_Clamp
+    400780: Wire_Clamp1
+    400782: Wire_Clamp10
+    400784: Wire_Clamp2
+    400786: Wire_Clamp3
+    400788: Wire_Clamp4
+    400790: Wire_Clamp5
+    400792: Wire_Clamp6
+    400794: Wire_Clamp7
+    400796: Wire_Clamp8
+    400798: Wire_Clamp9
+    400800: Wire_End
+    400802: Wire_End1
+    400804: Wire_End10
+    400806: Wire_End11
+    400808: Wire_End12
+    400810: Wire_End13
+    400812: Wire_End14
+    400814: Wire_End15
+    400816: Wire_End16
+    400818: Wire_End17
+    400820: Wire_End18
+    400822: Wire_End19
+    400824: Wire_End2
+    400826: Wire_End20
+    400828: Wire_End21
+    400830: Wire_End3
+    400832: Wire_End4
+    400834: Wire_End5
+    400836: Wire_End6
+    400838: Wire_End7
+    400840: Wire_End8
+    400842: Wire_End9
+    400844: Wire_End_01
+    400846: Wire_End_02
+    400848: Wire_End_03
+    400850: Wire_End_04
+    400852: Wire_Ends
+    400854: Wood_Crate
+    2300000: AD_Button 1
+    2300002: AD_Button_Case
+    2300004: AD_EX_Drawer
+    2300006: AD_EX_Drawer1
+    2300008: AD_Frame
+    2300010: AD_Handle
+    2300012: AD_Handle1
+    2300014: AD_Handles
+    2300016: AD_Rubber_Barrier
+    2300018: AD_Shell
+    2300020: Ammo_Clamp_Latch
+    2300022: Ammo_Clamp_Latch 1
+    2300024: Ammo_Clamp_Latch 2
+    2300026: Ammo_Clamp_Latch 3
+    2300028: Ammo_Clamp_Latch 4
+    2300030: Ammo_Clamp_Latch 5
+    2300032: Ammo_Clamp_Latch 6
+    2300034: Ammo_Clamp_Latch 7
+    2300036: Ammo_Clamp_Ring
+    2300038: Ammo_Clamp_Ring 1
+    2300040: Ammo_Clamp_Ring 2
+    2300042: Ammo_Clamp_Ring 3
+    2300044: Ammo_Clamp_Ring 4
+    2300046: Ammo_Clamp_Ring 5
+    2300048: Ammo_Clamp_Ring 6
+    2300050: Ammo_Clamp_Ring 7
+    2300052: Ammo_Clamp_Stand
+    2300054: Ammo_Clamp_Stand 1
+    2300056: Ammo_Clamp_Stand 2
+    2300058: Ammo_Clamp_Stand 3
+    2300060: Ammo_Clamp_Stand 4
+    2300062: Ammo_Clamp_Stand 5
+    2300064: Ammo_Clamp_Stand 6
+    2300066: Ammo_Clamp_Stand 7
+    2300068: Ammo_Storrage_Frame
+    2300070: Back_Plate
+    2300072: Back_Wall
+    2300074: Back_Wall_TUrret_Chamber
+    2300076: Base
+    2300078: Basket_Beam
+    2300080: Basket_Beam3
+    2300082: Basket_Beam4
+    2300084: Basket_Beam5
+    2300086: Basket_Floor
+    2300088: Basket_Floor_Guards
+    2300090: Basket_Grating_Connection
+    2300092: Basket_Handles
+    2300094: Basket_Scafold
+    2300096: Basket_Weld_Piece
+    2300098: Basket_Weld_Piece1
+    2300100: Basket_Weld_Piece2
+    2300102: Basket_Weld_Piece3
+    2300104: Bottom_Hull
+    2300106: Bottom_Panel
+    2300108: Bottom_Ring
+    2300110: Breach
+    2300112: Breach_Block
+    2300114: Breach_Lever
+    2300116: Breach_Lever_Bolt
+    2300118: Bulb
+    2300120: Cabinet_Body
+    2300122: Cabinet_Door_03
+    2300124: Cabinet_Door_04
+    2300126: Cabinet_Shelf
+    2300128: Cabinet_Shelf1
+    2300130: Canister_Body
+    2300132: Canister_Knob
+    2300134: Cannon_Brace
+    2300136: Casing
+    2300138: Casing 1
+    2300140: Chair_Frame
+    2300142: Chair_Padding
+    2300144: Chassis_Chamber_Divider
+    2300146: Chassis_Gage_Panel
+    2300148: Chassis_Left_Wall_01
+    2300150: Chassis_Light_Block
+    2300152: Chassis_Right_Wall_01
+    2300154: Chassis_Small_Power_Box
+    2300156: Cieling_Turret_Chamber
+    2300158: Circular_Plate
+    2300160: Circular_Plate1
+    2300162: Clamp
+    2300164: Clamp1
+    2300166: Cradle_Plate
+    2300168: Crate_Box
+    2300170: Crate_Lid
+    2300172: Cupola_Handle
+    2300174: Cupola_Handle 1
+    2300176: Cupola_Rim
+    2300178: Cupola_Rim 1
+    2300180: Dispenser_Wires
+    2300182: Divider_Ammo1
+    2300184: Divider_Ammo2
+    2300186: Divider_Ammo3
+    2300188: Divider_Ammo4
+    2300190: Divider_Ammo5
+    2300192: Divider_Ammo6
+    2300194: Door
+    2300196: Door 1
+    2300198: Driver_Hatch_Pad
+    2300200: Driving_Couplings
+    2300202: Driving_Floor_Plate
+    2300204: Driving_Pivot
+    2300206: Elevation_GearBox
+    2300208: Elevation_Pipe
+    2300210: Elevation_Ring_1_12
+    2300212: elv_Gear1
+    2300214: Engine_Brake_Case
+    2300216: Exterior_Handle
+    2300218: Fan_Blades
+    2300220: Fan_Blades 1
+    2300222: Fan_Case
+    2300224: Fan_Case 1
+    2300226: Fan_Grate
+    2300228: Fan_Grate 1
+    2300230: FE_Body
+    2300232: FE_Handle
+    2300234: Female_Tread1
+    2300236: Female_Tread2
+    2300238: Female_Tread3
+    2300240: Floor_Pipe
+    2300242: FM_Casing
+    2300244: FM_Chord
+    2300246: FM_Clutch
+    2300248: FM_Handle
+    2300250: FM_Pin
+    2300252: FM_Piston
+    2300254: FM_Shaft
+    2300256: Front_Armor
+    2300258: gage_Wire
+    2300260: Gas_Can1
+    2300262: gas_Cap_02
+    2300264: GasCap_01
+    2300266: Gauge1
+    2300268: Gauge2
+    2300270: Gauge3
+    2300272: Gauge4
+    2300274: Gauge5
+    2300276: Gauge6
+    2300278: Gauge_Spindle
+    2300280: Gauge_Spindle 1
+    2300282: Gauge_Spindle 2
+    2300284: Gauge_Spindle 3
+    2300286: Gauge_Spindle 4
+    2300288: Gause_Dial
+    2300290: Gause_Dial 1
+    2300292: Gause_Dial 2
+    2300294: Gause_Dial 3
+    2300296: Gause_Dial 4
+    2300298: Gause_Dial 5
+    2300300: Gause_Glass
+    2300302: Gause_Glass 1
+    2300304: Gause_Glass 2
+    2300306: Gause_Glass 3
+    2300308: Gause_Glass 4
+    2300310: Gause_Glass 5
+    2300312: Glass
+    2300314: Glass 1
+    2300316: Gun_Cradle_Pivot
+    2300318: Gun_Sheild
+    2300320: Hand_Wheel_Elevation
+    2300322: Hand_Wheel_Elevation1
+    2300324: Handle
+    2300326: Hatch
+    2300328: Hatch_Visor
+    2300330: Hull_Frame
+    2300332: Inner_Barrel
+    2300334: Left_Add_Panel
+    2300336: Left_Barrel
+    2300338: Left_Barrel_Stand
+    2300340: Left_Barrel_Stand1
+    2300342: Left_Clutch
+    2300344: Left_Driving_Chorde
+    2300346: Left_Driving_Lever
+    2300348: Left_Panel
+    2300350: Left_Vent
+    2300352: Left_Wall_Turret_Chamber
+    2300354: Left_Wheel_Cover
+    2300356: Light_Blocks
+    2300358: Light_Switch
+    2300360: Light_Switch 1
+    2300362: Light_Switch 2
+    2300364: Light_Switch_Casing
+    2300366: Light_Switch_Casing 1
+    2300368: Light_Switch_Casing 2
+    2300370: Lower_Piston
+    2300372: Lower_Piston_Shaft
+    2300374: Male_Tread
+    2300376: Male_Tread1
+    2300378: Male_Tread2
+    2300380: Metal_Caging
+    2300382: Metal_Plate
+    2300384: Metal_Plate1
+    2300386: Metal_Plate3
+    2300388: Metal_Plate4
+    2300390: Metal_Plate_Turret_Base
+    2300392: outlet
+    2300394: outlet1
+    2300396: Outter_Barrel
+    2300398: Outter_Gun_Shield
+    2300400: Outter_Hatch
+    2300402: Outter_Top_Plate
+    2300404: Parking_Brake
+    2300406: Parking_Brake_Clutch
+    2300408: pCube110
+    2300410: pCube111
+    2300412: Pipe_Line_01
+    2300414: Pipeline_02
+    2300416: Pipeline_03
+    2300418: Pistol_Hatch
+    2300420: Pistol_Hole
+    2300422: Piston 1
+    2300424: Piston 2
+    2300426: Piston_Knob
+    2300428: Piston_Knob 1
+    2300430: Piston_Pivot
+    2300432: Piston_Pivot 1
+    2300434: Piston_Shaft
+    2300436: Piston_Shaft 1
+    2300438: Pivot_Engine_Brake
+    2300440: Right_Add_Panel
+    2300442: Right_Barrel
+    2300444: Right_Barrel_Stand
+    2300446: Right_Barrel_Stand1
+    2300448: Right_Clutch
+    2300450: Right_Driving_Chord
+    2300452: Right_Driving_Lever
+    2300454: Right_Panel
+    2300456: Right_Vent
+    2300458: Right_Wall_Turret_Chamber
+    2300460: Right_Wheel_Cover
+    2300462: Ring_Gear
+    2300464: Ring_Gear_Guard
+    2300466: Ring_Shiled
+    2300468: Rivit_Plate5
+    2300470: Rivit_Plate6
+    2300472: Rivit_Plate7
+    2300474: Rivit_Plate7 1
+    2300476: Rivit_Plate8
+    2300478: Rivit_Plate8 1
+    2300480: Rivit_Plate9
+    2300482: Rivit_Plate9 1
+    2300484: Shaft_Case_Back
+    2300486: Shaft_Case_Front
+    2300488: Small_Rivet_Plate10
+    2300490: Small_Rivet_Plate10 1
+    2300492: Small_Rivet_Plate11
+    2300494: Small_Rivet_Plate12
+    2300496: Small_Rivet_Plate15
+    2300498: Small_Rivet_Plate2
+    2300500: Small_Rivet_Plate2 1
+    2300502: Small_Rivet_Plate3
+    2300504: Small_Rivet_Plate4
+    2300506: Small_Rivet_Plate5
+    2300508: Small_Rivet_Plate6
+    2300510: Small_Rivet_Plate7
+    2300512: Small_Rivet_Plate8
+    2300514: Top_Panel_Turret
+    2300516: Trans_Case
+    2300518: Trans_Fluid_Cap
+    2300520: Trans_Fluid_Pipe
+    2300522: Trans_Gear_Back
+    2300524: Trans_Gear_Casing
+    2300526: Trans_Gear_Front
+    2300528: Trans_Gear_MIddle
+    2300530: Trans_Hatch
+    2300532: Trans_Oil_Cap
+    2300534: Trans_Oil_Pipe
+    2300536: Traverse_Gear
+    2300538: Traverse_Gear_Box
+    2300540: Traverse_Pipe
+    2300542: Traverse_Pipe_Connection
+    2300544: Traverse_Shelf
+    2300546: Turret_Base
+    2300548: Turret_Cover_Plate
+    2300550: Turret_Front_Right_Wall
+    2300552: Turret_Gage_Panel
+    2300554: Turret_Hatch_Door
+    2300556: Turret_Hatch_Door_Handle
+    2300558: Turret_Hatch_Pad
+    2300560: Turret_Left_Panel_01
+    2300562: Turret_Left_Panel_02
+    2300564: Turret_Pipe
+    2300566: Turret_Port_Bolted_Frame
+    2300568: Turret_Right_Panel_01
+    2300570: Turret_Right_Panel_02
+    2300572: Turret_Ring 1
+    2300574: Turret_Small_Power_Box
+    2300576: Turret_Support 1
+    2300578: Turret_View_Port
+    2300580: Upper_Piston
+    2300582: Upper_Piston_Shaft
+    2300584: Visor_Handle
+    2300586: Wire
+    2300588: wire
+    2300590: wire1
+    2300592: Wire5
+    2300594: Wire6
+    2300596: Wire7
+    2300598: WIre8
+    2300600: Wire8
+    2300602: WIre9
+    2300604: Wire9
+    2300606: Wire_Clamp
+    2300608: Wire_Clamp1
+    2300610: Wire_Clamp10
+    2300612: Wire_Clamp2
+    2300614: Wire_Clamp3
+    2300616: Wire_Clamp4
+    2300618: Wire_Clamp5
+    2300620: Wire_Clamp6
+    2300622: Wire_Clamp7
+    2300624: Wire_Clamp8
+    2300626: Wire_Clamp9
+    2300628: Wire_End
+    2300630: Wire_End1
+    2300632: Wire_End10
+    2300634: Wire_End11
+    2300636: Wire_End12
+    2300638: Wire_End13
+    2300640: Wire_End14
+    2300642: Wire_End15
+    2300644: Wire_End16
+    2300646: Wire_End17
+    2300648: Wire_End18
+    2300650: Wire_End19
+    2300652: Wire_End2
+    2300654: Wire_End20
+    2300656: Wire_End21
+    2300658: Wire_End3
+    2300660: Wire_End4
+    2300662: Wire_End5
+    2300664: Wire_End6
+    2300666: Wire_End7
+    2300668: Wire_End8
+    2300670: Wire_End9
+    2300672: Wire_End_01
+    2300674: Wire_End_02
+    2300676: Wire_End_03
+    2300678: Wire_End_04
+    3300000: AD_Button 1
+    3300002: AD_Button_Case
+    3300004: AD_EX_Drawer
+    3300006: AD_EX_Drawer1
+    3300008: AD_Frame
+    3300010: AD_Handle
+    3300012: AD_Handle1
+    3300014: AD_Handles
+    3300016: AD_Rubber_Barrier
+    3300018: AD_Shell
+    3300020: Ammo_Clamp_Latch
+    3300022: Ammo_Clamp_Latch 1
+    3300024: Ammo_Clamp_Latch 2
+    3300026: Ammo_Clamp_Latch 3
+    3300028: Ammo_Clamp_Latch 4
+    3300030: Ammo_Clamp_Latch 5
+    3300032: Ammo_Clamp_Latch 6
+    3300034: Ammo_Clamp_Latch 7
+    3300036: Ammo_Clamp_Ring
+    3300038: Ammo_Clamp_Ring 1
+    3300040: Ammo_Clamp_Ring 2
+    3300042: Ammo_Clamp_Ring 3
+    3300044: Ammo_Clamp_Ring 4
+    3300046: Ammo_Clamp_Ring 5
+    3300048: Ammo_Clamp_Ring 6
+    3300050: Ammo_Clamp_Ring 7
+    3300052: Ammo_Clamp_Stand
+    3300054: Ammo_Clamp_Stand 1
+    3300056: Ammo_Clamp_Stand 2
+    3300058: Ammo_Clamp_Stand 3
+    3300060: Ammo_Clamp_Stand 4
+    3300062: Ammo_Clamp_Stand 5
+    3300064: Ammo_Clamp_Stand 6
+    3300066: Ammo_Clamp_Stand 7
+    3300068: Ammo_Storrage_Frame
+    3300070: Back_Plate
+    3300072: Back_Wall
+    3300074: Back_Wall_TUrret_Chamber
+    3300076: Base
+    3300078: Basket_Beam
+    3300080: Basket_Beam3
+    3300082: Basket_Beam4
+    3300084: Basket_Beam5
+    3300086: Basket_Floor
+    3300088: Basket_Floor_Guards
+    3300090: Basket_Grating_Connection
+    3300092: Basket_Handles
+    3300094: Basket_Scafold
+    3300096: Basket_Weld_Piece
+    3300098: Basket_Weld_Piece1
+    3300100: Basket_Weld_Piece2
+    3300102: Basket_Weld_Piece3
+    3300104: Bottom_Hull
+    3300106: Bottom_Panel
+    3300108: Bottom_Ring
+    3300110: Breach
+    3300112: Breach_Block
+    3300114: Breach_Lever
+    3300116: Breach_Lever_Bolt
+    3300118: Bulb
+    3300120: Cabinet_Body
+    3300122: Cabinet_Door_03
+    3300124: Cabinet_Door_04
+    3300126: Cabinet_Shelf
+    3300128: Cabinet_Shelf1
+    3300130: Canister_Body
+    3300132: Canister_Knob
+    3300134: Cannon_Brace
+    3300136: Casing
+    3300138: Casing 1
+    3300140: Chair_Frame
+    3300142: Chair_Padding
+    3300144: Chassis_Chamber_Divider
+    3300146: Chassis_Gage_Panel
+    3300148: Chassis_Left_Wall_01
+    3300150: Chassis_Light_Block
+    3300152: Chassis_Right_Wall_01
+    3300154: Chassis_Small_Power_Box
+    3300156: Cieling_Turret_Chamber
+    3300158: Circular_Plate
+    3300160: Circular_Plate1
+    3300162: Clamp
+    3300164: Clamp1
+    3300166: Cradle_Plate
+    3300168: Crate_Box
+    3300170: Crate_Lid
+    3300172: Cupola_Handle
+    3300174: Cupola_Handle 1
+    3300176: Cupola_Rim
+    3300178: Cupola_Rim 1
+    3300180: Dispenser_Wires
+    3300182: Divider_Ammo1
+    3300184: Divider_Ammo2
+    3300186: Divider_Ammo3
+    3300188: Divider_Ammo4
+    3300190: Divider_Ammo5
+    3300192: Divider_Ammo6
+    3300194: Door
+    3300196: Door 1
+    3300198: Driver_Hatch_Pad
+    3300200: Driving_Couplings
+    3300202: Driving_Floor_Plate
+    3300204: Driving_Pivot
+    3300206: Elevation_GearBox
+    3300208: Elevation_Pipe
+    3300210: Elevation_Ring_1_12
+    3300212: elv_Gear1
+    3300214: Engine_Brake_Case
+    3300216: Exterior_Handle
+    3300218: Fan_Blades
+    3300220: Fan_Blades 1
+    3300222: Fan_Case
+    3300224: Fan_Case 1
+    3300226: Fan_Grate
+    3300228: Fan_Grate 1
+    3300230: FE_Body
+    3300232: FE_Handle
+    3300234: Female_Tread1
+    3300236: Female_Tread2
+    3300238: Female_Tread3
+    3300240: Floor_Pipe
+    3300242: FM_Casing
+    3300244: FM_Chord
+    3300246: FM_Clutch
+    3300248: FM_Handle
+    3300250: FM_Pin
+    3300252: FM_Piston
+    3300254: FM_Shaft
+    3300256: Front_Armor
+    3300258: gage_Wire
+    3300260: Gas_Can1
+    3300262: gas_Cap_02
+    3300264: GasCap_01
+    3300266: Gauge1
+    3300268: Gauge2
+    3300270: Gauge3
+    3300272: Gauge4
+    3300274: Gauge5
+    3300276: Gauge6
+    3300278: Gauge_Spindle
+    3300280: Gauge_Spindle 1
+    3300282: Gauge_Spindle 2
+    3300284: Gauge_Spindle 3
+    3300286: Gauge_Spindle 4
+    3300288: Gause_Dial
+    3300290: Gause_Dial 1
+    3300292: Gause_Dial 2
+    3300294: Gause_Dial 3
+    3300296: Gause_Dial 4
+    3300298: Gause_Dial 5
+    3300300: Gause_Glass
+    3300302: Gause_Glass 1
+    3300304: Gause_Glass 2
+    3300306: Gause_Glass 3
+    3300308: Gause_Glass 4
+    3300310: Gause_Glass 5
+    3300312: Glass
+    3300314: Glass 1
+    3300316: Gun_Cradle_Pivot
+    3300318: Gun_Sheild
+    3300320: Hand_Wheel_Elevation
+    3300322: Hand_Wheel_Elevation1
+    3300324: Handle
+    3300326: Hatch
+    3300328: Hatch_Visor
+    3300330: Hull_Frame
+    3300332: Inner_Barrel
+    3300334: Left_Add_Panel
+    3300336: Left_Barrel
+    3300338: Left_Barrel_Stand
+    3300340: Left_Barrel_Stand1
+    3300342: Left_Clutch
+    3300344: Left_Driving_Chorde
+    3300346: Left_Driving_Lever
+    3300348: Left_Panel
+    3300350: Left_Vent
+    3300352: Left_Wall_Turret_Chamber
+    3300354: Left_Wheel_Cover
+    3300356: Light_Blocks
+    3300358: Light_Switch
+    3300360: Light_Switch 1
+    3300362: Light_Switch 2
+    3300364: Light_Switch_Casing
+    3300366: Light_Switch_Casing 1
+    3300368: Light_Switch_Casing 2
+    3300370: Lower_Piston
+    3300372: Lower_Piston_Shaft
+    3300374: Male_Tread
+    3300376: Male_Tread1
+    3300378: Male_Tread2
+    3300380: Metal_Caging
+    3300382: Metal_Plate
+    3300384: Metal_Plate1
+    3300386: Metal_Plate3
+    3300388: Metal_Plate4
+    3300390: Metal_Plate_Turret_Base
+    3300392: outlet
+    3300394: outlet1
+    3300396: Outter_Barrel
+    3300398: Outter_Gun_Shield
+    3300400: Outter_Hatch
+    3300402: Outter_Top_Plate
+    3300404: Parking_Brake
+    3300406: Parking_Brake_Clutch
+    3300408: pCube110
+    3300410: pCube111
+    3300412: Pipe_Line_01
+    3300414: Pipeline_02
+    3300416: Pipeline_03
+    3300418: Pistol_Hatch
+    3300420: Pistol_Hole
+    3300422: Piston 1
+    3300424: Piston 2
+    3300426: Piston_Knob
+    3300428: Piston_Knob 1
+    3300430: Piston_Pivot
+    3300432: Piston_Pivot 1
+    3300434: Piston_Shaft
+    3300436: Piston_Shaft 1
+    3300438: Pivot_Engine_Brake
+    3300440: Right_Add_Panel
+    3300442: Right_Barrel
+    3300444: Right_Barrel_Stand
+    3300446: Right_Barrel_Stand1
+    3300448: Right_Clutch
+    3300450: Right_Driving_Chord
+    3300452: Right_Driving_Lever
+    3300454: Right_Panel
+    3300456: Right_Vent
+    3300458: Right_Wall_Turret_Chamber
+    3300460: Right_Wheel_Cover
+    3300462: Ring_Gear
+    3300464: Ring_Gear_Guard
+    3300466: Ring_Shiled
+    3300468: Rivit_Plate5
+    3300470: Rivit_Plate6
+    3300472: Rivit_Plate7
+    3300474: Rivit_Plate7 1
+    3300476: Rivit_Plate8
+    3300478: Rivit_Plate8 1
+    3300480: Rivit_Plate9
+    3300482: Rivit_Plate9 1
+    3300484: Shaft_Case_Back
+    3300486: Shaft_Case_Front
+    3300488: Small_Rivet_Plate10
+    3300490: Small_Rivet_Plate10 1
+    3300492: Small_Rivet_Plate11
+    3300494: Small_Rivet_Plate12
+    3300496: Small_Rivet_Plate15
+    3300498: Small_Rivet_Plate2
+    3300500: Small_Rivet_Plate2 1
+    3300502: Small_Rivet_Plate3
+    3300504: Small_Rivet_Plate4
+    3300506: Small_Rivet_Plate5
+    3300508: Small_Rivet_Plate6
+    3300510: Small_Rivet_Plate7
+    3300512: Small_Rivet_Plate8
+    3300514: Top_Panel_Turret
+    3300516: Trans_Case
+    3300518: Trans_Fluid_Cap
+    3300520: Trans_Fluid_Pipe
+    3300522: Trans_Gear_Back
+    3300524: Trans_Gear_Casing
+    3300526: Trans_Gear_Front
+    3300528: Trans_Gear_MIddle
+    3300530: Trans_Hatch
+    3300532: Trans_Oil_Cap
+    3300534: Trans_Oil_Pipe
+    3300536: Traverse_Gear
+    3300538: Traverse_Gear_Box
+    3300540: Traverse_Pipe
+    3300542: Traverse_Pipe_Connection
+    3300544: Traverse_Shelf
+    3300546: Turret_Base
+    3300548: Turret_Cover_Plate
+    3300550: Turret_Front_Right_Wall
+    3300552: Turret_Gage_Panel
+    3300554: Turret_Hatch_Door
+    3300556: Turret_Hatch_Door_Handle
+    3300558: Turret_Hatch_Pad
+    3300560: Turret_Left_Panel_01
+    3300562: Turret_Left_Panel_02
+    3300564: Turret_Pipe
+    3300566: Turret_Port_Bolted_Frame
+    3300568: Turret_Right_Panel_01
+    3300570: Turret_Right_Panel_02
+    3300572: Turret_Ring 1
+    3300574: Turret_Small_Power_Box
+    3300576: Turret_Support 1
+    3300578: Turret_View_Port
+    3300580: Upper_Piston
+    3300582: Upper_Piston_Shaft
+    3300584: Visor_Handle
+    3300586: Wire
+    3300588: wire
+    3300590: wire1
+    3300592: Wire5
+    3300594: Wire6
+    3300596: Wire7
+    3300598: WIre8
+    3300600: Wire8
+    3300602: WIre9
+    3300604: Wire9
+    3300606: Wire_Clamp
+    3300608: Wire_Clamp1
+    3300610: Wire_Clamp10
+    3300612: Wire_Clamp2
+    3300614: Wire_Clamp3
+    3300616: Wire_Clamp4
+    3300618: Wire_Clamp5
+    3300620: Wire_Clamp6
+    3300622: Wire_Clamp7
+    3300624: Wire_Clamp8
+    3300626: Wire_Clamp9
+    3300628: Wire_End
+    3300630: Wire_End1
+    3300632: Wire_End10
+    3300634: Wire_End11
+    3300636: Wire_End12
+    3300638: Wire_End13
+    3300640: Wire_End14
+    3300642: Wire_End15
+    3300644: Wire_End16
+    3300646: Wire_End17
+    3300648: Wire_End18
+    3300650: Wire_End19
+    3300652: Wire_End2
+    3300654: Wire_End20
+    3300656: Wire_End21
+    3300658: Wire_End3
+    3300660: Wire_End4
+    3300662: Wire_End5
+    3300664: Wire_End6
+    3300666: Wire_End7
+    3300668: Wire_End8
+    3300670: Wire_End9
+    3300672: Wire_End_01
+    3300674: Wire_End_02
+    3300676: Wire_End_03
+    3300678: Wire_End_04
+    4300000: Outter_Gun_Shield
+    4300002: Ring_Shiled
+    4300004: Light_Blocks
+    4300006: Basket_Scafold
+    4300008: Basket_Floor
+    4300010: Basket_Handles
+    4300012: Basket_Floor_Guards
+    4300014: Basket_Grating_Connection
+    4300016: Basket_Weld_Piece
+    4300018: Basket_Weld_Piece1
+    4300020: Basket_Weld_Piece2
+    4300022: Basket_Weld_Piece3
+    4300024: Small_Rivet_Plate4
+    4300026: Small_Rivet_Plate3
+    4300028: Small_Rivet_Plate6
+    4300030: Small_Rivet_Plate7
+    4300032: Small_Rivet_Plate8
+    4300034: Small_Rivet_Plate5
+    4300036: Lower_Piston
+    4300038: Upper_Piston
+    4300040: Cannon_Brace
+    4300042: Elevation_Ring_1_12
+    4300044: Cradle_Plate
+    4300046: FM_Piston
+    4300048: Upper_Piston_Shaft
+    4300050: Breach_Block
+    4300052: Breach_Lever
+    4300054: Breach_Lever_Bolt
+    4300056: Inner_Barrel
+    4300058: Outter_Barrel
+    4300060: FM_Shaft
+    4300062: Breach
+    4300064: Lower_Piston_Shaft
+    4300066: Gun_Sheild
+    4300068: Turret_Front_Right_Wall
+    4300070: Gun_Cradle_Pivot
+    4300072: Turret_Port_Bolted_Frame
+    4300074: Turret_View_Port
+    4300076: Rivit_Plate7
+    4300078: Rivit_Plate8
+    4300080: Turret_Left_Panel_01
+    4300082: Turret_Left_Panel_02
+    4300084: Small_Rivet_Plate10
+    4300086: Small_Rivet_Plate2
+    4300088: Small_Rivet_Plate15
+    4300090: Rivit_Plate7
+    4300092: Rivit_Plate8
+    4300094: Turret_Right_Panel_01
+    4300096: Turret_Right_Panel_02
+    4300098: Small_Rivet_Plate10
+    4300100: Small_Rivet_Plate2
+    4300102: Traverse_Shelf
+    4300104: Turret_Ring
+    4300106: Ring_Gear_Guard
+    4300108: Metal_Caging
+    4300110: Metal_Plate3
+    4300112: Rivit_Plate6
+    4300114: Rivit_Plate5
+    4300116: Small_Rivet_Plate11
+    4300118: Small_Rivet_Plate12
+    4300120: Basket_Beam
+    4300122: Basket_Beam3
+    4300124: Basket_Beam4
+    4300126: Basket_Beam5
+    4300128: Turret_Small_Power_Box
+    4300130: Door
+    4300132: Cupola_Rim
+    4300134: Cupola_Handle
+    4300136: Top_Panel_Turret
+    4300138: Door
+    4300140: Cupola_Rim
+    4300142: Cupola_Handle
+    4300144: Back_Wall
+    4300146: Metal_Plate
+    4300148: Circular_Plate
+    4300150: Circular_Plate1
+    4300152: Metal_Plate1
+    4300154: FM_Clutch
+    4300156: FM_Casing
+    4300158: pCube110
+    4300160: FM_Handle
+    4300162: FM_Pin
+    4300164: pCube111
+    4300166: FM_Chord
+    4300168: Elevation_GearBox
+    4300170: elv_Gear1
+    4300172: Elevation_Pipe
+    4300174: Hand_Wheel_Elevation
+    4300176: Hand_Wheel_Elevation1
+    4300178: Traverse_Gear
+    4300180: Traverse_Pipe
+    4300182: Traverse_Pipe_Connection
+    4300184: Traverse_Gear_Box
+    4300186: Turret_Hatch_Door_Handle
+    4300188: Turret_Hatch_Pad
+    4300190: Turret_Hatch_Door
+    4300192: Light_Switch_Casing
+    4300194: Light_Switch
+    4300196: Light_Switch_Casing
+    4300198: Light_Switch
+    4300200: Fan_Blades
+    4300202: Fan_Case
+    4300204: Fan_Grate
+    4300206: AD_Frame
+    4300208: AD_Shell
+    4300210: AD_Rubber_Barrier
+    4300212: AD_Handles
+    4300214: AD_EX_Drawer
+    4300216: AD_Button_Case
+    4300218: AD_Button
+    4300220: AD_Handle
+    4300222: AD_Handle1
+    4300224: AD_EX_Drawer1
+    4300226: Wire
+    4300228: Wire8
+    4300230: Wire5
+    4300232: Wire6
+    4300234: Wire9
+    4300236: Wire7
+    4300238: outlet
+    4300240: wire1
+    4300242: Dispenser_Wires
+    4300244: wire
+    4300246: Turret_Pipe
+    4300248: Handle
+    4300250: Wire_End2
+    4300252: Wire_End1
+    4300254: Wire_End
+    4300256: Wire_End3
+    4300258: Wire_End4
+    4300260: Wire_End5
+    4300262: Wire_End6
+    4300264: Wire_End7
+    4300266: Wire_End8
+    4300268: Wire_End9
+    4300270: Wire_End10
+    4300272: Wire_End11
+    4300274: Wire_End12
+    4300276: Wire_End13
+    4300278: Wire_End14
+    4300280: Wire_End15
+    4300282: Wire_End16
+    4300284: Wire_End17
+    4300286: Wire_End18
+    4300288: Wire_End19
+    4300290: Wire_End20
+    4300292: Wire_End21
+    4300294: Bulb
+    4300296: Base
+    4300298: gage_Wire
+    4300300: Wire_Clamp
+    4300302: Wire_Clamp1
+    4300304: Wire_Clamp2
+    4300306: Wire_Clamp3
+    4300308: Wire_Clamp4
+    4300310: Wire_Clamp5
+    4300312: Wire_Clamp6
+    4300314: Wire_Clamp7
+    4300316: Wire_Clamp8
+    4300318: Pistol_Hole
+    4300320: Pistol_Hatch
+    4300322: Glass
+    4300324: Casing
+    4300326: Ammo_Clamp_Latch
+    4300328: Ammo_Clamp_Ring
+    4300330: Ammo_Clamp_Stand
+    4300332: Ammo_Clamp_Latch
+    4300334: Ammo_Clamp_Ring
+    4300336: Ammo_Clamp_Stand
+    4300338: Ammo_Clamp_Latch
+    4300340: Ammo_Clamp_Ring
+    4300342: Ammo_Clamp_Stand
+    4300344: Ammo_Clamp_Latch
+    4300346: Ammo_Clamp_Ring
+    4300348: Ammo_Clamp_Stand
+    4300350: Ammo_Clamp_Latch
+    4300352: Ammo_Clamp_Ring
+    4300354: Ammo_Clamp_Stand
+    4300356: Ammo_Clamp_Latch
+    4300358: Ammo_Clamp_Ring
+    4300360: Ammo_Clamp_Stand
+    4300362: Ammo_Clamp_Latch
+    4300364: Ammo_Clamp_Ring
+    4300366: Ammo_Clamp_Stand
+    4300368: Ammo_Clamp_Latch
+    4300370: Ammo_Clamp_Ring
+    4300372: Ammo_Clamp_Stand
+    4300374: Fan_Blades
+    4300376: Fan_Case
+    4300378: Fan_Grate
+    4300380: Cabinet_Body
+    4300382: Cabinet_Shelf
+    4300384: Cabinet_Door_03
+    4300386: Cabinet_Door_04
+    4300388: Cabinet_Shelf1
+    4300390: Gauge2
+    4300392: Gause_Glass
+    4300394: Gauge_Spindle
+    4300396: Gause_Dial
+    4300398: Gauge1
+    4300400: Gause_Glass
+    4300402: Gause_Dial
+    4300404: Turret_Gage_Panel
+    4300406: Gauge6
+    4300408: Gause_Glass
+    4300410: Gauge_Spindle
+    4300412: Gause_Dial
+    4300414: Ammo_Storrage_Frame
+    4300416: Divider_Ammo1
+    4300418: Divider_Ammo2
+    4300420: Divider_Ammo4
+    4300422: Divider_Ammo3
+    4300424: Divider_Ammo5
+    4300426: Divider_Ammo6
+    4300428: Clamp1
+    4300430: Clamp
+    4300432: Piston_Pivot
+    4300434: Piston
+    4300436: Piston_Knob
+    4300438: Piston_Shaft
+    4300440: Metal_Plate_Turret_Base
+    4300442: Turret_Support
+    4300444: Turret_Base
+    4300446: Back_Wall_TUrret_Chamber
+    4300448: Cieling_Turret_Chamber
+    4300450: Bottom_Hull
+    4300452: Bottom_Ring
+    4300454: Chassis_Chamber_Divider
+    4300456: Ring_Gear
+    4300458: GasCap_01
+    4300460: Pipe_Line_01
+    4300462: gas_Cap_02
+    4300464: Gas_Can1
+    4300466: Pipeline_02
+    4300468: Pipeline_03
+    4300470: Chassis_Small_Power_Box
+    4300472: WIre9
+    4300474: WIre8
+    4300476: Wire_End_01
+    4300478: outlet1
+    4300480: Wire_End_02
+    4300482: Wire_End_03
+    4300484: Wire_End_04
+    4300486: Wire_Clamp9
+    4300488: Wire_Clamp10
+    4300490: Canister_Knob
+    4300492: Canister_Body
+    4300494: Crate_Box
+    4300496: Crate_Lid
+    4300498: FE_Handle
+    4300500: FE_Body
+    4300502: Gauge5
+    4300504: Gause_Glass
+    4300506: Gauge_Spindle
+    4300508: Gause_Dial
+    4300510: Gauge4
+    4300512: Gause_Glass
+    4300514: Gauge_Spindle
+    4300516: Gause_Dial
+    4300518: Gauge3
+    4300520: Gause_Glass
+    4300522: Gauge_Spindle
+    4300524: Gause_Dial
+    4300526: Chassis_Gage_Panel
+    4300528: Glass
+    4300530: Casing
+    4300532: Visor_Handle
+    4300534: Hatch_Visor
+    4300536: Hatch
+    4300538: Driver_Hatch_Pad
+    4300540: Piston_Pivot
+    4300542: Piston
+    4300544: Piston_Knob
+    4300546: Piston_Shaft
+    4300548: Engine_Brake_Case
+    4300550: Trans_Oil_Pipe
+    4300552: Pivot_Engine_Brake
+    4300554: Trans_Gear_Front
+    4300556: Trans_Gear_Casing
+    4300558: Trans_Gear_MIddle
+    4300560: Trans_Gear_Back
+    4300562: Shaft_Case_Back
+    4300564: Shaft_Case_Front
+    4300566: Driving_Couplings
+    4300568: Trans_Hatch
+    4300570: Trans_Oil_Cap
+    4300572: Trans_Fluid_Cap
+    4300574: Trans_Fluid_Pipe
+    4300576: Parking_Brake
+    4300578: Parking_Brake_Clutch
+    4300580: Trans_Case
+    4300582: Driving_Pivot
+    4300584: Right_Driving_Chord
+    4300586: Left_Driving_Chorde
+    4300588: Right_Driving_Lever
+    4300590: Right_Clutch
+    4300592: Left_Driving_Lever
+    4300594: Left_Clutch
+    4300596: Light_Switch_Casing
+    4300598: Light_Switch
+    4300600: Left_Panel
+    4300602: Chassis_Left_Wall_01
+    4300604: Rivit_Plate9
+    4300606: Left_Wall_Turret_Chamber
+    4300608: Left_Add_Panel
+    4300610: Left_Wheel_Cover
+    4300612: Bottom_Panel
+    4300614: Floor_Pipe
+    4300616: Driving_Floor_Plate
+    4300618: Metal_Plate4
+    4300620: Hull_Frame
+    4300622: Right_Panel
+    4300624: Chassis_Right_Wall_01
+    4300626: Rivit_Plate9
+    4300628: Right_Wall_Turret_Chamber
+    4300630: Right_Add_Panel
+    4300632: Right_Wheel_Cover
+    4300634: Chair_Padding
+    4300636: Chair_Frame
+    4300638: Male_Tread
+    4300640: Female_Tread1
+    4300642: Male_Tread1
+    4300644: Female_Tread2
+    4300646: Male_Tread2
+    4300648: Female_Tread3
+    4300650: Outter_Top_Plate
+    4300652: Back_Plate
+    4300654: Outter_Hatch
+    4300656: Right_Barrel_Stand
+    4300658: Right_Barrel
+    4300660: Right_Barrel_Stand1
+    4300662: Right_Vent
+    4300664: Exterior_Handle
+    4300666: Left_Barrel_Stand
+    4300668: Left_Barrel
+    4300670: Left_Barrel_Stand1
+    4300672: Left_Vent
+    4300674: Chassis_Light_Block
+    4300676: Turret_Cover_Plate
+    4300678: Front_Armor
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

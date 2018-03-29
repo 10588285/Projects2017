@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour {
 
-	enum moveState {move, climb};
-	moveState state = moveState.move;
+	public enum moveState {move, climb};
+	public moveState state = moveState.move;
 	public float speed = 5.0f;
 	public float climbSpeed = 2.0f;
 	public float jumpSpeed = 8.0f;
