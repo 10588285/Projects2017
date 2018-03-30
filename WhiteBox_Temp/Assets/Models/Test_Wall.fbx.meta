@@ -48,6 +48,43 @@ ModelImporter:
     100080: pCube8 6
     100082: pPlane4 6
     100084: Window6
+    100086: bricking2 1
+    100088: Framing4 1
+    100090: Framing5
+    100092: Top_Segment
+    100094: Window7
+    100096: Window8
+    100098: Window9
+    100100: Window_Left_Panel
+    100102: Window_Left_Panel 1
+    100104: Window_Left_Panel 2
+    100106: Window_Left_Panel 3
+    100108: Window_Left_Panel 4
+    100110: Window_Left_Panel 5
+    100112: Window_Left_Panel 6
+    100114: Window_Left_Panel 7
+    100116: Window_Left_Panel 8
+    100118: Window_Left_Panel 9
+    100120: Window_Right_Panel
+    100122: Window_Right_Panel 1
+    100124: Window_Right_Panel 2
+    100126: Window_Right_Panel 3
+    100128: Window_Right_Panel 4
+    100130: Window_Right_Panel 5
+    100132: Window_Right_Panel 6
+    100134: Window_Right_Panel 7
+    100136: Window_Right_Panel 8
+    100138: Window_Right_Panel 9
+    100140: Windw_Frame
+    100142: Windw_Frame 1
+    100144: Windw_Frame 2
+    100146: Windw_Frame 3
+    100148: Windw_Frame 4
+    100150: Windw_Frame 5
+    100152: Windw_Frame 6
+    100154: Windw_Frame 7
+    100156: Windw_Frame 8
+    100158: Windw_Frame 9
     400000: bricking
     400002: Framing2
     400004: Framing3
@@ -91,6 +128,43 @@ ModelImporter:
     400080: pCube8 6
     400082: pPlane4 6
     400084: Window6
+    400086: bricking2 1
+    400088: Framing4 1
+    400090: Framing5
+    400092: Top_Segment
+    400094: Window7
+    400096: Window8
+    400098: Window9
+    400100: Window_Left_Panel
+    400102: Window_Left_Panel 1
+    400104: Window_Left_Panel 2
+    400106: Window_Left_Panel 3
+    400108: Window_Left_Panel 4
+    400110: Window_Left_Panel 5
+    400112: Window_Left_Panel 6
+    400114: Window_Left_Panel 7
+    400116: Window_Left_Panel 8
+    400118: Window_Left_Panel 9
+    400120: Window_Right_Panel
+    400122: Window_Right_Panel 1
+    400124: Window_Right_Panel 2
+    400126: Window_Right_Panel 3
+    400128: Window_Right_Panel 4
+    400130: Window_Right_Panel 5
+    400132: Window_Right_Panel 6
+    400134: Window_Right_Panel 7
+    400136: Window_Right_Panel 8
+    400138: Window_Right_Panel 9
+    400140: Windw_Frame
+    400142: Windw_Frame 1
+    400144: Windw_Frame 2
+    400146: Windw_Frame 3
+    400148: Windw_Frame 4
+    400150: Windw_Frame 5
+    400152: Windw_Frame 6
+    400154: Windw_Frame 7
+    400156: Windw_Frame 8
+    400158: Windw_Frame 9
     2300000: bricking
     2300002: Framing2
     2300004: Framing3
@@ -122,6 +196,39 @@ ModelImporter:
     2300056: pCube7 6
     2300058: pCube8 6
     2300060: pPlane4 6
+    2300062: bricking2 1
+    2300064: Framing4 1
+    2300066: Framing5
+    2300068: Window_Left_Panel
+    2300070: Window_Left_Panel 1
+    2300072: Window_Left_Panel 2
+    2300074: Window_Left_Panel 3
+    2300076: Window_Left_Panel 4
+    2300078: Window_Left_Panel 5
+    2300080: Window_Left_Panel 6
+    2300082: Window_Left_Panel 7
+    2300084: Window_Left_Panel 8
+    2300086: Window_Left_Panel 9
+    2300088: Window_Right_Panel
+    2300090: Window_Right_Panel 1
+    2300092: Window_Right_Panel 2
+    2300094: Window_Right_Panel 3
+    2300096: Window_Right_Panel 4
+    2300098: Window_Right_Panel 5
+    2300100: Window_Right_Panel 6
+    2300102: Window_Right_Panel 7
+    2300104: Window_Right_Panel 8
+    2300106: Window_Right_Panel 9
+    2300108: Windw_Frame
+    2300110: Windw_Frame 1
+    2300112: Windw_Frame 2
+    2300114: Windw_Frame 3
+    2300116: Windw_Frame 4
+    2300118: Windw_Frame 5
+    2300120: Windw_Frame 6
+    2300122: Windw_Frame 7
+    2300124: Windw_Frame 8
+    2300126: Windw_Frame 9
     3300000: bricking
     3300002: Framing2
     3300004: Framing3
@@ -153,6 +260,39 @@ ModelImporter:
     3300056: pCube7 6
     3300058: pCube8 6
     3300060: pPlane4 6
+    3300062: bricking2 1
+    3300064: Framing4 1
+    3300066: Framing5
+    3300068: Window_Left_Panel
+    3300070: Window_Left_Panel 1
+    3300072: Window_Left_Panel 2
+    3300074: Window_Left_Panel 3
+    3300076: Window_Left_Panel 4
+    3300078: Window_Left_Panel 5
+    3300080: Window_Left_Panel 6
+    3300082: Window_Left_Panel 7
+    3300084: Window_Left_Panel 8
+    3300086: Window_Left_Panel 9
+    3300088: Window_Right_Panel
+    3300090: Window_Right_Panel 1
+    3300092: Window_Right_Panel 2
+    3300094: Window_Right_Panel 3
+    3300096: Window_Right_Panel 4
+    3300098: Window_Right_Panel 5
+    3300100: Window_Right_Panel 6
+    3300102: Window_Right_Panel 7
+    3300104: Window_Right_Panel 8
+    3300106: Window_Right_Panel 9
+    3300108: Windw_Frame
+    3300110: Windw_Frame 1
+    3300112: Windw_Frame 2
+    3300114: Windw_Frame 3
+    3300116: Windw_Frame 4
+    3300118: Windw_Frame 5
+    3300120: Windw_Frame 6
+    3300122: Windw_Frame 7
+    3300124: Windw_Frame 8
+    3300126: Windw_Frame 9
     4300000: bricking
     4300002: Framing2
     4300004: Framing3
@@ -184,6 +324,39 @@ ModelImporter:
     4300056: pPlane4
     4300058: pCube7
     4300060: pCube8
+    4300062: Windw_Frame
+    4300064: Window_Right_Panel
+    4300066: Window_Left_Panel
+    4300068: Windw_Frame
+    4300070: Window_Right_Panel
+    4300072: Window_Left_Panel
+    4300074: Windw_Frame
+    4300076: Window_Right_Panel
+    4300078: Window_Left_Panel
+    4300080: Windw_Frame
+    4300082: Window_Right_Panel
+    4300084: Window_Left_Panel
+    4300086: Windw_Frame
+    4300088: Window_Right_Panel
+    4300090: Window_Left_Panel
+    4300092: Windw_Frame
+    4300094: Window_Right_Panel
+    4300096: Window_Left_Panel
+    4300098: Windw_Frame
+    4300100: Window_Right_Panel
+    4300102: Window_Left_Panel
+    4300104: bricking2
+    4300106: Framing4
+    4300108: Framing5
+    4300110: Windw_Frame
+    4300112: Window_Right_Panel
+    4300114: Window_Left_Panel
+    4300116: Windw_Frame
+    4300118: Window_Right_Panel
+    4300120: Window_Left_Panel
+    4300122: Windw_Frame
+    4300124: Window_Right_Panel
+    4300126: Window_Left_Panel
     9500000: //RootNode
   materials:
     importMaterials: 1
