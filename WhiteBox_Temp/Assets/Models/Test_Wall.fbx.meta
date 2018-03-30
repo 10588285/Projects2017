@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 548c81d22c061034db9e9a19d3d6704d
+timeCreated: 1522379518
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: bricking
+    100002: Framing2
+    100004: Framing3
+    100006: Left_Door
+    100008: pCube7
+    100010: pCube7 1
+    100012: pCube7 2
+    100014: pCube8
+    100016: pCube8 1
+    100018: pCube8 2
+    100020: polySurface15
+    100022: pPlane4
+    100024: pPlane4 1
+    100026: pPlane4 2
+    100028: Right_Door
+    100030: //RootNode
+    100032: Wall_02
+    100034: Window
+    100036: Window1
+    100038: Window2
+    100040: bricking2
+    100042: Corner_Segment
+    100044: Door_Segment
+    100046: Door_Segment 1
+    100048: Door_Segment1
+    100050: Framing4
+    100052: pCube7 3
+    100054: pCube7 4
+    100056: pCube7 5
+    100058: pCube8 3
+    100060: pCube8 4
+    100062: pCube8 5
+    100064: pPlane4 3
+    100066: pPlane4 4
+    100068: pPlane4 5
+    100070: Wall_Segment
+    100072: Window3
+    100074: Window4
+    100076: Window5
+    100078: pCube7 6
+    100080: pCube8 6
+    100082: pPlane4 6
+    100084: Window6
+    400000: bricking
+    400002: Framing2
+    400004: Framing3
+    400006: Left_Door
+    400008: pCube7
+    400010: pCube7 1
+    400012: pCube7 2
+    400014: pCube8
+    400016: pCube8 1
+    400018: pCube8 2
+    400020: polySurface15
+    400022: pPlane4
+    400024: pPlane4 1
+    400026: pPlane4 2
+    400028: Right_Door
+    400030: //RootNode
+    400032: Wall_02
+    400034: Window
+    400036: Window1
+    400038: Window2
+    400040: bricking2
+    400042: Corner_Segment
+    400044: Door_Segment
+    400046: Door_Segment 1
+    400048: Door_Segment1
+    400050: Framing4
+    400052: pCube7 3
+    400054: pCube7 4
+    400056: pCube7 5
+    400058: pCube8 3
+    400060: pCube8 4
+    400062: pCube8 5
+    400064: pPlane4 3
+    400066: pPlane4 4
+    400068: pPlane4 5
+    400070: Wall_Segment
+    400072: Window3
+    400074: Window4
+    400076: Window5
+    400078: pCube7 6
+    400080: pCube8 6
+    400082: pPlane4 6
+    400084: Window6
+    2300000: bricking
+    2300002: Framing2
+    2300004: Framing3
+    2300006: Left_Door
+    2300008: pCube7
+    2300010: pCube7 1
+    2300012: pCube7 2
+    2300014: pCube8
+    2300016: pCube8 1
+    2300018: pCube8 2
+    2300020: polySurface15
+    2300022: pPlane4
+    2300024: pPlane4 1
+    2300026: pPlane4 2
+    2300028: Right_Door
+    2300030: bricking2
+    2300032: Door_Segment 1
+    2300034: Door_Segment1
+    2300036: Framing4
+    2300038: pCube7 3
+    2300040: pCube7 4
+    2300042: pCube7 5
+    2300044: pCube8 3
+    2300046: pCube8 4
+    2300048: pCube8 5
+    2300050: pPlane4 3
+    2300052: pPlane4 4
+    2300054: pPlane4 5
+    2300056: pCube7 6
+    2300058: pCube8 6
+    2300060: pPlane4 6
+    3300000: bricking
+    3300002: Framing2
+    3300004: Framing3
+    3300006: Left_Door
+    3300008: pCube7
+    3300010: pCube7 1
+    3300012: pCube7 2
+    3300014: pCube8
+    3300016: pCube8 1
+    3300018: pCube8 2
+    3300020: polySurface15
+    3300022: pPlane4
+    3300024: pPlane4 1
+    3300026: pPlane4 2
+    3300028: Right_Door
+    3300030: bricking2
+    3300032: Door_Segment 1
+    3300034: Door_Segment1
+    3300036: Framing4
+    3300038: pCube7 3
+    3300040: pCube7 4
+    3300042: pCube7 5
+    3300044: pCube8 3
+    3300046: pCube8 4
+    3300048: pCube8 5
+    3300050: pPlane4 3
+    3300052: pPlane4 4
+    3300054: pPlane4 5
+    3300056: pCube7 6
+    3300058: pCube8 6
+    3300060: pPlane4 6
+    4300000: bricking
+    4300002: Framing2
+    4300004: Framing3
+    4300006: polySurface15
+    4300008: Right_Door
+    4300010: Left_Door
+    4300012: pPlane4
+    4300014: pCube7
+    4300016: pCube8
+    4300018: pPlane4
+    4300020: pCube7
+    4300022: pCube8
+    4300024: pPlane4
+    4300026: pCube7
+    4300028: pCube8
+    4300030: Door_Segment
+    4300032: Door_Segment1
+    4300034: bricking2
+    4300036: Framing4
+    4300038: pPlane4
+    4300040: pCube7
+    4300042: pCube8
+    4300044: pPlane4
+    4300046: pCube7
+    4300048: pCube8
+    4300050: pPlane4
+    4300052: pCube7
+    4300054: pCube8
+    4300056: pPlane4
+    4300058: pCube7
+    4300060: pCube8
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

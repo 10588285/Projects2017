@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character_Animation : MonoBehaviour {
 
+	public List<string> animState = new List<string>();
 	CharacterMove.moveState state = CharacterMove.moveState.move;
 
 	public Transform character;
@@ -20,12 +21,13 @@ public class Character_Animation : MonoBehaviour {
 
 		if (state == CharacterMove.moveState.move) {
 			SetSpriteFlip ();
-			animator.SetBool ("Running", CheckXMotion());
+			SetState ("Running", CheckXMotion());
 		}
 
 		if (state == CharacterMove.moveState.climb) {
+			SetState ("Climbing", true);
+			CheckYMotion();
 
-			animator.SetBool ("Climbing", CheckYMotion());
 		}
 
 		poseCheck = character.position;
@@ -39,18 +41,20 @@ public class Character_Animation : MonoBehaviour {
 		}
 	}
 
-	bool CheckYMotion(){
-		if (poseCheck.y < character.position.y || poseCheck.y > character.position.y) {
-			return true;
-		} else {
-			return false;
+	void CheckYMotion(){
+		if (poseCheck.y < character.position.y) {
+			animator.speed = 1;
+		} else if(poseCheck.y > character.position.y){
+			animator.speed = -1;
+		}else{
+			animator.speed = 0;
 		}
 
 
 	}
 
 	bool CheckXMotion(){
-
+		animator.speed = 1;
 		if (poseCheck.x < character.position.x || poseCheck.x > character.position.x) {
 			return true;
 		} else {
@@ -58,4 +62,13 @@ public class Character_Animation : MonoBehaviour {
 		}
 	}
 
+	void SetState(string newState, bool newBool){
+		animator.SetBool (newState, newBool);
+
+		foreach (string str in animState){
+			if(str != newState)
+				animator.SetBool (str, false);
+		}
+
+	}
 }
