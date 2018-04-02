@@ -25,6 +25,7 @@ public class Character_Animation : MonoBehaviour {
 		}
 
 		if (state == CharacterMove.moveState.climb) {
+			sprite.flipX = true;
 			SetState ("Climbing", true);
 			CheckYMotion();
 
