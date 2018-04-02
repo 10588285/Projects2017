@@ -1,16 +1,32 @@
 fileFormatVersion: 2
-guid: 0d66567771cfd6b469a0c65528a8a260
-timeCreated: 1510608772
+guid: b09ae70260babfa4ea512f078326906c
+timeCreated: 1522692646
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Building_Small
-    9500000: //RootNode
+    100000: Poster_01
+    100002: Poster_02
+    100004: Poster_03
+    100006: Poster_04
+    100008: //RootNode
+    400000: Poster_01
+    400002: Poster_02
+    400004: Poster_03
+    400006: Poster_04
+    400008: //RootNode
+    2300000: Poster_01
+    2300002: Poster_02
+    2300004: Poster_03
+    2300006: Poster_04
+    3300000: Poster_01
+    3300002: Poster_02
+    3300004: Poster_03
+    3300006: Poster_04
+    4300000: Poster_01
+    4300002: Poster_02
+    4300004: Poster_03
+    4300006: Poster_04
   materials:
     importMaterials: 1
     materialName: 0
@@ -80,7 +96,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
