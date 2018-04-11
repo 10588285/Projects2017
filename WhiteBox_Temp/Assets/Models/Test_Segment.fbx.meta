@@ -6,10 +6,52 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Door_Segment
+    100004: Fracture_01
+    100006: Fracture_02
+    100008: Fracture_03
+    100010: Fracture_04
+    100012: Fracture_05
+    100014: Fracture_06
+    100016: Fracture_07
+    100018: Fracture_08
     400000: //RootNode
+    400002: Door_Segment
+    400004: Fracture_01
+    400006: Fracture_02
+    400008: Fracture_03
+    400010: Fracture_04
+    400012: Fracture_05
+    400014: Fracture_06
+    400016: Fracture_07
+    400018: Fracture_08
     2300000: //RootNode
+    2300002: Fracture_01
+    2300004: Fracture_02
+    2300006: Fracture_03
+    2300008: Fracture_04
+    2300010: Fracture_05
+    2300012: Fracture_06
+    2300014: Fracture_07
+    2300016: Fracture_08
     3300000: //RootNode
+    3300002: Fracture_01
+    3300004: Fracture_02
+    3300006: Fracture_03
+    3300008: Fracture_04
+    3300010: Fracture_05
+    3300012: Fracture_06
+    3300014: Fracture_07
+    3300016: Fracture_08
     4300000: Building_Broken1_Door_Segment_Fracture_01
+    4300002: Fracture_08
+    4300004: Fracture_07
+    4300006: Fracture_06
+    4300008: Fracture_05
+    4300010: Fracture_04
+    4300012: Fracture_03
+    4300014: Fracture_02
+    4300016: Fracture_01
   materials:
     importMaterials: 1
     materialName: 0
