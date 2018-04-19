@@ -15,6 +15,7 @@ ModelImporter:
     100014: fragment_07
     100016: Fragment_08
     100018: Wall_Segment
+    100020: Fragment_07
     400000: //RootNode
     400002: Fragment_01
     400004: Fragment_02
@@ -25,6 +26,7 @@ ModelImporter:
     400014: fragment_07
     400016: Fragment_08
     400018: Wall_Segment
+    400020: Fragment_07
     2300000: Fragment_01
     2300002: Fragment_02
     2300004: Fragment_03
@@ -33,6 +35,7 @@ ModelImporter:
     2300010: Fragment_06
     2300012: fragment_07
     2300014: Fragment_08
+    2300016: Fragment_07
     3300000: Fragment_01
     3300002: Fragment_02
     3300004: Fragment_03
@@ -41,6 +44,7 @@ ModelImporter:
     3300010: Fragment_06
     3300012: fragment_07
     3300014: Fragment_08
+    3300016: Fragment_07
     4300000: Fragment_01
     4300002: Fragment_02
     4300004: Fragment_03
@@ -49,6 +53,7 @@ ModelImporter:
     4300010: Fragment_06
     4300012: fragment_07
     4300014: Fragment_08
+    4300016: Fragment_07
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -15,6 +15,8 @@ ModelImporter:
     100014: Fracture_06
     100016: fracture_07
     100018: fracture_08
+    100020: Fracture_07
+    100022: Fracture_08
     400000: //RootNode
     400002: Door_Segment
     400004: Fracture_01
@@ -25,6 +27,8 @@ ModelImporter:
     400014: Fracture_06
     400016: fracture_07
     400018: fracture_08
+    400020: Fracture_07
+    400022: Fracture_08
     2300000: Fracture_01
     2300002: Fracture_02
     2300004: Fracture_03
@@ -33,6 +37,8 @@ ModelImporter:
     2300010: Fracture_06
     2300012: fracture_07
     2300014: fracture_08
+    2300016: Fracture_07
+    2300018: Fracture_08
     3300000: Fracture_01
     3300002: Fracture_02
     3300004: Fracture_03
@@ -41,6 +47,8 @@ ModelImporter:
     3300010: Fracture_06
     3300012: fracture_07
     3300014: fracture_08
+    3300016: Fracture_07
+    3300018: Fracture_08
     4300000: Fracture_01
     4300002: Fracture_02
     4300004: Fracture_03
@@ -49,6 +57,8 @@ ModelImporter:
     4300010: Fracture_06
     4300012: fracture_07
     4300014: fracture_08
+    4300016: Fracture_08
+    4300018: Fracture_07
     9500000: //RootNode
   materials:
     importMaterials: 1

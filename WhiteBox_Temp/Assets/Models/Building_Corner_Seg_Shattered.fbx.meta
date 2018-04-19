@@ -14,6 +14,8 @@ ModelImporter:
     100012: Fragment_05
     100014: Fragment_06
     100016: Fragment_07
+    100018: Fragement_01
+    100020: Fragement_02
     400000: //RootNode
     400002: Corner_Segment
     400004: Fragment_01
@@ -23,6 +25,8 @@ ModelImporter:
     400012: Fragment_05
     400014: Fragment_06
     400016: Fragment_07
+    400018: Fragement_01
+    400020: Fragement_02
     2300000: Fragment_01
     2300002: Fragment_02
     2300004: Fragment_03
@@ -30,6 +34,8 @@ ModelImporter:
     2300008: Fragment_05
     2300010: Fragment_06
     2300012: Fragment_07
+    2300014: Fragement_01
+    2300016: Fragement_02
     3300000: Fragment_01
     3300002: Fragment_02
     3300004: Fragment_03
@@ -37,6 +43,8 @@ ModelImporter:
     3300008: Fragment_05
     3300010: Fragment_06
     3300012: Fragment_07
+    3300014: Fragement_01
+    3300016: Fragement_02
     4300000: Fragment_01
     4300002: Fragment_02
     4300004: Fragment_03
@@ -44,6 +52,8 @@ ModelImporter:
     4300008: Fragment_05
     4300010: Fragment_06
     4300012: Fragment_07
+    4300014: Fragement_02
+    4300016: Fragement_01
     9500000: //RootNode
   materials:
     importMaterials: 1
