@@ -44,11 +44,11 @@ public class Character_Animation : MonoBehaviour {
 
 	void CheckYMotion(){
 		if (poseCheck.y < character.position.y) {
-			animator.speed = 1;
+			animator.SetFloat ("ClimbingSpeed", 1.0f);
 		} else if(poseCheck.y > character.position.y){
-			animator.speed = -1;
+			animator.SetFloat ("ClimbingSpeed", -1.0f);
 		}else{
-			animator.speed = 0;
+			animator.SetFloat ("ClimbingSpeed",0.0f);
 		}
 
 
