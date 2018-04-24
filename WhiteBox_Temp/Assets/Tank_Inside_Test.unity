@@ -14435,6 +14435,56 @@ Transform:
   m_Father: {fileID: 745590580}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &959997943
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2056093812}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+  m_IsPrefabParent: 0
+--- !u!4 &959997944 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: 42ed710773303654aa3ef2fcabefc239, type: 3}
+  m_PrefabInternal: {fileID: 959997943}
 --- !u!1 &965958351
 GameObject:
   m_ObjectHideFlags: 0
@@ -26867,6 +26917,7 @@ Transform:
   - {fileID: 1103623318}
   - {fileID: 1981063682}
   - {fileID: 1778064764}
+  - {fileID: 959997944}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
