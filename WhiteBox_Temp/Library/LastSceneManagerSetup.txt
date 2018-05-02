@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Tank_Inside_Test.unity
+- path: Assets/Final_Environment.unity
   isLoaded: 1
   isActive: 1

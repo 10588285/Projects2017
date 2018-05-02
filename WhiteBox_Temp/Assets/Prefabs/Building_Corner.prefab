@@ -115,7 +115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1316700452450628
 GameObject:
   m_ObjectHideFlags: 1
@@ -492,6 +492,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4023705596653058}
+  - component: {fileID: 114698620901479574}
+  - component: {fileID: 65573938150062840}
   m_Layer: 0
   m_Name: Corner_Segment
   m_TagString: Untagged
@@ -548,7 +550,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1803053834620534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.838594, y: -2.0006504, z: 0.2517575}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 180, y: 180, z: 180}
   m_Children:
   - {fileID: 4023705596653058}
@@ -2055,6 +2057,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 9bd0e605199084b498cbc02464935112, type: 3}
+--- !u!65 &65573938150062840
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989505128587316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.025, y: 0.024, z: 0.025}
+  m_Center: {x: 0.01, y: 0.012, z: -0.01}
 --- !u!95 &95110561973706262
 Animator:
   serializedVersion: 3
@@ -2089,3 +2103,15 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114698620901479574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1989505128587316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb7a3094198ed848876ccb4e3ffaf48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShatteredWall: {fileID: 1315118210225930}

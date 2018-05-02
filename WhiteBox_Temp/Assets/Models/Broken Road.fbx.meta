@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7d7f5552e504f364e96f601a73d17181
-timeCreated: 1517165222
+guid: e0ff6cfd0682e0341b69265d09da921d
+timeCreated: 1525135238
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,8 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Grass
+    4300000: Road_Brick69
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -79,7 +80,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
