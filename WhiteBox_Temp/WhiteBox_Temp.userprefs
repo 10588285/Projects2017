@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CreateRubble.cs">
     <Files>
       <File FileName="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" Line="1" Column="1" />
+      <File FileName="Assets\CreateRubble.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
